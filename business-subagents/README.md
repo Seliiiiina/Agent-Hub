@@ -15,6 +15,7 @@ Each Business Subagent file must use:
 
 Name requirements:
 - Include English name as the main heading.
+- Add `英文名称：` below the main heading.
 - Include Chinese name below the heading.
 
 Description requirements:
@@ -23,6 +24,7 @@ Description requirements:
 
 Introduction requirements:
 - Define responsibilities, trigger conditions, input requirements, output expectations, execution rules, limitations, and structured result format.
+- Explicitly state that the Business Subagent does not communicate directly with users and returns structured results to Agent Hub or the upstream functional Agent only.
 - Keep the file under 8000 characters.
 - Return upstream results as JSON-like objects inside Markdown code blocks when needed.
 

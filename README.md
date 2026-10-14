@@ -605,7 +605,7 @@ All Agent Markdown files must use the same concise three-part structure:
 Name requirements:
 
 - Agent Hub and the four functional agents only need English names.
-- Business Subagents in `business-subagents/` should include both English and Chinese names.
+- Business Subagents in `business-subagents/` should include both `英文名称：` and `中文名称：` below the main heading.
 
 Description requirements:
 
@@ -619,6 +619,7 @@ Introduction requirements:
 - Define responsibilities, boundaries, trigger conditions, workflow, input and output requirements, calling rules, and necessary restrictions.
 - Write executable instructions that help the Agent perform work, not just understand its role.
 - Require functional agents and Subagents to return structured outputs as JSON-like objects inside Markdown code blocks when they report results upstream.
+- Business Subagents must explicitly state that they do not communicate directly with users and return structured results to Agent Hub or the upstream functional Agent only.
 
 Length and style requirements:
 
@@ -647,6 +648,8 @@ Recommended template for business Subagents:
 ```markdown
 # English Name
 
+英文名称：
+
 中文名称：
 
 ## Description
@@ -663,6 +666,7 @@ Define responsibilities, trigger conditions, input/output requirements, executio
 ```text
 Agent-Hub/
   README.md
+  Flow-Validation.md
   Agent-Hub.md
   Agent-Registry.md
   functional-agents/
@@ -757,5 +761,5 @@ Use force push only when intentionally replacing remote history and after confir
 | M1: Core agent definitions | `Agent-Hub.md` and four functional Agent Markdown files exist. | Done |
 | M2: Subagent library baseline | `business-subagents/` folder exists for future business Subagents. | Done |
 | M3: Agent Registry baseline | `Agent-Registry.md` indexes available agents with v1 registry fields. | Done |
-| M4: End-to-end prototype | A full recommendation, confirmation, and execution flow can be simulated. | Not started |
+| M4: End-to-end prototype | A full recommendation, confirmation, and execution flow can be simulated. | Done |
 | M5: Copilot Studio readiness | Agent definitions are ready to migrate or map into Copilot Studio concepts. | Not started |
