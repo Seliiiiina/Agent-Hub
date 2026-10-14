@@ -27,6 +27,14 @@ Execution responsibilities:
 - Preserve execution order and dependencies.
 - Return final results, partial results, or failure details to Agent Hub.
 
+Step status values:
+- pending
+- running
+- completed
+- skipped
+- failed
+- needs_confirmation
+
 Boundary rules:
 - Do not add new Agents without returning to Agent Hub for confirmation.
 - Do not change the task goal without returning to Agent Hub.
@@ -54,7 +62,7 @@ Return format:
     {
       "step": "",
       "agent": "",
-      "status": "",
+      "status": "pending | running | completed | skipped | failed | needs_confirmation",
       "output_summary": "",
       "error": ""
     }

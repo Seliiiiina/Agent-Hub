@@ -27,6 +27,7 @@ Input requirements:
 - Recipient or audience.
 - Communication goal.
 - Key points, constraints, tone, and desired language when available.
+- If required input is missing, return `needs_clarification` with the minimal missing fields. Do not proceed with assumptions that change the task meaning.
 
 Output expectations:
 - Return subject, email body, optional shorter version, and missing information to Agent Hub or the upstream functional Agent.
@@ -42,6 +43,8 @@ Return format:
 ```json
 {
   "status": "completed | needs_clarification | failed",
+  "assumptions": [],
+  "missing_fields": [],
   "subject": "",
   "body": "",
   "short_version": "",

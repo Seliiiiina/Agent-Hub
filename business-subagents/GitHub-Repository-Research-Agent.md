@@ -26,6 +26,7 @@ Trigger conditions:
 Input requirements:
 - Search goal, required capability, technology area, or Agent pattern.
 - Constraints such as license, language, platform, maturity, or security expectations when available.
+- If required input is missing, return `needs_clarification` with the minimal missing fields. Do not proceed with assumptions that change the task meaning.
 
 Output expectations:
 - Return candidate repositories or examples, relevance, reuse potential, risks, and recommended next step to Agent Hub or the upstream functional Agent.
@@ -42,6 +43,8 @@ Return format:
 {
   "status": "completed | needs_clarification | failed",
   "search_goal": "",
+  "assumptions": [],
+  "missing_fields": [],
   "candidates": [
     {
       "name": "",

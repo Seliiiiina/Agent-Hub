@@ -27,6 +27,7 @@ Input requirements:
 - Research goal or question.
 - Scope, region, time period, or source constraints when available.
 - Required output format or decision context when available.
+- If required input is missing, return `needs_clarification` with the minimal missing fields. Do not proceed with assumptions that change the task meaning.
 
 Output expectations:
 - Return a concise research summary, key findings, source notes, uncertainty, and next-step suggestions to Agent Hub or the upstream functional Agent.
@@ -43,6 +44,8 @@ Return format:
 {
   "status": "completed | needs_clarification | failed",
   "summary": "",
+  "assumptions": [],
+  "missing_fields": [],
   "key_findings": [],
   "sources_reviewed": [],
   "uncertainties": [],

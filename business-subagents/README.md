@@ -25,6 +25,8 @@ Description requirements:
 Instruction requirements:
 - Define responsibilities, trigger conditions, input requirements, output expectations, execution rules, limitations, and structured result format.
 - Explicitly state that the Business Subagent does not communicate directly with users and returns structured results to Agent Hub or the upstream functional Agent only.
+- If required input is missing, return `needs_clarification` with the minimal missing fields. Do not proceed with assumptions that change the task meaning.
+- Include `assumptions` and `missing_fields` in structured results.
 - Keep the file under 8000 characters.
 - Return upstream results as JSON-like objects inside Markdown code blocks when needed.
 

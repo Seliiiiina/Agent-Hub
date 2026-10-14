@@ -26,6 +26,7 @@ Trigger conditions:
 Input requirements:
 - Document content or accessible excerpt.
 - Desired summary depth, audience, or focus when available.
+- If required input is missing, return `needs_clarification` with the minimal missing fields. Do not proceed with assumptions that change the task meaning.
 
 Output expectations:
 - Return summary, key points, decisions, risks, action items, and open questions to Agent Hub or the upstream functional Agent.
@@ -41,6 +42,8 @@ Return format:
 {
   "status": "completed | needs_clarification | failed",
   "summary": "",
+  "assumptions": [],
+  "missing_fields": [],
   "key_points": [],
   "decisions": [],
   "risks": [],

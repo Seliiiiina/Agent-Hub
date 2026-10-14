@@ -26,6 +26,7 @@ Trigger conditions:
 Input requirements:
 - Data, table, metric summary, or clearly described dataset.
 - Business question, target metric, comparison period, or segmentation when available.
+- If required input is missing, return `needs_clarification` with the minimal missing fields. Do not proceed with assumptions that change the task meaning.
 
 Output expectations:
 - Return findings, evidence, possible drivers, limitations, and recommended next analysis to Agent Hub or the upstream functional Agent.
@@ -41,6 +42,8 @@ Return format:
 ```json
 {
   "status": "completed | needs_clarification | failed",
+  "assumptions": [],
+  "missing_fields": [],
   "findings": [],
   "evidence": [],
   "possible_drivers": [],
