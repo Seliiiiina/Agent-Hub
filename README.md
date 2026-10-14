@@ -600,7 +600,7 @@ All Agent Markdown files must use the same concise three-part structure:
 
 - Name
 - Description
-- Introduction
+- Instruction
 
 Name requirements:
 
@@ -613,9 +613,9 @@ Description requirements:
 - Use as few words as possible to describe the agent's core function and when to use it.
 - Do not include long background explanations.
 
-Introduction requirements:
+Instruction requirements:
 
-- Treat Introduction as the core instruction block, similar to a Skill.
+- Treat Instruction as the core instruction block, similar to a Skill.
 - Define responsibilities, boundaries, trigger conditions, workflow, input and output requirements, calling rules, and necessary restrictions.
 - Write executable instructions that help the Agent perform work, not just understand its role.
 - Require functional agents and Subagents to return structured outputs as JSON-like objects inside Markdown code blocks when they report results upstream.
@@ -623,7 +623,7 @@ Introduction requirements:
 
 Length and style requirements:
 
-- Each Markdown file must stay under 8000 characters, including Name, Description, and Introduction.
+- Each Markdown file must stay under 8000 characters, including Name, Description, and Instruction.
 - Reduce unnecessary blank lines, repeated explanations, redundant headings, and non-actionable text.
 - Prefer clear, direct, executable instructions.
 - Avoid repeating the same global rules across Agent Hub and the four functional Agent files.
@@ -638,7 +638,7 @@ Recommended template for Agent Hub and functional agents:
 
 Describe the agent's core role and when it should be used.
 
-## Introduction
+## Instruction
 
 Define responsibilities, boundaries, trigger conditions, workflow, input/output requirements, calling rules, and restrictions.
 ```
@@ -656,7 +656,7 @@ Recommended template for business Subagents:
 
 Describe the Subagent's core capability and when to use it.
 
-## Introduction
+## Instruction
 
 Define responsibilities, trigger conditions, input/output requirements, execution rules, and limitations.
 ```
@@ -688,7 +688,7 @@ Agent-Hub/
 | 2026-10-14 | Require Human-in-the-Loop confirmation before execution. | Prevents unauthorized execution and keeps recommendation, planning, and execution distinct. | Accepted |
 | 2026-10-14 | Keep the project Markdown-only at this stage. | Minimizes implementation overhead and keeps the agent definitions portable. | Accepted |
 | 2026-10-14 | Store business Subagents in `business-subagents/` and maintain an independent Agent Registry. | Separates callable business agents from core orchestration agents and gives Agent Finder a central index. | Accepted |
-| 2026-10-14 | Limit every Agent Markdown file to Name, Description, and Introduction under 8000 characters. | Reduces token usage and improves maintainability for Copilot Studio migration. | Accepted |
+| 2026-10-14 | Limit every Agent Markdown file to Name, Description, and Instruction under 8000 characters. | Reduces token usage and improves maintainability for Copilot Studio migration. | Accepted |
 | 2026-10-14 | Keep the functional agent folder named `functional-agents/`. | Preserves the current structure and clearly separates functional agents from business Subagents. | Accepted |
 | 2026-10-14 | Use Markdown code blocks containing JSON-like objects for upstream structured outputs. | Keeps files Markdown-only while preserving machine-readable response structure. | Accepted |
 | 2026-10-14 | Add `Permission Level` and fixed `Status` values to Agent Registry. | Helps Agent Finder avoid unavailable or deprecated agents and supports scoped execution confirmation. | Accepted |
@@ -726,7 +726,7 @@ Agent-Hub/
 3. Create `business-subagents/` for business Subagents.
 4. Create `Agent-Registry.md` as the central Markdown index.
 5. Define the minimal registry fields for discovery and matching.
-6. Define JSON-like object response requirements inside each Agent Introduction.
+6. Define JSON-like object response requirements inside each Agent Instruction.
 7. Simulate the end-to-end flow from user need to recommendation to confirmation to execution result after real Subagents are added.
 8. Refine the Markdown instructions for future Microsoft Copilot Studio migration.
 

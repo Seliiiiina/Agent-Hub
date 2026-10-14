@@ -4,7 +4,7 @@
 
 Markdown-only validation record for simulating Agent Hub flows as if the definitions were running inside Copilot Studio.
 
-## Introduction
+## Instruction
 
 This file records manual flow validation for Agent Hub, Agent Finder, Workflow Builder, Agent Executor, Agent Creator, Agent Registry, and Business Subagents. It does not execute real tasks.
 

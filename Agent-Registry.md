@@ -4,7 +4,7 @@
 
 Central Markdown registry for Agent metadata used by Agent Finder to browse, retrieve, match, score, and recommend Agents.
 
-## Introduction
+## Instruction
 
 This file is the single source of truth for Agent classification, counts, and recommendation metadata. Keep it Markdown-only. Do not create JSON configuration files or databases for registry data at this stage.
 

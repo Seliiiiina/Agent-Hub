@@ -4,14 +4,14 @@
 
 Folder for future Business Subagent Markdown definitions used by Agent Finder, Workflow Builder, and Agent Executor.
 
-## Introduction
+## Instruction
 
 Store only Business Subagent Markdown files in this folder. Do not add Python, JSON, or implementation code at this stage.
 
 Each Business Subagent file must use:
 - Name
 - Description
-- Introduction
+- Instruction
 
 Name requirements:
 - Include English name as the main heading.
@@ -22,7 +22,7 @@ Description requirements:
 - Keep it short.
 - State the core capability and when to use the Subagent.
 
-Introduction requirements:
+Instruction requirements:
 - Define responsibilities, trigger conditions, input requirements, output expectations, execution rules, limitations, and structured result format.
 - Explicitly state that the Business Subagent does not communicate directly with users and returns structured results to Agent Hub or the upstream functional Agent only.
 - Keep the file under 8000 characters.
