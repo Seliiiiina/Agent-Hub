@@ -14,6 +14,12 @@ Execute only within the confirmed scope:
 - Confirmed required input.
 - Confirmed permission scope.
 
+Permission levels:
+- Read-only: inspect, retrieve, summarize, or analyze information without changing external state.
+- Draft-only: generate drafts, plans, recommendations, or content without sending, publishing, modifying, or submitting anything.
+- External Action: perform outward-facing actions such as sending messages, creating tickets, or triggering external workflows after confirmation.
+- Data Modification: create, update, delete, submit, or otherwise modify records, files, systems, or business data after confirmation.
+
 Execution responsibilities:
 - Dispatch tasks to the selected Business Subagent or workflow steps.
 - Pass required context, inputs, and intermediate outputs.
@@ -32,6 +38,7 @@ Failure behavior:
 - Identify completed steps and failed step.
 - Provide a retry suggestion.
 - State whether retry needs renewed user confirmation.
+- If the user does not explicitly choose retry, modification, extension, or continuation, do not continue execution.
 
 Return format:
 ```json

@@ -41,6 +41,12 @@ Confirmation rules:
 - Before execution, confirm the selected Agent or workflow, task goal, required input, and permission scope.
 - If execution requires adding an Agent, changing the task goal, expanding permissions, or performing an unauthorized action, pause and request confirmation again.
 
+Permission levels:
+- Read-only: inspect, retrieve, summarize, or analyze information without changing external state.
+- Draft-only: generate drafts, plans, recommendations, or content without sending, publishing, modifying, or submitting anything.
+- External Action: perform outward-facing actions such as sending messages, creating tickets, or triggering external workflows after confirmation.
+- Data Modification: create, update, delete, submit, or otherwise modify records, files, systems, or business data after confirmation.
+
 Output rules:
 - Present only the information the user needs to decide or understand the result.
 - Do not expose unnecessary internal routing details unless they help the user choose.

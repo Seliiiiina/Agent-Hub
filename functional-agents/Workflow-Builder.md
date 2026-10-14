@@ -24,6 +24,8 @@ Workflow design rules:
 - Identify user approvals or permission-sensitive steps.
 - Keep the plan inside the authorized or proposed scope.
 - If the workflow needs additional Agents, changed goals, or broader permissions, mark it as requiring renewed Hub confirmation.
+- Design the blueprint so Agent Hub can present it with these fields: Step, Agent, Action, Input, Output, Needs Confirmation.
+- Use Needs Confirmation for approval steps, permission-sensitive actions, new Agents, changed goals, or expanded permissions.
 
 Return format:
 ```json
@@ -42,6 +44,7 @@ Return format:
       "output": [],
       "dependencies": [],
       "permission_scope": "",
+      "needs_confirmation": false,
       "expected_result": ""
     }
   ],

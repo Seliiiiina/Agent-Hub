@@ -721,6 +721,29 @@ Agent-Hub/
 7. Simulate the end-to-end flow from user need to recommendation to confirmation to execution result after real Subagents are added.
 8. Refine the Markdown instructions for future Microsoft Copilot Studio migration.
 
+## Git Workflow Notes
+
+If `git push` is rejected with `fetch first`, the remote branch contains commits that do not exist locally. Do not force push by default. First integrate the remote changes, resolve any conflicts, then push again.
+
+Recommended flow:
+
+```bash
+git status
+git pull --rebase origin main
+git push -u origin main
+```
+
+If rebase reports conflicts, resolve the files, then continue:
+
+```bash
+git status
+git add <resolved-files>
+git rebase --continue
+git push -u origin main
+```
+
+Use force push only when intentionally replacing remote history and after confirming that no one else's work will be lost.
+
 ## Milestones
 
 | Milestone | Outcome | Status |

@@ -21,6 +21,27 @@ Creation rules:
 - Registry update suggestions must use `YYYY-MM-DD` for Last Updated.
 - Do not mark a new Agent Active unless Hub confirms creation and readiness.
 
+Primary Category values:
+- Knowledge and Research
+- Document and Content
+- Data and Analytics
+- Business Operations
+- Communication and Collaboration
+- Development and Technology
+- Compliance and Quality
+- Specialized Business
+
+Common Capability Tags:
+- Search
+- Retrieve
+- Extract
+- Compare
+- Analyze
+- Validate
+- Summarize
+- Generate
+- Automate
+
 Capability-gap analysis should consider:
 - Missing capability.
 - Missing domain expertise.

@@ -34,3 +34,13 @@ Registry requirements:
 - Use one fixed Status value: Active, Draft, Deprecated, or Unavailable.
 - Use one fixed Permission Level value: Read-only, Draft-only, External Action, or Data Modification.
 - Use `YYYY-MM-DD` for Last Updated.
+
+Primary Category values:
+- Knowledge and Research
+- Document and Content
+- Data and Analytics
+- Business Operations
+- Communication and Collaboration
+- Development and Technology
+- Compliance and Quality
+- Specialized Business
