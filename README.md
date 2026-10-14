@@ -149,19 +149,22 @@ Boundaries:
 
 Chinese name: 智能体创建助手
 
-Agent Creator helps analyze capability gaps and design new agent definitions when no existing agent can satisfy the user's need.
+Agent Creator helps analyze capability gaps, search for reusable internal or external solutions, and draft new agent definitions only when reuse or adaptation is insufficient.
 
 Use Agent Creator when:
 
 - Agent Finder cannot find a suitable existing agent.
 - The platform needs to determine whether existing agents can be combined to meet the need.
+- Existing internal Agents are insufficient and external reusable Agent patterns, templates, repositories, or marketplace examples should be considered.
 - A genuinely new agent may be required.
 
 Expected behavior:
 
 - Analyze the capability gap.
 - Decide whether the need can be met by composing existing agents.
-- If a new agent is needed, draft its capability definition, responsibilities, input and output requirements, tool requirements, Markdown instructions, and configuration plan.
+- Search the web, GitHub, marketplaces, or other approved external sources for reusable Agent patterns, templates, repositories, or design references when useful.
+- Evaluate whether the best path is to reuse an existing solution, adapt an existing solution, or create a new Agent.
+- If a new Agent is needed, draft its capability definition, responsibilities, input and output requirements, tool requirements, Markdown instructions, and configuration plan.
 - Return the proposed definition to Agent Hub for user confirmation before creation.
 
 ### Subagents
@@ -324,7 +327,7 @@ For no-match or unsuitable-Agent cases, prefer two short paragraphs:
 ```markdown
 I could not find a suitable Agent for this request. The closest existing Agents are missing the required capability, do not support the provided input, or are not currently available for this business scenario.
 
-The best next step is to either create a new Agent definition with Agent Creator, combine existing Agents through Workflow Builder if partial capabilities exist, or narrow the task scope and run matching again.
+The best next step is to ask Agent Creator to search and evaluate reusable solutions, combine existing Agents through Workflow Builder if partial capabilities exist, or narrow the task scope and run matching again.
 ```
 
 ## Human-in-the-Loop Principle
@@ -443,14 +446,14 @@ Agent Finder should include enough rationale for Agent Hub to explain why each c
 
 For browsing or directory requests, Agent Finder should summarize Registry contents by category, including category counts, main capabilities, and representative agents.
 
-If no suitable Business Subagent exists, Agent Finder must return a no-match result. Agent Hub can then suggest Agent Creator for creating a new Agent or Workflow Builder for combining existing Agents when appropriate.
+If no suitable Business Subagent exists, Agent Finder must return a no-match result. Agent Hub can then suggest Agent Creator for sourcing and evaluating reuse, adaptation, or creation, or Workflow Builder for combining existing Agents when appropriate.
 
 Agent Finder only performs matching and recommendation. It does not execute tasks, request execution confirmation, or present final user-facing results directly.
 
 No-match routing:
 
 - If existing Agents have partial capabilities that can be sequenced together, suggest Workflow Builder.
-- If the core required capability is missing, suggest Agent Creator.
+- If the core required capability is missing, suggest Agent Creator to search external sources and evaluate reuse, adaptation, or creation.
 - If the goal, input, or scope is unclear, Agent Hub should ask clarification questions and then call Agent Finder again.
 
 ## Execution Result Review
@@ -582,8 +585,9 @@ User asks for a complex multi-step task
 Agent Finder finds no suitable agent
   -> Agent Hub informs the user
   -> Agent Creator analyzes the capability gap
-  -> Agent Creator drafts a new agent definition and Registry update suggestion when needed
-  -> Agent Hub asks the user to confirm creation and Registry update
+  -> Agent Creator searches internal and external reusable solutions when useful
+  -> Agent Creator recommends reuse, adaptation, or new Agent creation
+  -> Agent Hub asks the user to confirm the selected path and any Registry update
 ```
 
 ## Markdown Agent Definition Standard
@@ -699,6 +703,7 @@ Agent-Hub/
 | 2026-10-14 | Use fixed user-facing table fields for recommendations and Workflow Blueprints. | Makes user output predictable and decision-friendly. | Accepted |
 | 2026-10-14 | Require `Last Updated` to use `YYYY-MM-DD` format and define Status behavior. | Keeps Registry maintenance consistent and recommendation-safe. | Accepted |
 | 2026-10-14 | Do not continue, retry, modify, or extend execution without an explicit user choice. | Preserves Human-in-the-Loop control after execution. | Accepted |
+| 2026-10-14 | Allow Agent Creator to search web, GitHub, marketplaces, or approved external sources before proposing new Agent creation. | Promotes reuse and adaptation before creating duplicate Agents. | Accepted |
 
 ## Open Questions
 
