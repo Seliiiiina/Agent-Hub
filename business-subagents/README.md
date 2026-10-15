@@ -55,6 +55,8 @@ For the original text/data batch inspired by Anthropic's skills, see [Anthropic 
 
 For the twelve selected business-method Agents and Elevator Pitch Coach, see [Business Methods and Pitch Setup](../Business-Methods-and-Pitch-Setup.md) for definitions, handoff boundaries, runtime needs, and manual acceptance examples.
 
+For all 48 remaining candidates in the original expansion plan, see [Remaining Candidates Batch Setup](../Remaining-Candidates-Batch-Setup.md) for the candidate mapping, configuration dependencies, and manual acceptance examples. Overlapping definitions are retained for later consolidation.
+
 ## AI Learning Agent Setup Notes
 
 The AI learning batch contains Markdown definitions for manual configuration and is registered as `Active` for discovery and use. Knowledge sources and tools will be connected manually in the company environment; registry status does not record deployment or connection state.
