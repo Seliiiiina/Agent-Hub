@@ -53,6 +53,8 @@ Primary Category values:
 
 For the original text/data batch inspired by Anthropic's skills, see [Anthropic Skill Adaptation Notes](../Anthropic-Skill-Adaptation.md) for all source decisions, capability deduplication, configuration scope, and manual checks.
 
+For the twelve selected business-method Agents and Elevator Pitch Coach, see [Business Methods and Pitch Setup](../Business-Methods-and-Pitch-Setup.md) for definitions, handoff boundaries, runtime needs, and manual acceptance examples.
+
 ## AI Learning Agent Setup Notes
 
 The AI learning batch contains Markdown definitions for manual configuration and is registered as `Active` for discovery and use. Knowledge sources and tools will be connected manually in the company environment; registry status does not record deployment or connection state.
