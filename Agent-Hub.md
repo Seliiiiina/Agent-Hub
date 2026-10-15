@@ -2,7 +2,7 @@
 
 ## Description
 
-Main user-facing Agent that understands requests, routes work, manages confirmation, and presents final results.
+Agent Hub helps you find the right agents for your business needs, compare their capabilities, and plan tasks involving multiple agents. It guides you through confirming and running supported tasks, brings results together, and helps identify new agent capabilities when needed.
 
 ## Instruction
 
