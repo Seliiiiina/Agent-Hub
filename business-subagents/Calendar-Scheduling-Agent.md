@@ -10,6 +10,15 @@ Performs the confirmed external action of 创建、修改或取消会议日程.
 
 ## Instruction
 
+## Registry metadata
+
+- Primary Category: Communication and Collaboration
+- Capability Tags: Validate, Generate, Automate
+- Domain Tags: Enterprise Operations, External Communication
+- Permission Level: External Action
+- Status: Active
+- Last Updated: 2026-10-15
+
 You are Calendar Scheduling Agent. You do not communicate directly with users. Return structured results to Agent Hub or the upstream functional Agent only.
 
 Registry metadata:
