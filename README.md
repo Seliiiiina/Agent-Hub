@@ -25,7 +25,7 @@ The long-term goal is to become a unified navigation, management, and scheduling
 
 The system uses one main agent, four functional agents, and multiple business subagents.
 
-The current library contains 172 Business Subagents after the first capability deduplication pass. See [Agent Registry](Agent-Registry.md) for current counts.
+The current library contains 172 Business Subagents after the first capability deduplication pass. See [Agent Registry](Agent-Registry.txt) for current counts.
 
 ```text
 User
@@ -166,7 +166,7 @@ Expected behavior:
 - Decide whether the need can be met by composing existing agents.
 - Search the web, GitHub, marketplaces, or other approved external sources for reusable Agent patterns, templates, repositories, or design references when useful.
 - Evaluate whether the best path is to reuse an existing solution, adapt an existing solution, or create a new Agent.
-- If a new Agent is needed, draft its capability definition, responsibilities, input and output requirements, tool requirements, Markdown instructions, and configuration plan.
+- If a new Agent is needed, draft its capability definition, responsibilities, input and output requirements, tool requirements, plain text instructions, and configuration plan.
 - Return the proposed definition to Agent Hub for user confirmation before creation.
 
 ### Subagents
@@ -187,7 +187,7 @@ Each Subagent should gradually include:
 
 ### Agent Registry
 
-Agent Registry is an independent Markdown index file that records existing agents in one place.
+Agent Registry is an independent plain text index file that records existing agents in one place.
 
 It is the single source of truth for agent classification, counts, and candidate recommendation. The system should not maintain duplicate registry data elsewhere.
 
@@ -270,7 +270,7 @@ Status must use one of these fixed values:
 
 Status rules:
 
-- Active: the Markdown definition is complete and available for discovery; this does not mean it is deployed, connected, or runtime-validated. Execution requires verified runtime availability, required inputs/tools, permissions, and user confirmation.
+- Active: the plain text definition is complete and available for discovery; this does not mean it is deployed, connected, or runtime-validated. Execution requires verified runtime availability, required inputs/tools, permissions, and user confirmation.
 - Draft: can be browsed or discussed but should not be recommended for execution.
 - Deprecated: should not be recommended unless the user explicitly asks about it.
 - Unavailable: cannot be executed and should not be recommended for execution.
@@ -279,7 +279,7 @@ Last Updated must use `YYYY-MM-DD` format.
 
 Agent Finder should avoid recommending Draft, Deprecated, or Unavailable agents for execution unless the user explicitly asks about them.
 
-Future registry fields may include input/output types, permission requirements, and certification status. Current implementation remains Markdown-only and should not introduce JSON configuration files or a database.
+Future registry fields may include input/output types, permission requirements, and certification status. Current implementation remains plain-text-only and should not introduce JSON configuration files or a database.
 
 ## Interaction Rules
 
@@ -610,13 +610,15 @@ Agent Finder finds no suitable agent
   -> Agent Hub asks the user to confirm the selected path and any Registry update
 ```
 
-## Markdown Agent Definition Standard
+## Plain Text Agent Definition Standard
 
-The current project should only contain Markdown files. It should not include Python files, JSON configuration files, or other implementation code at this stage.
+Agent definitions and the Agent Registry are stored as UTF-8 `.txt` files for copying into Copilot Studio. README and TODO documents remain `.md` files. Headings, hyphen bullets, tables, and code fences remain literal text; preserve their line breaks when copying.
 
-The initial implementation uses Markdown files to define agent roles, usage scenarios, and execution instructions. This keeps the design portable and prepares the system for future migration to Microsoft Copilot Studio.
+Agent definitions and the Agent Registry use plain text (.txt) files; README and TODO documents use Markdown (.md). It should not include Python files, JSON configuration files, or other implementation code at this stage.
 
-All Agent Markdown files must use the same concise three-part structure:
+The initial implementation uses plain text (.txt) files to define agent roles, usage scenarios, and execution instructions. This keeps the design portable and prepares the system for future migration to Microsoft Copilot Studio.
+
+All Agent plain text (.txt) files must use the same concise three-part structure:
 
 - Name
 - Description
@@ -643,7 +645,7 @@ Instruction requirements:
 
 Length and style requirements:
 
-- Each Markdown file must stay under 8000 characters, including Name, Description, and Instruction.
+- Each plain text (.txt) file must stay under 8000 characters, including Name, Description, and Instruction.
 - Reduce unnecessary blank lines, repeated explanations, redundant headings, and non-actionable text.
 - Prefer clear, direct, executable instructions.
 - Avoid repeating the same global rules across Agent Hub and the four functional Agent files.
@@ -686,13 +688,13 @@ Define responsibilities, trigger conditions, input/output requirements, executio
 ```text
 Agent-Hub/
   README.md
-  Agent-Hub.md
-  Agent-Registry.md
+  Agent-Hub.txt
+  Agent-Registry.txt
   functional-agents/
-    Agent-Finder.md
-    Workflow-Builder.md
-    Agent-Executor.md
-    Agent-Creator.md
+    Agent-Finder.txt
+    Workflow-Builder.txt
+    Agent-Executor.txt
+    Agent-Creator.txt
   business-subagents/
     README.md
 ```
@@ -703,13 +705,13 @@ Agent-Hub/
 | --- | --- | --- | --- |
 | 2026-10-14 | Use Agent Hub as the only user-facing agent. | Keeps user experience consistent and centralizes confirmation, explanation, and final output. | Accepted |
 | 2026-10-14 | Use four functional agents: Agent Finder, Workflow Builder, Agent Executor, and Agent Creator. | Separates discovery, planning, execution, and creation responsibilities. | Accepted |
-| 2026-10-14 | Store initial agent definitions as Markdown files. | Supports lightweight iteration and future migration to Microsoft Copilot Studio. | Accepted |
+| 2026-10-14 | Store initial agent definitions as plain text (.txt) files. | Supports lightweight iteration and future migration to Microsoft Copilot Studio. | Accepted |
 | 2026-10-14 | Require Human-in-the-Loop confirmation before execution. | Prevents unauthorized execution and keeps recommendation, planning, and execution distinct. | Accepted |
-| 2026-10-14 | Keep the project Markdown-only at this stage. | Minimizes implementation overhead and keeps the agent definitions portable. | Accepted |
+| 2026-10-14 | Keep the project plain-text-only at this stage. | Minimizes implementation overhead and keeps the agent definitions portable. | Accepted |
 | 2026-10-14 | Store business Subagents in `business-subagents/` and maintain an independent Agent Registry. | Separates callable business agents from core orchestration agents and gives Agent Finder a central index. | Accepted |
-| 2026-10-14 | Limit every Agent Markdown file to Name, Description, and Instruction under 8000 characters. | Reduces token usage and improves maintainability for Copilot Studio migration. | Accepted |
+| 2026-10-14 | Limit every Agent plain text (.txt) file to Name, Description, and Instruction under 8000 characters. | Reduces token usage and improves maintainability for Copilot Studio migration. | Accepted |
 | 2026-10-14 | Keep the functional agent folder named `functional-agents/`. | Preserves the current structure and clearly separates functional agents from business Subagents. | Accepted |
-| 2026-10-14 | Use Markdown code blocks containing JSON-like objects for upstream structured outputs. | Keeps files Markdown-only while preserving machine-readable response structure. | Accepted |
+| 2026-10-14 | Use Markdown code blocks containing JSON-like objects for upstream structured outputs. | Keeps files plain-text-only while preserving machine-readable response structure. | Accepted |
 | 2026-10-14 | Add `Permission Level` and fixed `Status` values to Agent Registry. | Helps Agent Finder avoid unavailable or deprecated agents and supports scoped execution confirmation. | Accepted |
 | 2026-10-14 | Require fallback from invalid user-specified Subagent to Agent Finder, then Agent Creator if needed. | Prevents failed direct execution while still respecting the user's preferred agent choice. | Accepted |
 | 2026-10-14 | Require Agent Hub to confirm Agent, task goal, input, and permission scope before execution. | Makes Agent selection separate from execution authorization. | Accepted |
@@ -732,22 +734,22 @@ Agent-Hub/
 
 | Topic | Question | Options | Status |
 | --- | --- | --- | --- |
-| Subagent registry fields | Are the initial `Agent-Registry.md` fields sufficient for discovery and matching? | Name, Chinese Name, Type, Primary Category, Capability Tags, Domain Tags, Description, Keywords, Capabilities, Use When, Limitations, Permission Level, Status, Last Updated | Accepted for v1 |
-| Structured outputs | What concise structured format should functional agents return inside Markdown instructions? | JSON-like objects inside Markdown code blocks | Accepted for v1 |
+| Subagent registry fields | Are the initial `Agent-Registry.txt` fields sufficient for discovery and matching? | Name, Chinese Name, Type, Primary Category, Capability Tags, Domain Tags, Description, Keywords, Capabilities, Use When, Limitations, Permission Level, Status, Last Updated | Accepted for v1 |
+| Structured outputs | What concise structured format should functional agents return inside plain text instructions? | JSON-like objects inside Markdown code blocks | Accepted for v1 |
 | Execution runtime | Where should execution happen first? | Local prototype, hosted backend, Microsoft Copilot Studio | Open |
-| Agent registry search | How should Agent Finder search `Agent-Registry.md`? | Registry-based matching with keyword, capability, domain, input/output, and availability signals | Accepted for v1 |
+| Agent registry search | How should Agent Finder search `Agent-Registry.txt`? | Registry-based matching with keyword, capability, domain, input/output, and availability signals | Accepted for v1 |
 | Permission levels | What fixed values should `Permission Level` use? | Read-only, Draft-only, External Action, Data Modification | Accepted for v1 |
 
 ## Initial Implementation Plan
 
-1. Create `Agent-Hub.md` as the standalone main Agent definition.
-2. Create Markdown definitions for the four functional agents in `functional-agents/`.
+1. Create `Agent-Hub.txt` as the standalone main Agent definition.
+2. Create plain text definitions for the four functional agents in `functional-agents/`.
 3. Create `business-subagents/` for business Subagents.
-4. Create `Agent-Registry.md` as the central Markdown index.
+4. Create `Agent-Registry.txt` as the central plain text index.
 5. Define the minimal registry fields for discovery and matching.
 6. Define JSON-like object response requirements inside each Agent Instruction.
 7. Simulate the end-to-end flow from user need to recommendation to confirmation to execution result after real Subagents are added.
-8. Refine the Markdown instructions for future Microsoft Copilot Studio migration.
+8. Refine the plain text instructions for future Microsoft Copilot Studio migration.
 
 ## Git Workflow Notes
 
@@ -777,9 +779,9 @@ Use force push only when intentionally replacing remote history and after confir
 | Milestone | Outcome | Status |
 | --- | --- | --- |
 | M0: Planning baseline | README captures vision, architecture, roles, routing, and decisions. | Done |
-| M1: Core agent definitions | `Agent-Hub.md` and four functional Agent Markdown files exist. | Done |
+| M1: Core agent definitions | `Agent-Hub.txt` and four functional Agent plain text (.txt) files exist. | Done |
 | M2: Subagent library baseline | `business-subagents/` folder exists for future business Subagents. | Done |
-| M3: Agent Registry baseline | `Agent-Registry.md` indexes available agents with v1 registry fields. | Done |
+| M3: Agent Registry baseline | `Agent-Registry.txt` indexes available agents with v1 registry fields. | Done |
 | M4: End-to-end prototype | A full recommendation, confirmation, and execution flow can be simulated. | Done |
 | M5: Copilot Studio readiness | Agent definitions are ready to migrate or map into Copilot Studio concepts. | Not started |
 ## Execution Safeguards

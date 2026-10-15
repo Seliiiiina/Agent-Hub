@@ -2,11 +2,11 @@
 
 ## Description
 
-Folder for future Business Subagent Markdown definitions used by Agent Finder, Workflow Builder, and Agent Executor.
+Folder for future Business Subagent plain text definitions used by Agent Finder, Workflow Builder, and Agent Executor.
 
 ## Instruction
 
-Store only Business Subagent Markdown files in this folder. Do not add Python, JSON, or implementation code at this stage.
+Store only Business Subagent plain text (.txt) files in this folder. Do not add Python, JSON, or implementation code at this stage.
 
 Each Business Subagent file must use:
 - Name
@@ -31,7 +31,7 @@ Instruction requirements:
 - Return upstream results as JSON-like objects inside Markdown code blocks when needed.
 
 Registry requirements:
-- Add Business Subagent metadata to `Agent-Registry.md` before it is discoverable by Agent Finder.
+- Add Business Subagent metadata to `Agent-Registry.txt` before it is discoverable by Agent Finder.
 - Keep Name, Chinese Name, Description, Primary Category, Capability Tags, Domain Tags, Permission Level, Status, and Last Updated consistent between the Subagent file and Agent Registry.
 - Use exactly one Primary Category.
 - Use multiple Capability Tags and Domain Tags when useful.
@@ -57,7 +57,7 @@ Primary Category values:
 
 ## AI Learning Agent Setup Notes
 
-The AI learning batch contains Markdown definitions for manual configuration and is registered as `Active` for discovery and use. Knowledge sources and tools will be connected manually in the company environment; registry status does not record deployment or connection state.
+The AI learning batch contains plain text definitions for manual configuration and is registered as `Active` for discovery and use. Knowledge sources and tools will be connected manually in the company environment; registry status does not record deployment or connection state.
 
 ### Manual Configuration
 
@@ -71,14 +71,14 @@ The AI learning batch contains Markdown definitions for manual configuration and
 
 | Definition | Required source or context | Useful additional source |
 | --- | --- | --- |
-| [AI Learning Resource Recommender](AI-Learning-Resource-Recommender.md) | Retrievable records from `Curriculum_Intern-Acquired_Learning_Materials.xlsx` or an approved extract | Learner goals, experience, language, and time constraints |
-| [Course Chapter Distiller](Course-Chapter-Distiller.md) | Actual chapter text, transcript, slides, or accessible excerpt | Catalog metadata and chapter timestamps/pages when available |
-| [3-Minute AI Brief](3-Minute-AI-Brief.md) | Approved current search or dated source extracts, plus current date/timezone | Official research and release sources, audience interests |
-| [Agent Learning Tutor](Agent-Learning-Tutor.md) | Approved foundational teaching material; upstream lesson context for follow-ups | Curriculum workbook for course references |
-| [LLM Learning Tutor](LLM-Learning-Tutor.md) | Approved foundational teaching material; upstream lesson context for follow-ups | Curriculum workbook for course references |
-| [AI Tool Guide](AI-Tool-Guide.md) | Identified product environment and applicable official/internal guidance | Visible interface labels or a learner-supplied screenshot |
-| [AI Story Teller](AI-Story-Teller.md) | Approved historical references or source retrieval | Archives, original proposals, attributable naming accounts |
-| [Learning Checkpoint](Learning-Checkpoint.md) | Lesson/objectives for quizzes; original quiz/rubric and answers for grading | Supplied dated learning history for a progress summary |
+| [AI Learning Resource Recommender](AI-Learning-Resource-Recommender.txt) | Retrievable records from `Curriculum_Intern-Acquired_Learning_Materials.xlsx` or an approved extract | Learner goals, experience, language, and time constraints |
+| [Course Chapter Distiller](Course-Chapter-Distiller.txt) | Actual chapter text, transcript, slides, or accessible excerpt | Catalog metadata and chapter timestamps/pages when available |
+| [3-Minute AI Brief](3-Minute-AI-Brief.txt) | Approved current search or dated source extracts, plus current date/timezone | Official research and release sources, audience interests |
+| [Agent Learning Tutor](Agent-Learning-Tutor.txt) | Approved foundational teaching material; upstream lesson context for follow-ups | Curriculum workbook for course references |
+| [LLM Learning Tutor](LLM-Learning-Tutor.txt) | Approved foundational teaching material; upstream lesson context for follow-ups | Curriculum workbook for course references |
+| [AI Tool Guide](AI-Tool-Guide.txt) | Identified product environment and applicable official/internal guidance | Visible interface labels or a learner-supplied screenshot |
+| [AI Story Teller](AI-Story-Teller.txt) | Approved historical references or source retrieval | Archives, original proposals, attributable naming accounts |
+| [Learning Checkpoint](Learning-Checkpoint.txt) | Lesson/objectives for quizzes; original quiz/rubric and answers for grading | Supplied dated learning history for a progress summary |
 
 The curriculum workbook is stored on the company's internal cloud as `Curriculum_Intern-Acquired_Learning_Materials.xlsx` and will be connected manually by the project owner. A local copy is not required for maintaining these Agent definitions. Its sheet names, columns, and contents have not been inspected here. Catalog metadata supports recommendations; linked course content requires separate access for chapter distillation. Tutors can teach general concepts without workbook access but must disclose unavailable catalog references at runtime.
 
@@ -116,12 +116,12 @@ These definitions are registered as `Active`. Configure them manually using thei
 
 | Definition | Focus |
 | --- | --- |
-| [Tarot Play Agent](Tarot-Play-Agent.md) / 塔罗趣味解读助手 | Creates lighthearted simulated tarot readings as fictional storytelling, with a visible entertainment-only label and no claims of real prediction. |
-| [Folk Fortune Play Agent](Folk-Fortune-Play-Agent.md) / 趣味卦签助手 | Creates playful folklore-inspired fortunes and symbolic verses as clearly fictional entertainment without claiming authentic divination or personal destiny. |
-| [Zodiac Play Agent](Zodiac-Play-Agent.md) / 星座趣味馆 | Creates amusing zodiac-themed character sketches and daily mini-stories while explicitly treating astrology as entertainment rather than evidence about a person. |
-| [Chinese Zodiac Play Agent](Chinese-Zodiac-Play-Agent.md) / 生肖趣味馆 | Creates lighthearted Chinese-zodiac animal stories and symbolic descriptions without treating birth signs as evidence of fate, ability, or relationship compatibility. |
-| [Clock-Out Oracle Agent](Clock-Out-Oracle-Agent.md) / 下班时间盲盒 | Produces a clearly fictional clock-out time and a humorous office mini-story for entertainment without predicting attendance, workload, or managerial decisions. |
-| [Office Fun Draw Agent](Office-Fun-Draw-Agent.md) / 办公室趣味抽签 | Generates fictional office-themed badges, harmless mini-lots, and amusing scenes for a brief break with no predictions or judgments about real colleagues. |
+| [Tarot Play Agent](Tarot-Play-Agent.txt) / 塔罗趣味解读助手 | Creates lighthearted simulated tarot readings as fictional storytelling, with a visible entertainment-only label and no claims of real prediction. |
+| [Folk Fortune Play Agent](Folk-Fortune-Play-Agent.txt) / 趣味卦签助手 | Creates playful folklore-inspired fortunes and symbolic verses as clearly fictional entertainment without claiming authentic divination or personal destiny. |
+| [Zodiac Play Agent](Zodiac-Play-Agent.txt) / 星座趣味馆 | Creates amusing zodiac-themed character sketches and daily mini-stories while explicitly treating astrology as entertainment rather than evidence about a person. |
+| [Chinese Zodiac Play Agent](Chinese-Zodiac-Play-Agent.txt) / 生肖趣味馆 | Creates lighthearted Chinese-zodiac animal stories and symbolic descriptions without treating birth signs as evidence of fate, ability, or relationship compatibility. |
+| [Clock-Out Oracle Agent](Clock-Out-Oracle-Agent.txt) / 下班时间盲盒 | Produces a clearly fictional clock-out time and a humorous office mini-story for entertainment without predicting attendance, workload, or managerial decisions. |
+| [Office Fun Draw Agent](Office-Fun-Draw-Agent.txt) / 办公室趣味抽签 | Generates fictional office-themed badges, harmless mini-lots, and amusing scenes for a brief break with no predictions or judgments about real colleagues. |
 
 - Every entertainment response must visibly begin with its entertainment notice, including follow-up readings. Hub must preserve the notice and label fictional times, scores, or scenes when excerpting them.
 - Simulated selection is sufficient for playful text; no real card deck, birth data, calendar access, or randomization service is assumed. Never present simulation as a real divination procedure or verified forecast.
@@ -133,12 +133,12 @@ These definitions are registered as `Active`. Configure them manually using thei
 
 | Definition | Focus |
 | --- | --- |
-| [Psychology Knowledge Agent](Psychology-Knowledge-Agent.md) / 心理小知识科普员 | Explains general psychology concepts and common misunderstandings in short educational notes without assessment, diagnosis, counseling, or behavioral advice. |
-| [Movement Knowledge Agent](Movement-Knowledge-Agent.md) / 运动小知识科普员 | Explains physical activity and movement-science concepts in short factual notes without exercise recommendations, prescriptions, demonstrations, or personal assessment. |
-| [Sleep Knowledge Agent](Sleep-Knowledge-Agent.md) / 睡眠小知识科普员 | Explains sleep concepts and general research findings in plain language without sleep schedules, improvement tips, symptom assessment, or treatment advice. |
-| [Hydration Knowledge Agent](Hydration-Knowledge-Agent.md) / 饮水小知识科普员 | Explains water balance, hydration terminology, and common hydration claims without fluid-intake targets, reminders, personal assessment, or drinking advice. |
-| [Nutrition Knowledge Agent](Nutrition-Knowledge-Agent.md) / 营养小知识科普员 | Explains basic nutrition terms and food-label concepts without dietary advice, meal plans, calorie targets, weight judgments, or product recommendations. |
-| [Vision Knowledge Agent](Vision-Knowledge-Agent.md) / 眼睛与屏幕小知识科普员 | Explains basic vision and screen-related terminology in short educational notes without eye-care routines, device settings, symptom interpretation, or treatment advice. |
+| [Psychology Knowledge Agent](Psychology-Knowledge-Agent.txt) / 心理小知识科普员 | Explains general psychology concepts and common misunderstandings in short educational notes without assessment, diagnosis, counseling, or behavioral advice. |
+| [Movement Knowledge Agent](Movement-Knowledge-Agent.txt) / 运动小知识科普员 | Explains physical activity and movement-science concepts in short factual notes without exercise recommendations, prescriptions, demonstrations, or personal assessment. |
+| [Sleep Knowledge Agent](Sleep-Knowledge-Agent.txt) / 睡眠小知识科普员 | Explains sleep concepts and general research findings in plain language without sleep schedules, improvement tips, symptom assessment, or treatment advice. |
+| [Hydration Knowledge Agent](Hydration-Knowledge-Agent.txt) / 饮水小知识科普员 | Explains water balance, hydration terminology, and common hydration claims without fluid-intake targets, reminders, personal assessment, or drinking advice. |
+| [Nutrition Knowledge Agent](Nutrition-Knowledge-Agent.txt) / 营养小知识科普员 | Explains basic nutrition terms and food-label concepts without dietary advice, meal plans, calorie targets, weight judgments, or product recommendations. |
+| [Vision Knowledge Agent](Vision-Knowledge-Agent.txt) / 眼睛与屏幕小知识科普员 | Explains basic vision and screen-related terminology in short educational notes without eye-care routines, device settings, symptom interpretation, or treatment advice. |
 
 - Connect approved educational references or relevant extracts. Suggested official pages are linked in each definition; instructions alone do not enable live retrieval.
 - Source pages may contain advice. These Agents must extract factual explanations only, excluding action guidance, recommended amounts, routines, behavior changes, treatment content, and product recommendations.
@@ -180,11 +180,11 @@ The following definitions are listed in creation order. They are registered as `
 
 | Definition | Required input |
 | --- | --- |
-| [Meeting Agenda Planner Agent](Meeting-Agenda-Planner-Agent.md) / 会议议程规划助手 | Meeting purpose, desired outcomes, total duration, and participant roles. Required topics, timing constraints, and supplied background material when available. |
-| [Customer Feedback Triage Agent](Customer-Feedback-Triage-Agent.md) / 客户反馈分流助手 | Feedback records or accessible excerpts, with source identifiers when available. Existing taxonomy, impact criteria, and routing rules when available; otherwise label any proposed scheme. |
-| [Knowledge Article Draft Agent](Knowledge-Article-Draft-Agent.md) / 知识库文章起草助手 | Source notes, resolution records, or documented steps, plus intended audience and article purpose. Applicable product/version, environment, validated outcomes, and review requirements when available. |
-| [Change Impact Analysis Agent](Change-Impact-Analysis-Agent.md) / 变更影响分析助手 | Baseline process, policy, or system description and a proposed change or revised version. Known roles, dependencies, relevant documents, scope boundaries, and effective dates when available. |
-| [Handover Brief Draft Agent](Handover-Brief-Draft-Agent.md) / 工作交接起草助手 | Work records or project notes, handover scope, and recipient role. As-of date, absence or transition period, documented owners, deadlines, and reference locations when available. |
+| [Meeting Agenda Planner Agent](Meeting-Agenda-Planner-Agent.txt) / 会议议程规划助手 | Meeting purpose, desired outcomes, total duration, and participant roles. Required topics, timing constraints, and supplied background material when available. |
+| [Customer Feedback Triage Agent](Customer-Feedback-Triage-Agent.txt) / 客户反馈分流助手 | Feedback records or accessible excerpts, with source identifiers when available. Existing taxonomy, impact criteria, and routing rules when available; otherwise label any proposed scheme. |
+| [Knowledge Article Draft Agent](Knowledge-Article-Draft-Agent.txt) / 知识库文章起草助手 | Source notes, resolution records, or documented steps, plus intended audience and article purpose. Applicable product/version, environment, validated outcomes, and review requirements when available. |
+| [Change Impact Analysis Agent](Change-Impact-Analysis-Agent.txt) / 变更影响分析助手 | Baseline process, policy, or system description and a proposed change or revised version. Known roles, dependencies, relevant documents, scope boundaries, and effective dates when available. |
+| [Handover Brief Draft Agent](Handover-Brief-Draft-Agent.txt) / 工作交接起草助手 | Work records or project notes, handover scope, and recipient role. As-of date, absence or transition period, documented owners, deadlines, and reference locations when available. |
 
 ### Manual Acceptance Prompts
 
@@ -204,10 +204,10 @@ The following definitions are listed in requested order and registered as `Activ
 
 | Definition | Required input |
 | --- | --- |
-| [Code Review Agent](Code-Review-Agent.md) / 代码审查助手 | A diff or clearly identified changed code and the intended behavior. Relevant surrounding code, interfaces, language/runtime versions, and existing tests when needed to assess a suspected issue. |
-| [Test Case Draft Agent](Test-Case-Draft-Agent.md) / 测试用例起草助手 | Code under test and expected behavior or acceptance criteria. For executable test drafts: language, framework/version, module paths, and representative existing tests or conventions. For regression tests: the failing scenario and intended corrected behavior when available. |
-| [Code Refactoring Agent](Code-Refactoring-Agent.md) / 代码重构助手 | Current code, refactoring objective, and behavior or compatibility constraints. Relevant callers, public signatures, error behavior, side effects, runtime versions, and existing tests when available. |
-| [API Integration Coding Agent](API-Integration-Coding-Agent.md) / API 对接编码助手 | Accessible API documentation or specification for the desired operations and the target language/runtime. Project HTTP library and version or permission to propose one, plus relevant code conventions. Documented API version, authentication scheme, pagination, rate limits, and error schemas when relevant; real credentials are not required. |
+| [Code Review Agent](Code-Review-Agent.txt) / 代码审查助手 | A diff or clearly identified changed code and the intended behavior. Relevant surrounding code, interfaces, language/runtime versions, and existing tests when needed to assess a suspected issue. |
+| [Test Case Draft Agent](Test-Case-Draft-Agent.txt) / 测试用例起草助手 | Code under test and expected behavior or acceptance criteria. For executable test drafts: language, framework/version, module paths, and representative existing tests or conventions. For regression tests: the failing scenario and intended corrected behavior when available. |
+| [Code Refactoring Agent](Code-Refactoring-Agent.txt) / 代码重构助手 | Current code, refactoring objective, and behavior or compatibility constraints. Relevant callers, public signatures, error behavior, side effects, runtime versions, and existing tests when available. |
+| [API Integration Coding Agent](API-Integration-Coding-Agent.txt) / API 对接编码助手 | Accessible API documentation or specification for the desired operations and the target language/runtime. Project HTTP library and version or permission to propose one, plus relevant code conventions. Documented API version, authentication scheme, pagination, rate limits, and error schemas when relevant; real credentials are not required. |
 
 ### Suggested Handoffs
 
@@ -234,8 +234,8 @@ These definitions are registered as `Active` with `Draft-only` permissions. Conf
 
 | Definition | Required input |
 | --- | --- |
-| [Decision Record Draft Agent](Decision-Record-Draft-Agent.md) / 决策记录助手 | Decision topic and source notes, discussion records, or an explicit proposed decision. Decision state, date, participants, options, rationale, and review conditions when available. |
-| [Interview Practice Agent](Interview-Practice-Agent.md) / 面试陪练助手 | Target role or job description and desired practice mode: interactive questions, answer review, or session summary. For interactive practice, use one-question-at-a-time mode unless another format is explicitly supplied. For answer review, the original question and candidate answer; for summaries, the relevant practice transcript. Experience level, interview type, language, and optional redacted background when available. |
+| [Decision Record Draft Agent](Decision-Record-Draft-Agent.txt) / 决策记录助手 | Decision topic and source notes, discussion records, or an explicit proposed decision. Decision state, date, participants, options, rationale, and review conditions when available. |
+| [Interview Practice Agent](Interview-Practice-Agent.txt) / 面试陪练助手 | Target role or job description and desired practice mode: interactive questions, answer review, or session summary. For interactive practice, use one-question-at-a-time mode unless another format is explicitly supplied. For answer review, the original question and candidate answer; for summaries, the relevant practice transcript. Experience level, interview type, language, and optional redacted background when available. |
 
 For decision records, preserve the distinction between proposed and documented decisions; a generated record does not establish approval or consensus.
 
@@ -256,9 +256,9 @@ These definitions are listed in requested order and registered as `Active` with 
 
 | Definition | Required input |
 | --- | --- |
-| [Retrospective Facilitator Agent](Retrospective-Facilitator-Agent.md) / 复盘引导助手 | Review scope or work period, intended goals, and actual outcomes or source records. Dated events, constraints, participant observations, and success metrics when available. |
-| [Release Notes Draft Agent](Release-Notes-Draft-Agent.md) / 版本说明助手 | Release scope or version, target audience, and actual change records or descriptions. Release state/date, compatibility information, migration instructions, and known issues when available. |
-| [Prompt Evaluation Agent](Prompt-Evaluation-Agent.md) / 提示词评估助手 | The actual prompt and its intended task or success criteria. Intended inputs, output contract, instruction layers, tool permissions, and model context when relevant. For evaluation of observed behavior: actual input/output samples with variant and environment identifiers when available. |
+| [Retrospective Facilitator Agent](Retrospective-Facilitator-Agent.txt) / 复盘引导助手 | Review scope or work period, intended goals, and actual outcomes or source records. Dated events, constraints, participant observations, and success metrics when available. |
+| [Release Notes Draft Agent](Release-Notes-Draft-Agent.txt) / 版本说明助手 | Release scope or version, target audience, and actual change records or descriptions. Release state/date, compatibility information, migration instructions, and known issues when available. |
+| [Prompt Evaluation Agent](Prompt-Evaluation-Agent.txt) / 提示词评估助手 | The actual prompt and its intended task or success criteria. Intended inputs, output contract, instruction layers, tool permissions, and model context when relevant. For evaluation of observed behavior: actual input/output samples with variant and environment identifiers when available. |
 
 Keep retrospective causes labeled as hypotheses unless established by evidence. Keep planned releases distinct from shipped changes. Prompt static review and evaluation-case design do not establish measured model performance; scoring requires supplied actual outputs and an explicit rubric.
 
@@ -330,10 +330,10 @@ These four Agents are specialized by reporting period. They are registered as `A
 
 | Definition | Reporting period | Main output |
 | --- | --- | --- |
-| [Daily Report Draft Agent](Daily-Report-Draft-Agent.md) / 日报起草助手 | One workday | Completed work, ongoing items, blockers, and next-day plan |
-| [Weekly Report Draft Agent](Weekly-Report-Draft-Agent.md) / 周报起草助手 | One stated week | Highlights, progress, risks, and next-week priorities |
-| [Monthly Report Draft Agent](Monthly-Report-Draft-Agent.md) / 月报起草助手 | One calendar or fiscal month | Milestones, metrics, trends, risks, and next-month priorities |
-| [Annual Report Draft Agent](Annual-Report-Draft-Agent.md) / 年报起草助手 | One calendar or fiscal year | Objectives, results, annual trends, lessons, and next-year priorities |
+| [Daily Report Draft Agent](Daily-Report-Draft-Agent.txt) / 日报起草助手 | One workday | Completed work, ongoing items, blockers, and next-day plan |
+| [Weekly Report Draft Agent](Weekly-Report-Draft-Agent.txt) / 周报起草助手 | One stated week | Highlights, progress, risks, and next-week priorities |
+| [Monthly Report Draft Agent](Monthly-Report-Draft-Agent.txt) / 月报起草助手 | One calendar or fiscal month | Milestones, metrics, trends, risks, and next-month priorities |
+| [Annual Report Draft Agent](Annual-Report-Draft-Agent.txt) / 年报起草助手 | One calendar or fiscal year | Objectives, results, annual trends, lessons, and next-year priorities |
 
 Period boundaries, metric definitions, source references, and coverage limits must remain visible in every report. A generated draft is not an approved, audited, sent, or published report.
 
@@ -343,11 +343,11 @@ These definitions support planning, studying, practice, reading, and knowledge r
 
 | Definition | Main output |
 | --- | --- |
-| [Learning Path Planner Agent](Learning-Path-Planner-Agent.md) / 学习路径规划助手 | Staged learning plan, prerequisites, and checkpoints |
-| [Study Notes Organizer Agent](Study-Notes-Organizer-Agent.md) / 学习笔记整理助手 | Structured notes, concept map, examples, and review questions |
-| [Practice Exercise Draft Agent](Practice-Exercise-Draft-Agent.md) / 练习题起草助手 | Practice questions, scenarios, and scoped rubrics |
-| [Source Reading Guide Agent](Source-Reading-Guide-Agent.md) / 资料导读助手 | Reading order, prerequisites, terms, and guiding questions |
-| [Knowledge Base Article Agent](Knowledge-Base-Article-Agent.md) / 知识库文章助手 | Reusable source-grounded knowledge article draft |
+| [Learning Path Planner Agent](Learning-Path-Planner-Agent.txt) / 学习路径规划助手 | Staged learning plan, prerequisites, and checkpoints |
+| [Study Notes Organizer Agent](Study-Notes-Organizer-Agent.txt) / 学习笔记整理助手 | Structured notes, concept map, examples, and review questions |
+| [Practice Exercise Draft Agent](Practice-Exercise-Draft-Agent.txt) / 练习题起草助手 | Practice questions, scenarios, and scoped rubrics |
+| [Source Reading Guide Agent](Source-Reading-Guide-Agent.txt) / 资料导读助手 | Reading order, prerequisites, terms, and guiding questions |
+| [Knowledge Base Article Agent](Knowledge-Base-Article-Agent.txt) / 知识库文章助手 | Reusable source-grounded knowledge article draft |
 
 Suggested learning flow: Resource Recommender → Learning Path Planner → Course Chapter Distiller or Source Reading Guide → Study Notes Organizer → Practice Exercise Draft → Learning Checkpoint. These handoffs are proposals through Agent Hub; no Agent enrolls a learner, stores progress, or claims mastery automatically.
 
@@ -357,14 +357,14 @@ These eight Agents support registration preparation and review. They are registe
 
 | Definition | Permission | Main output |
 | --- | --- | --- |
-| [Registration Applicability Agent](Registration-Applicability-Agent.md) / 注册适用性分析助手 | Read-only | Applicability signals and missing-fact questions |
-| [Registration Checklist Agent](Registration-Checklist-Agent.md) / 合规注册清单助手 | Draft-only | Requirements, materials, owners, and dependency checklist |
-| [Filing Calendar Agent](Filing-Calendar-Agent.md) / 申报日历助手 | Draft-only | Registration, renewal, and change-notice calendar draft |
-| [Registration Evidence Package Agent](Registration-Evidence-Package-Agent.md) / 注册证据包助手 | Draft-only | Source-indexed evidence package and gap list |
-| [Form Field Mapping Agent](Form-Field-Mapping-Agent.md) / 注册表单映射助手 | Draft-only | Field-by-field mapping and verification questions |
-| [Registration Readiness Review Agent](Registration-Readiness-Review-Agent.md) / 注册准备度审查助手 | Read-only | Completeness, consistency, and blocking-gap review |
-| [License Scope Comparison Agent](License-Scope-Comparison-Agent.md) / 许可范围比较助手 | Read-only | Scope, restriction, and maintenance-duty comparison |
-| [Renewal and Change Impact Agent](Renewal-Change-Impact-Agent.md) / 续期与变更影响助手 | Read-only | Potential renewal and notification impacts |
+| [Registration Applicability Agent](Registration-Applicability-Agent.txt) / 注册适用性分析助手 | Read-only | Applicability signals and missing-fact questions |
+| [Registration Checklist Agent](Registration-Checklist-Agent.txt) / 合规注册清单助手 | Draft-only | Requirements, materials, owners, and dependency checklist |
+| [Filing Calendar Agent](Filing-Calendar-Agent.txt) / 申报日历助手 | Draft-only | Registration, renewal, and change-notice calendar draft |
+| [Registration Evidence Package Agent](Registration-Evidence-Package-Agent.txt) / 注册证据包助手 | Draft-only | Source-indexed evidence package and gap list |
+| [Form Field Mapping Agent](Form-Field-Mapping-Agent.txt) / 注册表单映射助手 | Draft-only | Field-by-field mapping and verification questions |
+| [Registration Readiness Review Agent](Registration-Readiness-Review-Agent.txt) / 注册准备度审查助手 | Read-only | Completeness, consistency, and blocking-gap review |
+| [License Scope Comparison Agent](License-Scope-Comparison-Agent.txt) / 许可范围比较助手 | Read-only | Scope, restriction, and maintenance-duty comparison |
+| [Renewal and Change Impact Agent](Renewal-Change-Impact-Agent.txt) / 续期与变更影响助手 | Read-only | Potential renewal and notification impacts |
 
 Suggested handoff: Registration Applicability → Registration Checklist → Registration Evidence Package → Form Field Mapping → Registration Readiness Review. Filing Calendar and Renewal and Change Impact can be added when dates or organizational changes are in scope. This is a proposed review flow and does not replace qualified legal or regulatory review.
 
@@ -374,32 +374,32 @@ These definitions are registered as `Active` and are discoverable after manual p
 
 | Definition | Permission | Use for |
 | --- | --- | --- |
-| [Audit Evidence Organizer Agent](Audit-Evidence-Organizer-Agent.md) / 审计证据整理助手 | Read-only | Evidence inventories and requirement mappings |
-| [Policy Gap Analysis Agent](Policy-Gap-Analysis-Agent.md) / 政策差距分析助手 | Read-only | Policy and practice comparisons |
-| [Control Checklist Draft Agent](Control-Checklist-Draft-Agent.md) / 控制清单起草助手 | Draft-only | Review checklists and evidence expectations |
-| [Metric Definition Designer Agent](Metric-Definition-Designer-Agent.md) / 指标口径助手 | Draft-only | Metric formulas, sources, and boundaries |
-| [Data Analysis Plan Agent](Data-Analysis-Plan-Agent.md) / 数据分析计划助手 | Draft-only | Analysis objectives, fields, and quality checks |
-| [Anomaly Investigation Agent](Anomaly-Investigation-Agent.md) / 数据异常调查助手 | Read-only | Anomaly scope, hypotheses, and validation steps |
+| [Audit Evidence Organizer Agent](Audit-Evidence-Organizer-Agent.txt) / 审计证据整理助手 | Read-only | Evidence inventories and requirement mappings |
+| [Policy Gap Analysis Agent](Policy-Gap-Analysis-Agent.txt) / 政策差距分析助手 | Read-only | Policy and practice comparisons |
+| [Control Checklist Draft Agent](Control-Checklist-Draft-Agent.txt) / 控制清单起草助手 | Draft-only | Review checklists and evidence expectations |
+| [Metric Definition Designer Agent](Metric-Definition-Designer-Agent.txt) / 指标口径助手 | Draft-only | Metric formulas, sources, and boundaries |
+| [Data Analysis Plan Agent](Data-Analysis-Plan-Agent.txt) / 数据分析计划助手 | Draft-only | Analysis objectives, fields, and quality checks |
+| [Anomaly Investigation Agent](Anomaly-Investigation-Agent.txt) / 数据异常调查助手 | Read-only | Anomaly scope, hypotheses, and validation steps |
 
 ## Department Operations Agents
 
 The following 15 department-oriented Agents are registered as Active with bounded Read-only or Draft-only permissions. They use supplied records and do not submit, publish, approve, or modify external systems.
 
-- [Expense Policy Explainer Agent](Expense-Policy-Explainer-Agent.md) / 报销制度解读助手 — Specialized Business, Read-only
-- [Procurement Request Agent](Procurement-Request-Agent.md) / 采购申请助手 — Business Operations, Draft-only
-- [Vendor Due Diligence Agent](Vendor-Due-Diligence-Agent.md) / 供应商尽调助手 — Compliance and Quality, Read-only
-- [Contract Clause Review Agent](Contract-Clause-Review-Agent.md) / 合同条款审阅助手 — Compliance and Quality, Read-only
-- [HR Policy Explainer Agent](HR-Policy-Explainer-Agent.md) / HR制度解读助手 — Specialized Business, Read-only
-- [Onboarding Plan Agent](Onboarding-Plan-Agent.md) / 入职计划助手 — Business Operations, Draft-only
-- [Offboarding Checklist Agent](Offboarding-Checklist-Agent.md) / 离职交接清单助手 — Business Operations, Draft-only
-- [Incident Triage Agent](Incident-Triage-Agent.md) / 技术事件分诊智能体 — Development and Technology, Read-only
-- [Access Request Review Agent](Access-Request-Review-Agent.md) / 权限申请审查助手 — Compliance and Quality, Read-only
-- [Customer Success Review Agent](Customer-Success-Review-Agent.md) / 客户成功复盘助手 — Business Operations, Read-only
-- [Sales Call Summary Agent](Sales-Call-Summary-Agent.md) / 销售通话总结助手 — Communication and Collaboration, Draft-only
-- [Product Launch Readiness Agent](Product-Launch-Readiness-Agent.md) / 产品发布准备助手 — Business Operations, Read-only
-- [Incident Postmortem Agent](Incident-Postmortem-Agent.md) / 事故复盘助手 — Business Operations, Draft-only
-- [Accessible Content Review Agent](Accessible-Content-Review-Agent.md) / 内容无障碍审查助手 — Compliance and Quality, Read-only
-- [Translation QA Agent](Translation-QA-Agent.md) / 翻译质量检查助手 — Document and Content, Read-only
+- [Expense Policy Explainer Agent](Expense-Policy-Explainer-Agent.txt) / 报销制度解读助手 — Specialized Business, Read-only
+- [Procurement Request Agent](Procurement-Request-Agent.txt) / 采购申请助手 — Business Operations, Draft-only
+- [Vendor Due Diligence Agent](Vendor-Due-Diligence-Agent.txt) / 供应商尽调助手 — Compliance and Quality, Read-only
+- [Contract Clause Review Agent](Contract-Clause-Review-Agent.txt) / 合同条款审阅助手 — Compliance and Quality, Read-only
+- [HR Policy Explainer Agent](HR-Policy-Explainer-Agent.txt) / HR制度解读助手 — Specialized Business, Read-only
+- [Onboarding Plan Agent](Onboarding-Plan-Agent.txt) / 入职计划助手 — Business Operations, Draft-only
+- [Offboarding Checklist Agent](Offboarding-Checklist-Agent.txt) / 离职交接清单助手 — Business Operations, Draft-only
+- [Incident Triage Agent](Incident-Triage-Agent.txt) / 技术事件分诊智能体 — Development and Technology, Read-only
+- [Access Request Review Agent](Access-Request-Review-Agent.txt) / 权限申请审查助手 — Compliance and Quality, Read-only
+- [Customer Success Review Agent](Customer-Success-Review-Agent.txt) / 客户成功复盘助手 — Business Operations, Read-only
+- [Sales Call Summary Agent](Sales-Call-Summary-Agent.txt) / 销售通话总结助手 — Communication and Collaboration, Draft-only
+- [Product Launch Readiness Agent](Product-Launch-Readiness-Agent.txt) / 产品发布准备助手 — Business Operations, Read-only
+- [Incident Postmortem Agent](Incident-Postmortem-Agent.txt) / 事故复盘助手 — Business Operations, Draft-only
+- [Accessible Content Review Agent](Accessible-Content-Review-Agent.txt) / 内容无障碍审查助手 — Compliance and Quality, Read-only
+- [Translation QA Agent](Translation-QA-Agent.txt) / 翻译质量检查助手 — Document and Content, Read-only
 
 ## Copilot Studio 外部工具与权限触发矩阵
 
@@ -595,15 +595,15 @@ These five Agents can call external tools only after an explicit confirmation co
 
 | Agent | Action |
 | --- | --- |
-| [Email Sending Agent](Email-Sending-Agent.md) / 邮件发送助手 | 发送邮件、回复邮件和抄送消息 |
-| [Calendar Scheduling Agent](Calendar-Scheduling-Agent.md) / 日程安排助手 | 创建、修改或取消会议日程 |
-| [Task Ticket Creation Agent](Task-Ticket-Creation-Agent.md) / 任务工单创建助手 | 创建任务、工单或服务请求 |
-| [Notification Sending Agent](Notification-Sending-Agent.md) / 通知发送助手 | 向 Teams、Slack 或企业渠道发送通知 |
-| [File Publishing Agent](File-Publishing-Agent.md) / 文件发布助手 | 将确认后的文件发布到指定知识库或文件夹 |
+| [Email Sending Agent](Email-Sending-Agent.txt) / 邮件发送助手 | 发送邮件、回复邮件和抄送消息 |
+| [Calendar Scheduling Agent](Calendar-Scheduling-Agent.txt) / 日程安排助手 | 创建、修改或取消会议日程 |
+| [Task Ticket Creation Agent](Task-Ticket-Creation-Agent.txt) / 任务工单创建助手 | 创建任务、工单或服务请求 |
+| [Notification Sending Agent](Notification-Sending-Agent.txt) / 通知发送助手 | 向 Teams、Slack 或企业渠道发送通知 |
+| [File Publishing Agent](File-Publishing-Agent.txt) / 文件发布助手 | 将确认后的文件发布到指定知识库或文件夹 |
 
 Every action must return a preview, confirmation state, external system identifier, result, warnings, and cancellation or rollback information where supported.
 
 
 ## External Agent Solution Scout
 
-[External Agent Solution Scout Agent](External-Agent-Solution-Scout-Agent.md) / 外部智能体方案侦察助手 is used after internal matching returns no suitable Agent. It searches approved external sources and returns direct links, fit assessment, reuse/adaptation advice, license and maintenance signals, and risks. It is read-only: it does not download, clone, install, execute, purchase, deploy, or connect an external solution. Agent Creator and Agent Hub must obtain confirmation before reuse or adaptation.
+[External Agent Solution Scout Agent](External-Agent-Solution-Scout-Agent.txt) / 外部智能体方案侦察助手 is used after internal matching returns no suitable Agent. It searches approved external sources and returns direct links, fit assessment, reuse/adaptation advice, license and maintenance signals, and risks. It is read-only: it does not download, clone, install, execute, purchase, deploy, or connect an external solution. Agent Creator and Agent Hub must obtain confirmation before reuse or adaptation.

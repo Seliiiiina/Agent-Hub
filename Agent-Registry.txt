@@ -2,11 +2,11 @@
 
 ## Description
 
-Central Markdown registry for Agent metadata used by Agent Finder to browse, retrieve, match, score, and recommend Agents.
+Central plain text registry for Agent metadata used by Agent Finder to browse, retrieve, match, score, and recommend Agents.
 
 ## Instruction
 
-This file is the single source of truth for Agent classification, counts, and recommendation metadata. Keep it Markdown-only. Do not create JSON configuration files or databases for registry data at this stage.
+This file is the single source of truth for Agent classification, counts, and recommendation metadata. Keep it plain-text-only. Do not create JSON configuration files or databases for registry data at this stage.
 
 Registry rules:
 - Distinguish the standalone main Agent, Functional Agents, and Business Subagents.
@@ -15,7 +15,7 @@ Registry rules:
 - Business Subagents are callable business Agents stored in `business-subagents/` and are the main retrieval target for Agent Finder.
 - Each Business Subagent must have exactly one Primary Category.
 - Each Business Subagent can have multiple Capability Tags and Domain Tags.
-- Do not add a Business Subagent to Active status unless its Markdown definition is complete enough for discovery. Active records definition completion, not deployment readiness.
+- Do not add a Business Subagent to Active status unless its plain text definition is complete enough for discovery. Active records definition completion, not deployment readiness.
 
 Primary Category values:
 - Knowledge and Research
@@ -46,7 +46,7 @@ Common Domain Tags:
 - Supply Chain
 
 Status values:
-- Active: the Markdown definition is complete and available for discovery; this does not mean it is deployed, connected, or runtime-validated. Execution requires verified runtime availability, required inputs/tools, permissions, and user confirmation.
+- Active: the plain text definition is complete and available for discovery; this does not mean it is deployed, connected, or runtime-validated. Execution requires verified runtime availability, required inputs/tools, permissions, and user confirmation.
 - Draft: can be browsed or discussed but should not be recommended for execution.
 - Deprecated: should not be recommended unless the user explicitly asks about it.
 - Unavailable: cannot be executed and should not be recommended for execution.
@@ -93,7 +93,7 @@ Registry fields:
 
 ## Registry Overview
 
-Registry rebuilt from the Markdown definitions in `business-subagents/` on 2026-10-15. Each Business Subagent definition contributes exactly one registry record.
+Registry rebuilt from the plain text definitions in `business-subagents/` on 2026-10-15. Each Business Subagent definition contributes exactly one registry record.
 
 | Agent Type | Total | Active |
 | --- | ---: | ---: |

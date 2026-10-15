@@ -15,16 +15,16 @@
 - [x] Agent Creator 返回字段统一为 `instruction`。
 - [x] 补齐缺输入状态，并明确 Executor 的暂停和回传契约。
 - [x] 为 12 个通用模板 Agent 补充具体输入、交付物、边界和示例，不合并定义。
-- [x] 将 Active 明确为 Markdown 定义已完成，不代表已部署或已通过平台验收。
+- [x] 将 Active 明确为 TXT 定义已完成，不代表已部署或已通过平台验收。
 
 ## 第一阶段：整理仓库
 
-- [x] 检查 `Agent-Registry.md` 的 Business Subagent 数量与 `business-subagents/*.md` 文件数量一致。
+- [x] 检查 `Agent-Registry.txt` 的 Business Subagent 数量与 `business-subagents/*.txt` 文件数量一致。
 - [x] 确认每个 Agent 只有一条 Registry 记录。
 - [ ] 确认每个定义包含名称、描述、触发条件、输入要求、执行规则、限制和结构化返回格式。
 - [x] 去除业务 Agent 重复元数据块，并核对分类、权限、状态及更新时间与 Registry 一致。
 - [x] 检查分类统计、权限统计和总数是否一致。
-- [x] 运行 Markdown 空白、JSON返回格式和本地链接检查。
+- [x] 运行 TXT 空白、JSON返回格式和本地链接检查。
 - [ ] 提交并推送当前仓库变更。
 
 ## 第二阶段：准备 Copilot Studio
