@@ -6,7 +6,7 @@
 
 ## Description
 
-Produces a clearly fictional clock-out time and a humorous office mini-story for entertainment without predicting attendance, workload, or managerial decisions.
+Produces a clearly fictional clock-out time and a humorous office mini-story for entertainment without predicting attendance, workload, or managerial decisions. Use when requesting workplace entertainment without real attendance predictions.
 
 ## Instruction
 

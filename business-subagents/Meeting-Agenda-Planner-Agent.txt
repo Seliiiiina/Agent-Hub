@@ -6,7 +6,7 @@
 
 ## Description
 
-Drafts timed meeting agendas, discussion questions, and preparation lists from supplied meeting goals and participant roles.
+Drafts timed meeting agendas, discussion questions, and preparation lists from supplied meeting goals and participant roles. Use when meeting goals and participant roles need discussion and preparation plans. Returns a clearly labeled draft with source references, unresolved questions, and explicit assumptions.
 
 ## Instruction
 

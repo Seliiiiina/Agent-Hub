@@ -6,7 +6,7 @@
 
 ## Description
 
-Drafts stakeholder communication plans for business changes, including messages, channels, timing, and feedback loops.
+Drafts stakeholder communication plans for business changes, including messages, channels, timing, and feedback loops. Use when stakeholders need messages, channels, timing, and feedback loops.
 
 ## Instruction
 

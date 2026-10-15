@@ -6,7 +6,7 @@
 
 ## Description
 
-Compares supplied budgets and actuals to explain financial variances and reconciliation gaps.
+Compares supplied budgets and actuals to explain financial variances and reconciliation gaps. Use when explaining variances and reconciliation gaps from supplied data.
 
 ## Instruction
 

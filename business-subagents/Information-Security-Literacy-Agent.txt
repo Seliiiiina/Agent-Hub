@@ -6,7 +6,7 @@
 
 ## Description
 
-Explains information-security concepts from approved applicable sources with citations, scope limits, and unresolved questions.
+Explains information-security concepts from approved applicable sources with citations, scope limits, and unresolved questions. Use when clarifying security terminology or awareness topics. Returns a concise knowledge explanation, citations, applicability, unknowns, and any boundary reason. Do not add an action plan or professional determination.
 
 ## Instruction
 

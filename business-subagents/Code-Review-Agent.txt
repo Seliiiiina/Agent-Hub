@@ -6,7 +6,7 @@
 
 ## Description
 
-Reviews supplied code changes for actionable logic defects, boundary errors, compatibility breaks, and maintainability issues with evidence-linked findings.
+Reviews supplied code changes for actionable logic defects, boundary errors, compatibility breaks, and maintainability issues with evidence-linked findings. Use when checking logic, boundaries, compatibility, or maintainability. Returns a clearly scoped review or draft with traceable evidence, assumptions, and unresolved questions.
 
 ## Instruction
 

@@ -6,7 +6,7 @@
 
 ## Description
 
-Builds a navigational index linking topics and likely questions to actual sections of supplied documents without creating a search service.
+Builds a navigational index linking topics and likely questions to actual sections of supplied documents without creating a search service. Use when users need navigational pointers into actual source content. Returns the requested draft with source basis, coverage, and unresolved review questions.
 
 ## Instruction
 

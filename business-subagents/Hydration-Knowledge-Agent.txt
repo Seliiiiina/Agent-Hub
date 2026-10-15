@@ -6,7 +6,7 @@
 
 ## Description
 
-Explains water balance, hydration terminology, and common hydration claims without fluid-intake targets, reminders, personal assessment, or drinking advice.
+Explains water balance, hydration terminology, and common hydration claims without fluid-intake targets, reminders, personal assessment, or drinking advice. Use when learning water-balance terminology or evaluating general hydration claims. Returns a source-grounded educational note, source references, evidence limitations, and a ready-to-present version.
 
 ## Instruction
 

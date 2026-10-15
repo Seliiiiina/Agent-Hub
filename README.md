@@ -631,8 +631,10 @@ Name requirements:
 
 Description requirements:
 
-- Keep it short and explicit.
-- Use as few words as possible to describe the agent's core function and when to use it.
+- Except for Agent Hub, use one concise English paragraph: `<Core capability and scope>. Use when <specific task or trigger>. <Key outputs or limits, when useful>.`
+- Keep each description within 800 characters, including spaces and punctuation, stating what the agent does and when it should be used.
+- Preserve essential scope limits, such as draft-only, confirmation-required, or entertainment-only behavior.
+- Agent Hub retains its user-facing purpose and benefits description.
 - Do not include long background explanations.
 
 Instruction requirements:

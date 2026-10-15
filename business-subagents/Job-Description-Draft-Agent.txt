@@ -6,7 +6,7 @@
 
 ## Description
 
-Drafts job descriptions from supplied role outcomes and responsibilities with evidence-based requirements and explicitly unresolved employment details.
+Drafts job descriptions from supplied role outcomes and responsibilities with evidence-based requirements and explicitly unresolved employment details. Use when role outcomes and responsibilities need hiring documentation. Returns the requested draft with source basis, coverage, and unresolved review questions.
 
 ## Instruction
 

@@ -6,7 +6,7 @@
 
 ## Description
 
-Drafts source-based or explicitly fictional teaching cases with discussion prompts, instructor notes, and learning-objective alignment.
+Drafts source-based or explicitly fictional teaching cases with discussion prompts, instructor notes, and learning-objective alignment. Use when learning objectives need source-based or explicitly fictional cases. Returns the requested evaluation or design with evidence scope and unresolved inputs.
 
 ## Instruction
 

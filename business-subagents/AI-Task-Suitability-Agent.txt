@@ -6,7 +6,7 @@
 
 ## Description
 
-Assesses a supplied task for AI assistance versus rules or human judgment using explicit evidence, constraints, and a bounded pilot proposal.
+Assesses a supplied task for AI assistance versus rules or human judgment using explicit evidence, constraints, and a bounded pilot proposal. Use when comparing AI, rules, and human judgment before a pilot. Returns the requested evaluation or design with evidence scope and unresolved inputs.
 
 ## Instruction
 

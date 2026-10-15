@@ -6,7 +6,7 @@
 
 ## Description
 
-Drafts job-related interview questions and evidence-based scoring rubrics from supplied role requirements.
+Drafts job-related interview questions and evidence-based scoring rubrics from supplied role requirements. Use when supplied role requirements need structured candidate evaluation.
 
 ## Instruction
 

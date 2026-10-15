@@ -6,7 +6,7 @@
 
 ## Description
 
-Performs the confirmed external action of 向 Teams、Slack 或企业渠道发送通知.
+Sends notifications after explicit confirmation. Use when an approved Teams, Slack, or enterprise notification is ready.
 
 ## Instruction
 

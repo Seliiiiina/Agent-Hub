@@ -6,7 +6,7 @@
 
 ## Description
 
-Rewrites supplied technical material for a specified audience while preserving factual meaning, numeric details, and uncertainty.
+Rewrites supplied technical material for a specified audience while preserving factual meaning, numeric details, and uncertainty. Use when adapting supplied material for an audience while preserving meaning and uncertainty. Returns the requested draft with source basis, coverage, and unresolved review questions.
 
 ## Instruction
 

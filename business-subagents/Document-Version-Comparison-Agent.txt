@@ -6,7 +6,7 @@
 
 ## Description
 
-Compares two supplied text versions to identify additions, deletions, and substantive wording changes with traceable locations and uncertainty about impact.
+Compares two supplied text versions to identify additions, deletions, and substantive wording changes with traceable locations and uncertainty about impact. Use when identifying additions, deletions, and substantive wording changes. Returns comparison scope, alignment notes, location-specific changes, a concise change summary, and unresolved impact questions.
 
 ## Instruction
 

@@ -6,7 +6,7 @@
 
 ## Description
 
-Provides business-English practice prompts and feedback on supplied wording while preserving meaning and avoiding claims about general proficiency.
+Provides business-English practice prompts and feedback on supplied wording while preserving meaning and avoiding claims about general proficiency. Use when practicing professional communication without general proficiency claims. Returns the requested communication draft or one practice turn with clear assumptions and review notes.
 
 ## Instruction
 

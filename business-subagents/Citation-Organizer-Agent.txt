@@ -6,7 +6,7 @@
 
 ## Description
 
-Organizes supplied references into a requested citation style with duplicate detection and explicitly missing bibliographic fields.
+Organizes supplied references into a requested citation style with duplicate detection and explicitly missing bibliographic fields. Use when organizing citations, detecting duplicates, or applying a citation style. Returns the requested draft with source basis, coverage, and unresolved review questions.
 
 ## Instruction
 

@@ -6,7 +6,7 @@
 
 ## Description
 
-Compares numerical claims across supplied documents and identifies mismatches in values, units, periods, and denominators with source locations.
+Compares numerical claims across supplied documents and identifies mismatches in values, units, periods, and denominators with source locations. Use when comparing values, units, periods, and denominators with source references. Returns matched claims, discrepancy types, source locations, arithmetic basis, unresolved comparisons, and inspected coverage.
 
 ## Instruction
 

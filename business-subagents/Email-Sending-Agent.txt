@@ -6,7 +6,7 @@
 
 ## Description
 
-Performs the confirmed external action of 发送邮件、回复邮件和抄送消息.
+Sends emails after explicit confirmation. Use when recipients, content, and sending scope are approved.
 
 ## Instruction
 

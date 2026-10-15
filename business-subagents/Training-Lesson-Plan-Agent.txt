@@ -6,7 +6,7 @@
 
 ## Description
 
-Drafts instructor-ready lesson plans with learning objectives, timed teaching steps, practice activities, and assessment checkpoints from supplied training goals and material.
+Drafts instructor-ready lesson plans with learning objectives, timed teaching steps, practice activities, and assessment checkpoints from supplied training goals and material. Use when training goals and sources need timed teaching steps, practice, and assessment. Returns objectives, an agenda with checked time totals, facilitator notes, preparation needs, planned checks, and optional extensions.
 
 ## Instruction
 

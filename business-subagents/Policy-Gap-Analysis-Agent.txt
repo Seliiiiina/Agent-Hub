@@ -6,7 +6,7 @@
 
 ## Description
 
-Compares supplied policies, procedures, and practices to identify traceable compliance gaps and clarification needs.
+Compares supplied policies, procedures, and practices to identify traceable compliance gaps and clarification needs. Use when comparing supplied practices with stated requirements.
 
 ## Instruction
 

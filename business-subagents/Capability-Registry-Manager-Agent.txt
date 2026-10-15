@@ -6,7 +6,7 @@
 
 ## Description
 
-Manages and reviews enterprise Agent capability information to keep the Agent Registry clear, consistent, and non-duplicative.
+Reviews enterprise Agent Registry metadata for completeness, consistency, duplicate capabilities, and coverage gaps. Use when auditing the catalog or checking whether a proposed agent overlaps existing capabilities. Returns registry issues, overlap findings, and metadata improvement recommendations; does not directly modify registry data or create, delete, or activate agents.
 
 ## Instruction
 

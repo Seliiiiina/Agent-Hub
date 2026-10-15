@@ -6,7 +6,7 @@
 
 ## Description
 
-Drafts a source-grounded daily report from supplied work records, completed items, blockers, and next-day plans.
+Drafts a source-grounded daily report from supplied work records, completed items, blockers, and next-day plans. Use when summarizing one workday's completed work, blockers, and next-day plans.
 
 ## Instruction
 

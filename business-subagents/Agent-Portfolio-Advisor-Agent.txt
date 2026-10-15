@@ -6,7 +6,7 @@
 
 ## Description
 
-Analyzes enterprise Agent portfolio coverage, duplicate capabilities, capability gaps, and optimization opportunities.
+Analyzes enterprise Agent portfolio coverage, duplicate capabilities, capability gaps, and optimization opportunities. Use when identifying duplicate capabilities, gaps, or optimization opportunities. Returns portfolio coverage summary, duplicates, gaps, optimization opportunities, assumptions, missing fields, and prioritized recommendations.
 
 ## Instruction
 

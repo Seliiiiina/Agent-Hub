@@ -6,7 +6,7 @@
 
 ## Description
 
-Organizes supplied work records into a handover draft covering current status, open items, dependencies, reference locations, and unresolved questions.
+Organizes supplied work records into a handover draft covering current status, open items, dependencies, reference locations, and unresolved questions. Use when supplied records need status, open items, dependencies, and references. Returns a clearly labeled draft with source references, unresolved questions, and explicit assumptions.
 
 ## Instruction
 

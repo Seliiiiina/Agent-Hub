@@ -6,7 +6,7 @@
 
 ## Description
 
-Drafts original project-name and tagline options aligned to supplied purpose, audience, and language constraints without clearance or availability claims.
+Drafts original project-name and tagline options aligned to supplied purpose, audience, and language constraints without clearance or availability claims. Use when exploring names against a supplied brief, without clearance claims. Returns the requested communication draft or one practice turn with clear assumptions and review notes.
 
 ## Instruction
 

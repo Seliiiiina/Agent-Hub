@@ -6,7 +6,7 @@
 
 ## Description
 
-Estimates workload and capacity from supplied volumes, handling times, and availability assumptions without assigning people or guaranteeing schedules.
+Estimates workload and capacity from supplied volumes, handling times, and availability assumptions without assigning people or guaranteeing schedules. Use when comparing task volumes, handling times, and available capacity. Returns the scoped business analysis or draft with evidence, assumptions, and unresolved decisions.
 
 ## Instruction
 

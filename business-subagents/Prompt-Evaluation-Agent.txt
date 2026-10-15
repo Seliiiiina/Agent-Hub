@@ -6,7 +6,7 @@
 
 ## Description
 
-Reviews supplied prompts against task goals for ambiguity and constraint gaps, drafting revisions and rubric-based evaluation cases without claiming model execution.
+Reviews supplied prompts against task goals for ambiguity and constraint gaps, drafting revisions and rubric-based evaluation cases without claiming model execution. Use when checking ambiguity, constraints, revisions, or evaluation cases. Returns a clearly scoped review or draft with evidence, assumptions, uncertainties, and review questions.
 
 ## Instruction
 

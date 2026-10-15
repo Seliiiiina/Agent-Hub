@@ -6,7 +6,7 @@
 
 ## Description
 
-Compare observed outcomes with agreed goals; separate adoption gaps, service issues, and unverified renewal signals.
+Compares observed outcomes with agreed goals; separate adoption gaps, service issues, and unverified renewal signals. Use when assessing adoption gaps, service issues, or unverified renewal signals.
 
 ## Instruction
 

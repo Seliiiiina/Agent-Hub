@@ -6,7 +6,7 @@
 
 ## Description
 
-Drafts observable scoring rubrics for AI outputs with anchored levels, weighting rules, and explicit failure gates without claiming validation.
+Drafts observable scoring rubrics for AI outputs with anchored levels, weighting rules, and explicit failure gates without claiming validation. Use when defining anchored quality levels, weights, and failure gates. Returns the requested evaluation or design with evidence scope and unresolved inputs.
 
 ## Instruction
 

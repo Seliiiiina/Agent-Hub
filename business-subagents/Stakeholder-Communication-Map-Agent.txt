@@ -6,7 +6,7 @@
 
 ## Description
 
-Maps supplied stakeholder groups to information needs, communication objectives, and proposed channels without profiling individuals or sending messages.
+Maps supplied stakeholder groups to information needs, communication objectives, and proposed channels without profiling individuals or sending messages. Use when planning communication objectives and channels for supplied groups. Returns the requested communication draft or one practice turn with clear assumptions and review notes.
 
 ## Instruction
 

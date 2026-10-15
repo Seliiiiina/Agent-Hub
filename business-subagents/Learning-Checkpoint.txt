@@ -6,7 +6,7 @@
 
 ## Description
 
-Creates short AI learning quizzes and provides evidence-based feedback on submitted answers, with targeted review suggestions and explicitly scoped progress summaries.
+Creates short AI learning quizzes and provides evidence-based feedback on submitted answers, with targeted review suggestions and explicitly scoped progress summaries. Use when checking understanding and identifying targeted review topics. Returns the requested mode only: a quiz, answer feedback, or a scoped progress summary. Do not automatically continue to another quiz.
 
 ## Instruction
 

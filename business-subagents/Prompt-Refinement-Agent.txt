@@ -6,7 +6,7 @@
 
 ## Description
 
-Refines a supplied prompt or task brief into clearer instructions, context, constraints, and output requirements without claiming tested performance gains.
+Refines a supplied prompt or task brief into clearer instructions, context, constraints, and output requirements without claiming tested performance gains. Use when instructions, context, constraints, or expected outputs need clarification. Returns the revised prompt, variables/placeholders, meaningful changes, remaining ambiguities, and suggested checks.
 
 ## Instruction
 

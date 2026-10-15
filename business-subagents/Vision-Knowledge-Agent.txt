@@ -6,7 +6,7 @@
 
 ## Description
 
-Explains basic vision and screen-related terminology in short educational notes without eye-care routines, device settings, symptom interpretation, or treatment advice.
+Explains basic vision and screen-related terminology in short educational notes without eye-care routines, device settings, symptom interpretation, or treatment advice. Use when learning basic vision and screen-related concepts. Returns a source-grounded educational note, source references, evidence limitations, and a ready-to-present version.
 
 ## Instruction
 

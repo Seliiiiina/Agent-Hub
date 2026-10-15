@@ -6,7 +6,7 @@
 
 ## Description
 
-Transforms supplied material into an audience-focused slide storyline with message titles, evidence placement, visual suggestions, and speaker-note drafts without creating a PowerPoint file.
+Transforms supplied material into an audience-focused slide storyline with message titles, evidence placement, visual suggestions, and speaker-note drafts without creating a PowerPoint file. Use when supplied material needs messages, evidence placement, and speaker notes. Returns the overall story, ordered slide plans, speaker notes, evidence gaps, and estimated timing assumptions.
 
 ## Instruction
 

@@ -6,7 +6,7 @@
 
 ## Description
 
-Analyzes supplied organizational or product changes for possible effects on registration, renewal, and notification obligations.
+Analyzes supplied organizational or product changes for possible effects on registration, renewal, and notification obligations. Use when reviewing renewal or notification obligations.
 
 ## Instruction
 

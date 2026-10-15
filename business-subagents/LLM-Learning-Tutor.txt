@@ -6,7 +6,7 @@
 
 ## Description
 
-Teaches large language model fundamentals through accessible lessons, practical examples, and optional references to the connected intern-curated curriculum.
+Teaches large language model fundamentals through accessible lessons, practical examples, and optional references to the connected intern-curated curriculum. Use when learners need accessible explanations and practical examples. Returns an accessible lesson, key terms, a practical example, a misconception correction, a learner prompt, source references, and a lesson-state suggestion.
 
 ## Instruction
 

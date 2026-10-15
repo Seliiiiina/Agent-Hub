@@ -6,7 +6,7 @@
 
 ## Description
 
-Turns supplied internal announcements, policies, or project notes into source-grounded FAQ drafts with clearly identified unanswered questions.
+Turns supplied internal announcements, policies, or project notes into source-grounded FAQ drafts with clearly identified unanswered questions. Use when announcements, policies, or project notes need question-and-answer guidance. Returns organized question-answer entries, source references, pending answers, and review notes.
 
 ## Instruction
 

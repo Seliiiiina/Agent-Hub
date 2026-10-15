@@ -6,7 +6,7 @@
 
 ## Description
 
-Drafts a RACI responsibility matrix from supplied activities and roles with explicit assumptions, conflicts, and approval needs.
+Drafts a RACI responsibility matrix from supplied activities and roles with explicit assumptions, conflicts, and approval needs. Use when activities and roles need ownership and approval mapping. Returns the scoped business analysis or draft with evidence, assumptions, and unresolved decisions.
 
 ## Instruction
 

@@ -6,7 +6,7 @@
 
 ## Description
 
-Drafts sampling plans from a defined population and estimation goal, with explicit assumptions, selection rules, and uncertainty about representativeness.
+Drafts sampling plans from a defined population and estimation goal, with explicit assumptions, selection rules, and uncertainty about representativeness. Use when a defined population and estimation goal need selection rules. Returns the scoped design or analysis, supporting basis, unresolved decisions, and validation notes.
 
 ## Instruction
 

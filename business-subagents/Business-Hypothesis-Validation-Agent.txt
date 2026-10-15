@@ -6,7 +6,7 @@
 
 ## Description
 
-Turns business assumptions into falsifiable hypotheses and evidence-gathering plans with predefined interpretation rules without conducting studies.
+Turns business assumptions into falsifiable hypotheses and evidence-gathering plans with predefined interpretation rules without conducting studies. Use when assumptions need evidence-gathering and interpretation rules before research. Returns the scoped business analysis or draft with evidence, assumptions, and unresolved decisions.
 
 ## Instruction
 

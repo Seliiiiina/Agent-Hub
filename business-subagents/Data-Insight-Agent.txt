@@ -6,7 +6,7 @@
 
 ## Description
 
-Analyzes provided data or metrics to identify trends, anomalies, drivers, and business insights.
+Analyzes provided data or metrics to identify trends, anomalies, drivers, and business insights. Use when investigating trends, anomalies, or potential drivers.
 
 ## Instruction
 

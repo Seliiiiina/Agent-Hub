@@ -6,7 +6,7 @@
 
 ## Description
 
-Analyzes supplied process steps and event data to identify evidenced waiting, rework, throughput constraints, and candidate bottlenecks.
+Analyzes supplied process steps and event data to identify evidenced waiting, rework, throughput constraints, and candidate bottlenecks. Use when investigating waiting, rework, or throughput problems. Returns the scoped business analysis or draft with evidence, assumptions, and unresolved decisions.
 
 ## Instruction
 

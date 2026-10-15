@@ -6,7 +6,7 @@
 
 ## Description
 
-Updates approved status, owner, date, or workflow fields in a supplied record set and returns an auditable change log.
+Updates approved status, owner, date, or workflow fields in a supplied record set and returns an auditable change log. Use when approved status, owner, or date changes are ready.
 
 ## Instruction
 

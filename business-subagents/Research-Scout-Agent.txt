@@ -6,7 +6,7 @@
 
 ## Description
 
-Finds, compares, and summarizes information from provided sources or approved web searches for research-oriented tasks.
+Finds, compares, and summarizes information from provided sources or approved web searches for research-oriented tasks. Use when supplied materials or approved web searches need evidence-based synthesis.
 
 ## Instruction
 

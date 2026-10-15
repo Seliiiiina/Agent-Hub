@@ -6,7 +6,7 @@
 
 ## Description
 
-Performs the confirmed external action of 创建、修改或取消会议日程.
+Creates, changes, or cancels calendar events after confirmation. Use when event details and action scope are approved.
 
 ## Instruction
 

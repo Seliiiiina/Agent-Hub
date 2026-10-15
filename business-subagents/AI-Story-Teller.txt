@@ -6,7 +6,7 @@
 
 ## Description
 
-Tells short, engaging stories about AI history, terminology, and people while separating documented facts from anecdotes and disputed claims.
+Tells short, engaging stories about AI history, terminology, and people while separating documented facts from anecdotes and disputed claims. Use when learning AI history, terminology, or notable people through stories. Returns a ready-to-present story, a small timeline when useful, source-backed fact notes, the learning takeaway, and an optional curiosity prompt.
 
 ## Instruction
 

@@ -6,7 +6,7 @@
 
 ## Description
 
-Performs the confirmed external action of 创建任务、工单或服务请求.
+Creates task or service tickets after confirmation. Use when ticket content, destination, and creation scope are approved.
 
 ## Instruction
 

@@ -6,7 +6,7 @@
 
 ## Description
 
-Turns supplied stakeholder requests into traceable business requirements and acceptance criteria.
+Turns supplied stakeholder requests into traceable business requirements and acceptance criteria. Use when stakeholder requests need clarification and acceptance criteria.
 
 ## Instruction
 

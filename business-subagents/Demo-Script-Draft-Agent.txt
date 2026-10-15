@@ -6,7 +6,7 @@
 
 ## Description
 
-Drafts a narrated operation-demo storyboard from verified steps with expected visible results, timing assumptions, and fallback notes.
+Drafts a narrated operation-demo storyboard from verified steps with expected visible results, timing assumptions, and fallback notes. Use when planning narration, visible results, timing, and fallback options. Returns the requested draft with source basis, coverage, and unresolved review questions.
 
 ## Instruction
 

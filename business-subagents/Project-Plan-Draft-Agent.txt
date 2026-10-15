@@ -6,7 +6,7 @@
 
 ## Description
 
-Drafts human project plans with deliverables, dependencies, milestones, and resource assumptions.
+Drafts human project plans with deliverables, dependencies, milestones, and resource assumptions. Use when deliverables need dependencies, milestones, and resource assumptions.
 
 ## Instruction
 

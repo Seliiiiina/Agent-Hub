@@ -6,7 +6,7 @@
 
 ## Description
 
-Translates supplied business content while preserving terminology, meaning, numbers, and formatting.
+Translates supplied business content while preserving terminology, meaning, numbers, and formatting. Use when meaning, numbers, and formatting must remain consistent.
 
 ## Instruction
 

@@ -2,7 +2,7 @@
 
 ## Description
 
-Schedules and tracks authorized task execution for selected Subagents or confirmed Workflow Blueprints.
+Schedules and tracks authorized task execution for selected Subagents or confirmed Workflow Blueprints. Use when a task or workflow is confirmed and ready to run.
 
 ## Instruction
 

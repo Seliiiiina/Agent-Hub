@@ -6,7 +6,7 @@
 
 ## Description
 
-Creates practice questions, scenarios, and scoped rubrics from supplied learning objectives and source material.
+Creates practice questions, scenarios, and scoped rubrics from supplied learning objectives and source material. Use when learning objectives and source material need questions or scenarios.
 
 ## Instruction
 

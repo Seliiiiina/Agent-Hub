@@ -6,7 +6,7 @@
 
 ## Description
 
-Assesses operational risks in supplied processes or plans and proposes evidence-based mitigations.
+Assesses operational risks in supplied processes or plans and proposes evidence-based mitigations. Use when supplied processes or plans need evidence-based risk review.
 
 ## Instruction
 

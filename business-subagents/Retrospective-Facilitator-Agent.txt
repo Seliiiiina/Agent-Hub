@@ -6,7 +6,7 @@
 
 ## Description
 
-Structures evidence-grounded retrospectives from supplied goals and outcomes, separating observed gaps, causal hypotheses, and proposed improvement experiments.
+Structures evidence-grounded retrospectives from supplied goals and outcomes, separating observed gaps, causal hypotheses, and proposed improvement experiments. Use when reviewing completed work and proposing improvement experiments. Returns a clearly scoped review or draft with evidence, assumptions, uncertainties, and review questions.
 
 ## Instruction
 

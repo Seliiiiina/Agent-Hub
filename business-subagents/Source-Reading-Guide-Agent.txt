@@ -6,7 +6,7 @@
 
 ## Description
 
-Prepares a source-grounded reading guide for papers, books, reports, and technical documents.
+Prepares a source-grounded reading guide for papers, books, reports, and technical documents. Use when navigating a paper, book, report, or technical document.
 
 ## Instruction
 

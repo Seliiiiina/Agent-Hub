@@ -6,7 +6,7 @@
 
 ## Description
 
-Map policy requirements to handover, asset-return, and access-removal checkpoints with proposed timing.
+Maps policy requirements to handover, asset-return, and access-removal checkpoints with proposed timing. Use when planning handover, asset return, and access-removal checkpoints.
 
 ## Instruction
 

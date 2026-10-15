@@ -2,7 +2,7 @@
 
 ## Description
 
-Analyzes capability gaps, searches reusable internal or external solutions, and drafts new Agent definitions only when needed.
+Analyzes capability gaps, searches reusable internal or external solutions, and drafts new Agent definitions only when needed. Use when existing agents cannot meet a need.
 
 ## Instruction
 

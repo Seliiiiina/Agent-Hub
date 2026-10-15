@@ -6,7 +6,7 @@
 
 ## Description
 
-Compare each launch criterion with supplied evidence and flag blockers, unknowns, and dependencies.
+Compares each launch criterion with supplied evidence and flag blockers, unknowns, and dependencies. Use when identifying blockers, unknowns, and dependencies before release.
 
 ## Instruction
 

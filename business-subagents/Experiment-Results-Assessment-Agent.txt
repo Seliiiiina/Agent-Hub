@@ -6,7 +6,7 @@
 
 ## Description
 
-Assesses supplied nonclinical experimental outcomes using a stated design and analysis plan, reporting effects, uncertainty, and validity limitations.
+Assesses supplied nonclinical experimental outcomes using a stated design and analysis plan, reporting effects, uncertainty, and validity limitations. Use when a stated design and analysis plan need outcome interpretation. Returns the scoped design or analysis, supporting basis, unresolved decisions, and validation notes.
 
 ## Instruction
 

@@ -6,7 +6,7 @@
 
 ## Description
 
-Explains supply-chain terminology from approved applicable sources with citations, scope limits, and unresolved questions.
+Explains supply-chain terminology from approved applicable sources with citations, scope limits, and unresolved questions. Use when clarifying logistics, sourcing, or inventory concepts. Returns a concise knowledge explanation, citations, applicability, unknowns, and any boundary reason. Do not add an action plan or professional determination.
 
 ## Instruction
 

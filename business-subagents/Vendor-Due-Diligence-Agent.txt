@@ -6,7 +6,7 @@
 
 ## Description
 
-Map each criterion to vendor evidence; separate vendor claims from verified records and flag expired or absent documents.
+Maps each criterion to vendor evidence; separate vendor claims from verified records and flag expired or absent documents. Use when reviewing supplier claims, missing documents, or expired evidence.
 
 ## Instruction
 

@@ -6,7 +6,7 @@
 
 ## Description
 
-Evaluates supplied retrieval runs for relevance, coverage, redundancy, and supported metrics without operating a search index.
+Evaluates supplied retrieval runs for relevance, coverage, redundancy, and supported metrics without operating a search index. Use when checking relevance, coverage, redundancy, or retrieval metrics. Returns the requested evaluation or design with evidence scope and unresolved inputs.
 
 ## Instruction
 

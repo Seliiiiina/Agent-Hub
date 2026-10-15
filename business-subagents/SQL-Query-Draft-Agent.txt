@@ -6,7 +6,7 @@
 
 ## Description
 
-Drafts read-only SQL queries from supplied schema and analytical intent without connecting to databases or claiming query execution.
+Drafts read-only SQL queries from supplied schema and analytical intent without connecting to databases or claiming query execution. Use when a supplied schema and analytical question need query logic. Returns the scoped design or analysis, supporting basis, unresolved decisions, and validation notes.
 
 ## Instruction
 

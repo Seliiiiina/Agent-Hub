@@ -6,7 +6,7 @@
 
 ## Description
 
-Organizes supplied registration materials into a source-indexed evidence package and identifies missing or inconsistent items.
+Organizes supplied registration materials into a source-indexed evidence package and identifies missing or inconsistent items. Use when supplied materials need source indexing and gap identification.
 
 ## Instruction
 

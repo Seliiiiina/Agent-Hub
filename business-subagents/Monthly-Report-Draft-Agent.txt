@@ -6,7 +6,7 @@
 
 ## Description
 
-Drafts a source-grounded monthly report with trends, milestones, unresolved risks, and priorities for the next month.
+Drafts a source-grounded monthly report with trends, milestones, unresolved risks, and priorities for the next month. Use when summarizing monthly trends, milestones, risks, and upcoming priorities.
 
 ## Instruction
 

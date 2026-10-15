@@ -6,7 +6,7 @@
 
 ## Description
 
-Reviews a supplied draft from its intended reader's perspective to identify unclear structure, undefined terms, and missing explanatory context without rewriting or editing the source.
+Reviews a supplied draft from its intended reader's perspective to identify unclear structure, undefined terms, and missing explanatory context without rewriting or editing the source. Use when checking structure, terminology, and missing context without rewriting. Returns a reader-perspective summary, location-specific issues, questions a reader would ask, and revision priorities.
 
 ## Instruction
 

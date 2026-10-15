@@ -6,7 +6,7 @@
 
 ## Description
 
-Organizes supplied internship work into evidence-based achievement narratives while distinguishing personal contributions, team results, and unfinished work.
+Organizes supplied internship work into evidence-based achievement narratives while distinguishing personal contributions, team results, and unfinished work. Use when distinguishing personal contributions, team results, and unfinished work. Returns the requested communication draft or one practice turn with clear assumptions and review notes.
 
 ## Instruction
 

@@ -6,7 +6,7 @@
 
 ## Description
 
-Review headings, wording, link labels, and supplied text alternatives against explicit criteria; label rendering checks unavailable.
+Reviews headings, wording, link labels, and supplied text alternatives against explicit criteria; label rendering checks unavailable. Use when checking headings, wording, links, or supplied text alternatives.
 
 ## Instruction
 

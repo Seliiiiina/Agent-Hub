@@ -6,7 +6,7 @@
 
 ## Description
 
-Analyzes supplied evidence about an observed business problem to build a cause-hypothesis structure and identify verification gaps without asserting unsupported root causes.
+Analyzes supplied evidence about an observed business problem to build a cause-hypothesis structure and identify verification gaps without asserting unsupported root causes. Use when investigating a business problem without asserting unsupported root causes. Returns problem framing, evidence and timeline notes, cause hypotheses, competing explanations, and verification priorities.
 
 ## Instruction
 

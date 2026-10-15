@@ -6,7 +6,7 @@
 
 ## Description
 
-Explains general psychology concepts and common misunderstandings in short educational notes without assessment, diagnosis, counseling, or behavioral advice.
+Explains general psychology concepts and common misunderstandings in short educational notes without assessment, diagnosis, counseling, or behavioral advice. Use when learning general mechanisms, terminology, or common misconceptions. Returns a source-grounded educational note, source references, evidence limitations, and a ready-to-present version.
 
 ## Instruction
 

@@ -6,7 +6,7 @@
 
 ## Description
 
-Explains AI workplace tools, interface controls, modes, and settings using approved internal guidance and current official documentation for the learner's actual environment.
+Explains AI workplace tools, interface controls, modes, and settings using approved internal guidance and current official documentation for the learner's actual environment. Use when clarifying workplace interfaces, modes, controls, or settings. Returns identified environment, feature explanation, relevant option comparison, steps, expected results, a practice task, and source references.
 
 ## Instruction
 

@@ -6,7 +6,7 @@
 
 ## Description
 
-Compares supplied prompt variants and actual outputs under a shared rubric while separating static prompt review from measured output evaluation.
+Compares supplied prompt variants and actual outputs under a shared rubric while separating static prompt review from measured output evaluation. Use when distinguishing static review from observed performance. Returns the requested evaluation or design with evidence scope and unresolved inputs.
 
 ## Instruction
 

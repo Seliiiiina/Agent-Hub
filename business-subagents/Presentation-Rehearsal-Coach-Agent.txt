@@ -6,7 +6,7 @@
 
 ## Description
 
-Reviews supplied presentation attempts for clarity, structure, audience fit, and estimated timing, with explicitly simulated audience questions.
+Reviews supplied presentation attempts for clarity, structure, audience fit, and estimated timing, with explicitly simulated audience questions. Use when improving clarity, structure, audience fit, and estimated timing through simulated questions. Returns the requested communication draft or one practice turn with clear assumptions and review notes.
 
 ## Instruction
 

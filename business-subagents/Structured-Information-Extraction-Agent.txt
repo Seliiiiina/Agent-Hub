@@ -6,7 +6,7 @@
 
 ## Description
 
-Extracts explicitly supported information from supplied material into a requested field schema with per-field provenance, missing values, and ambiguity records.
+Extracts explicitly supported information from supplied material into a requested field schema with per-field provenance, missing values, and ambiguity records. Use when converting supplied material into a defined information schema. Returns schema, extracted records with per-field evidence, validation coverage, and unresolved cases.
 
 ## Instruction
 

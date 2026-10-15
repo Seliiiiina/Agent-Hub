@@ -2,7 +2,7 @@
 
 ## Description
 
-Finds, scores, and recommends Business Subagents from Agent Registry for user goals, task needs, or directory browsing.
+Finds, scores, and recommends Business Subagents from Agent Registry for user goals, task needs, or directory browsing. Use when discovering agents or matching a task to capabilities.
 
 ## Instruction
 

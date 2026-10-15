@@ -6,7 +6,7 @@
 
 ## Description
 
-Reconstruct the timeline; distinguish supported causes from hypotheses and identify detection and response gaps.
+Reconstructs the timeline; distinguish supported causes from hypotheses and identify detection and response gaps. Use when reconstructing timelines, assessing causes, and reviewing detection or response gaps.
 
 ## Instruction
 

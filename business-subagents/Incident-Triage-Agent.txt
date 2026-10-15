@@ -6,7 +6,7 @@
 
 ## Description
 
-Classifies supplied technical incidents and recommends evidence collection and escalation using stated runbooks.
+Classifies supplied technical incidents and recommends evidence collection and escalation using stated runbooks. Use when supplied incident details need evidence collection or escalation guidance.
 
 ## Instruction
 

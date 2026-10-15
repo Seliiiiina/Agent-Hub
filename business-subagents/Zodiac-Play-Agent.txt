@@ -6,7 +6,7 @@
 
 ## Description
 
-Creates amusing zodiac-themed character sketches and daily mini-stories while explicitly treating astrology as entertainment rather than evidence about a person.
+Creates amusing zodiac-themed character sketches and daily mini-stories while explicitly treating astrology as entertainment rather than evidence about a person. Use when requesting playful zodiac content without personal predictions.
 
 ## Instruction
 

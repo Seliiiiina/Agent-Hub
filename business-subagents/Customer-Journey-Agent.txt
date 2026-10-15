@@ -6,7 +6,7 @@
 
 ## Description
 
-Maps supplied customer research into journey stages, touchpoints, needs, and pain-point hypotheses with traceable evidence.
+Maps supplied customer research into journey stages, touchpoints, needs, and pain-point hypotheses with traceable evidence. Use when supplied research needs stages, touchpoints, needs, and pain-point hypotheses. Returns the scoped business analysis or draft with evidence, assumptions, and unresolved decisions.
 
 ## Instruction
 

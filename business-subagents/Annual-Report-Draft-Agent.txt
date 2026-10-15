@@ -6,7 +6,7 @@
 
 ## Description
 
-Drafts a source-grounded annual report covering yearly objectives, results, trends, major decisions, lessons, and next-year priorities.
+Drafts a source-grounded annual report covering yearly objectives, results, trends, major decisions, lessons, and next-year priorities. Use when summarizing yearly objectives, results, lessons, and next-year priorities.
 
 ## Instruction
 

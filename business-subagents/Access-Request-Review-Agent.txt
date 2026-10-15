@@ -6,7 +6,7 @@
 
 ## Description
 
-Compare requested scope with supplied role and policy criteria; flag excess access, missing justification, and unresolved approvals.
+Compares requested scope with supplied role and policy criteria; flag excess access, missing justification, and unresolved approvals. Use when checking scope, justification, and unresolved approvals.
 
 ## Instruction
 

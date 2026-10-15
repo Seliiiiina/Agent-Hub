@@ -6,7 +6,7 @@
 
 ## Description
 
-Designs a source-grounded analysis plan from a business question, available fields, and decision criteria.
+Designs a source-grounded analysis plan from a business question, available fields, and decision criteria. Use when a question, available fields, and decision criteria need an analytical approach.
 
 ## Instruction
 

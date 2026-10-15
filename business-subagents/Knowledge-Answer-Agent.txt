@@ -6,7 +6,7 @@
 
 ## Description
 
-Answers specific business questions using supplied documents or authorized knowledge sources with citations.
+Answers specific business questions using supplied documents or authorized knowledge sources with citations. Use when supplied documents or authorized knowledge sources support a specific answer.
 
 ## Instruction
 

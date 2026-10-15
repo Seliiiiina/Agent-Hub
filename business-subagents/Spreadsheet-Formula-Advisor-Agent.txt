@@ -6,7 +6,7 @@
 
 ## Description
 
-Drafts and explains spreadsheet formulas for a supplied table layout and checks their logic without modifying workbooks or claiming Excel recalculation.
+Drafts and explains spreadsheet formulas for a supplied table layout and checks their logic without modifying workbooks or claiming Excel recalculation. Use when supplied table layouts need formula logic and explanations. Returns the formula text, target location if supplied, reference map, explanation, edge cases, and validation basis.
 
 ## Instruction
 

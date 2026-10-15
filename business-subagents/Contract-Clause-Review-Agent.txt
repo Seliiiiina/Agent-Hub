@@ -6,7 +6,7 @@
 
 ## Description
 
-Compare clauses with stated criteria; flag missing terms, ambiguity, inconsistent definitions, and dependencies with quotations.
+Compares clauses with stated criteria; flag missing terms, ambiguity, inconsistent definitions, and dependencies with quotations. Use when checking missing terms, ambiguity, inconsistent definitions, or dependencies.
 
 ## Instruction
 

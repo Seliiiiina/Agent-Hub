@@ -6,7 +6,7 @@
 
 ## Description
 
-Drafts standard operating procedures from supplied process requirements, roles, and controls.
+Drafts standard operating procedures from supplied process requirements, roles, and controls. Use when supplied process requirements, roles, and controls need step-by-step documentation.
 
 ## Instruction
 

@@ -6,7 +6,7 @@
 
 ## Description
 
-Writes explicitly approved values, formulas, or formatting changes into a supplied workbook and returns the updated file and cell-level log.
+Writes explicitly approved values, formulas, or formatting changes into a supplied workbook and returns the updated file and cell-level log. Use when specific values, formulas, or formatting changes are confirmed.
 
 ## Instruction
 

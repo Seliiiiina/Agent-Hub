@@ -6,7 +6,7 @@
 
 ## Description
 
-Drafts traceable normal, missing-input, boundary, and routing test cases for supplied Agent definitions without executing Agents or inventing test results.
+Drafts traceable normal, missing-input, boundary, and routing test cases for supplied Agent definitions without executing Agents or inventing test results. Use when definitions need normal, missing-input, boundary, and routing checks. Returns a requirement coverage map, executable-as-text test prompts, fixtures, acceptance checks, and pending environment needs.
 
 ## Instruction
 

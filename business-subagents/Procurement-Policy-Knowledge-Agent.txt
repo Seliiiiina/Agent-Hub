@@ -6,7 +6,7 @@
 
 ## Description
 
-Explains procurement-process knowledge from approved applicable sources with citations, scope limits, and unresolved questions.
+Explains procurement-process knowledge from approved applicable sources with citations, scope limits, and unresolved questions. Use when clarifying purchasing processes, requirements, or terminology. Returns a concise knowledge explanation, citations, applicability, unknowns, and any boundary reason. Do not add an action plan or professional determination.
 
 ## Instruction
 

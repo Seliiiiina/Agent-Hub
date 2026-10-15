@@ -6,7 +6,7 @@
 
 ## Description
 
-Designs a staged learning path from a learner goal, current level, available time, and target date.
+Designs a staged learning path from a learner goal, current level, available time, and target date. Use when goals, current knowledge, available time, and target dates need a study plan.
 
 ## Instruction
 

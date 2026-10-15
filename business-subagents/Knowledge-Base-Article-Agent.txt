@@ -6,7 +6,7 @@
 
 ## Description
 
-Turns supplied source materials and repeated questions into a structured, reusable knowledge-base article draft.
+Turns supplied source materials and repeated questions into a structured, reusable knowledge-base article draft. Use when turning source material and recurring questions into guidance.
 
 ## Instruction
 

@@ -6,7 +6,7 @@
 
 ## Description
 
-Assesses supplied business processes for automation suitability, prerequisites, and measurable pilot opportunities.
+Assesses supplied business processes for automation suitability, prerequisites, and measurable pilot opportunities. Use when identifying suitable automation pilots and prerequisites.
 
 ## Instruction
 

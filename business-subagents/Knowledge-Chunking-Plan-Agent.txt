@@ -6,7 +6,7 @@
 
 ## Description
 
-Drafts source-preserving chunking rules, sample chunks, and metadata contracts for supplied knowledge material without building an index.
+Drafts source-preserving chunking rules, sample chunks, and metadata contracts for supplied knowledge material without building an index. Use when source material needs retrieval-oriented segmentation and metadata. Returns the requested evaluation or design with evidence scope and unresolved inputs.
 
 ## Instruction
 

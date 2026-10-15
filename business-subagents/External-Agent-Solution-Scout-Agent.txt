@@ -6,7 +6,7 @@
 
 ## Description
 
-Searches approved external sources for reusable Agent, workflow, connector, MCP, or SDK solutions when the internal Agent Registry has no suitable match.
+Searches approved external sources for reusable Agent, workflow, connector, MCP, or SDK solutions when the internal Agent Registry has no suitable match. Use when the internal registry has no suitable match.
 
 ## Instruction
 

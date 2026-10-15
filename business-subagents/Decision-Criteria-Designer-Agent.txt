@@ -6,7 +6,7 @@
 
 ## Description
 
-Drafts transparent decision criteria, eligibility gates, evidence requirements, and proposed weighting rules before alternatives are compared.
+Drafts transparent decision criteria, eligibility gates, evidence requirements, and proposed weighting rules before alternatives are compared. Use when defining eligibility and evidence requirements before comparing alternatives. Returns the scoped business analysis or draft with evidence, assumptions, and unresolved decisions.
 
 ## Instruction
 

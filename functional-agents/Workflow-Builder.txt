@@ -2,7 +2,7 @@
 
 ## Description
 
-Builds Workflow Blueprints for complex tasks that require multiple steps, dependencies, or collaborating Agents.
+Builds Workflow Blueprints for complex tasks that require multiple steps, dependencies, or collaborating Agents. Use when a task requires ordered steps or collaborating agents.
 
 ## Instruction
 

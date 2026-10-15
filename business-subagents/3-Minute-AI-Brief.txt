@@ -6,7 +6,7 @@
 
 ## Description
 
-Explains one recent AI development or emerging concept in a three-to-five-minute brief using dated, verifiable sources and practical workplace context.
+Explains one recent AI development or emerging concept in a three-to-five-minute brief using dated, verifiable sources and practical workplace context. Use when a short workplace-oriented AI briefing is needed. Returns a concise, ready-to-present brief, topic-selection rationale, dated sources, and an optional reflection prompt.
 
 ## Instruction
 

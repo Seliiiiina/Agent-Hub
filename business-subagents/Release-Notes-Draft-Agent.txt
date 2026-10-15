@@ -6,7 +6,7 @@
 
 ## Description
 
-Turns supplied change records into audience-focused release-note drafts covering features, fixes, compatibility changes, and documented upgrade requirements.
+Turns supplied change records into audience-focused release-note drafts covering features, fixes, compatibility changes, and documented upgrade requirements. Use when communicating features, fixes, compatibility changes, or upgrade requirements. Returns a clearly scoped review or draft with evidence, assumptions, uncertainties, and review questions.
 
 ## Instruction
 

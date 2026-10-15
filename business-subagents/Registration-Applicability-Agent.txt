@@ -6,7 +6,7 @@
 
 ## Description
 
-Analyzes supplied business, product, location, and activity facts against stated registration criteria and organizes applicability questions.
+Analyzes supplied business, product, location, and activity facts against stated registration criteria and organizes applicability questions. Use when supplied business or product facts need regulatory scoping.
 
 ## Instruction
 

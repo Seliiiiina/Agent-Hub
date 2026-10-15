@@ -6,7 +6,7 @@
 
 ## Description
 
-Searches and evaluates GitHub repositories, examples, and open-source patterns for reusable technical or Agent designs.
+Searches and evaluates GitHub repositories, examples, and open-source patterns for reusable technical or Agent designs. Use when comparing technical implementations or agent patterns.
 
 ## Instruction
 

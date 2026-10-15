@@ -6,7 +6,7 @@
 
 ## Description
 
-Drafts original visual direction, layout guidance, and theme specifications for supplied content without generating images, editing files, or building interfaces.
+Drafts original visual direction, layout guidance, and theme specifications for supplied content without generating images, editing files, or building interfaces. Use when content needs visual direction, layout guidance, or theme specifications. Returns one primary design brief and an optional alternative only when useful, with proposed specifications and needed assets.
 
 ## Instruction
 

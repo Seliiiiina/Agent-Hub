@@ -6,7 +6,7 @@
 
 ## Description
 
-Turns supplied decision notes into traceable decision-record drafts covering context, options, rationale, tradeoffs, and unresolved assumptions.
+Turns supplied decision notes into traceable decision-record drafts covering context, options, rationale, tradeoffs, and unresolved assumptions. Use when supplied notes need context, options, rationale, tradeoffs, and unresolved assumptions. Returns a clearly labeled draft or simulated practice result, including evidence, uncertainties, and minimal unresolved questions.
 
 ## Instruction
 

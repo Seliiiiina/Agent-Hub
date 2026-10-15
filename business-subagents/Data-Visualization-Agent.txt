@@ -6,7 +6,7 @@
 
 ## Description
 
-Creates source-grounded chart specifications and, when supported by an enabled code interpreter, derived charts from supplied data without changing source records.
+Creates source-grounded chart specifications and, when supported by an enabled code interpreter, derived charts from supplied data without changing source records. Use when visualizing supplied data without changing source records. Returns chart purpose, plotting specification, actual plotting data when available, validation notes, and an optional artifact reference.
 
 ## Instruction
 

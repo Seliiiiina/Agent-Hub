@@ -6,7 +6,7 @@
 
 ## Description
 
-Sequence orientation, training, and check-ins; mark proposed owners and dependencies as unconfirmed.
+Sequences orientation, training, and check-ins; mark proposed owners and dependencies as unconfirmed. Use when sequencing orientation, training, and check-ins.
 
 ## Instruction
 

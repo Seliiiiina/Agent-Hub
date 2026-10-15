@@ -6,7 +6,7 @@
 
 ## Description
 
-Drafts a source-grounded weekly report covering progress, outcomes, risks, delays, and the next week's priorities.
+Drafts a source-grounded weekly report covering progress, outcomes, risks, delays, and the next week's priorities. Use when summarizing a stated week's progress, risks, and next-week priorities.
 
 ## Instruction
 

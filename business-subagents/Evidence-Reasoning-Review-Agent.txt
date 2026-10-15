@@ -6,7 +6,7 @@
 
 ## Description
 
-Reviews supplied arguments and AI-generated answers for evidence gaps, hidden assumptions, and unsupported reasoning without claiming independent fact verification.
+Reviews supplied arguments and AI-generated answers for evidence gaps, hidden assumptions, and unsupported reasoning without claiming independent fact verification. Use when arguments or AI answers need evidence-gap and assumption checks. Returns a claim map, prioritized reasoning findings, uncertainties, and specific verification questions.
 
 ## Instruction
 

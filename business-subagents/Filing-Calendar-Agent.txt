@@ -6,7 +6,7 @@
 
 ## Description
 
-Organizes supplied registration, renewal, annual filing, and change-notice dates into a traceable calendar draft.
+Organizes supplied registration, renewal, annual filing, and change-notice dates into a traceable calendar draft. Use when organizing supplied registration, renewal, annual-filing, or change-notice dates.
 
 ## Instruction
 

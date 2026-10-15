@@ -6,7 +6,7 @@
 
 ## Description
 
-Builds a source-grounded concept map with defined nodes, labeled relationships, and uncertainty notes for supplied learning material.
+Builds a source-grounded concept map with defined nodes, labeled relationships, and uncertainty notes for supplied learning material. Use when learning material needs defined concepts and labeled relationships. Returns the requested evaluation or design with evidence scope and unresolved inputs.
 
 ## Instruction
 

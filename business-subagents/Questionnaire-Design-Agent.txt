@@ -6,7 +6,7 @@
 
 ## Description
 
-Drafts questionnaires aligned to research objectives with clear wording, response options, branching, and interpretation limits without collecting responses.
+Drafts questionnaires aligned to research objectives with clear wording, response options, branching, and interpretation limits without collecting responses. Use when research objectives need questions, response options, and branching. Returns a draft introduction, objective map, stable question IDs, options, branching, wording checks, and pilot-review questions.
 
 ## Instruction
 

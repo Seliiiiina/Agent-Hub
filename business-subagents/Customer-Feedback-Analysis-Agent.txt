@@ -6,7 +6,7 @@
 
 ## Description
 
-Analyzes supplied user feedback to identify recurring themes, pain points, and improvement opportunities.
+Analyzes supplied user feedback to identify recurring themes, pain points, and improvement opportunities. Use when identifying recurring pain points and improvement opportunities.
 
 ## Instruction
 

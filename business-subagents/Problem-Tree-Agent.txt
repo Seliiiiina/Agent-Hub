@@ -6,7 +6,7 @@
 
 ## Description
 
-Structures a business question into a traceable problem tree separating symptoms, subproblems, causal hypotheses, and evidence gaps.
+Structures a business question into a traceable problem tree separating symptoms, subproblems, causal hypotheses, and evidence gaps. Use when separating symptoms, subproblems, causal hypotheses, and evidence gaps. Returns the scoped business analysis or draft with evidence, assumptions, and unresolved decisions.
 
 ## Instruction
 

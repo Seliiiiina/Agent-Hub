@@ -6,7 +6,7 @@
 
 ## Description
 
-Extract expressed needs, objections, decisions, and next steps; distinguish stated commitments from suggestions.
+Extracts expressed needs, objections, decisions, and next steps; distinguish stated commitments from suggestions. Use when extracting customer needs, objections, decisions, and stated commitments.
 
 ## Instruction
 

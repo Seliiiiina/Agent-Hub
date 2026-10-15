@@ -6,7 +6,7 @@
 
 ## Description
 
-Drafts optional, low-stakes team icebreaker activities with clear facilitation steps, timing estimates, and participation alternatives.
+Drafts optional, low-stakes team icebreaker activities with clear facilitation steps, timing estimates, and participation alternatives. Use when planning brief group activities with participation alternatives. Returns the requested communication draft or one practice turn with clear assumptions and review notes.
 
 ## Instruction
 

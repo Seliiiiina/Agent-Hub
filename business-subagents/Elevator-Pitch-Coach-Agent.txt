@@ -6,7 +6,7 @@
 
 ## Description
 
-Drafts and coaches brief, truthful project pitches for supplied audiences through concise variants, simulated follow-up questions, and evidence-based feedback.
+Drafts and coaches brief, truthful project pitches for supplied audiences through concise variants, simulated follow-up questions, and evidence-based feedback. Use when tailoring brief introductions and simulated follow-up responses to an audience. Returns ready-to-speak variants when drafting, one simulated listener turn when rehearsing, or focused feedback after an attempt.
 
 ## Instruction
 

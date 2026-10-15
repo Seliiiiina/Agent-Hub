@@ -6,7 +6,7 @@
 
 ## Description
 
-Reviews provided content against stated rules, policies, or requirements and flags potential compliance issues.
+Reviews provided content against stated rules, policies, or requirements and flags potential compliance issues. Use when reviewing content for policy or compliance alignment.
 
 ## Instruction
 

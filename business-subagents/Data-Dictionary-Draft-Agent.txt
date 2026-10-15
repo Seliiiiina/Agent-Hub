@@ -6,7 +6,7 @@
 
 ## Description
 
-Drafts a field-level data dictionary from supplied schemas and accessible samples while separating documented meanings, observed properties, proposals, and unknowns.
+Drafts a field-level data dictionary from supplied schemas and accessible samples while separating documented meanings, observed properties, proposals, and unknowns. Use when supplied schemas and samples need definitions, observed properties, and explicit unknowns. Returns a draft table/field dictionary with provenance and unresolved questions.
 
 ## Instruction
 

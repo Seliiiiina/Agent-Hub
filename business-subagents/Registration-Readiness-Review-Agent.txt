@@ -6,7 +6,7 @@
 
 ## Description
 
-Reviews a supplied registration package for completeness, consistency, version, date, and evidence gaps before human submission review.
+Reviews a supplied registration package for completeness, consistency, version, date, and evidence gaps before human submission review. Use when checking evidence gaps before human submission review.
 
 ## Instruction
 

@@ -6,7 +6,7 @@
 
 ## Description
 
-Applies an explicitly approved cleaning plan to a supplied dataset and returns the modified data with a complete change log.
+Applies an explicitly approved cleaning plan to a supplied dataset and returns the modified data with a complete change log. Use when a supplied dataset and explicit cleaning plan are confirmed.
 
 ## Instruction
 

@@ -6,7 +6,7 @@
 
 ## Description
 
-Produces a redacted draft of supplied text using explicit rules while documenting coverage and residual uncertainty without certifying anonymization.
+Produces a redacted draft of supplied text using explicit rules while documenting coverage and residual uncertainty without certifying anonymization. Use when supplied text needs sensitive information masked under explicit rules. Returns the requested draft with source basis, coverage, and unresolved review questions.
 
 ## Instruction
 

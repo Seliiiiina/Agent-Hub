@@ -6,7 +6,7 @@
 
 ## Description
 
-Builds a source-grounded glossary with terms, definitions, aliases, context, and unresolved naming conflicts.
+Builds a source-grounded glossary with terms, definitions, aliases, context, and unresolved naming conflicts. Use when consolidating definitions, aliases, and naming conflicts. Returns the requested draft with source basis, coverage, and unresolved review questions.
 
 ## Instruction
 

@@ -6,7 +6,7 @@
 
 ## Description
 
-Codes supplied free-text responses into an explicit category scheme with traceable excerpts, item-level labels, and clearly scoped counts.
+Codes supplied free-text responses into an explicit category scheme with traceable excerpts, item-level labels, and clearly scoped counts. Use when applying qualitative categories and reporting scoped counts. Returns the codebook, coded records or a disclosed preview, counts with denominators, ambiguous cases, and coverage.
 
 ## Instruction
 

@@ -6,7 +6,7 @@
 
 ## Description
 
-Drafts procurement briefs and supplier response questions from supplied purchasing requirements.
+Drafts procurement briefs and supplier response questions from supplied purchasing requirements. Use when purchasing requirements need a structured sourcing brief.
 
 ## Instruction
 

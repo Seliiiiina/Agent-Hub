@@ -6,7 +6,7 @@
 
 ## Description
 
-Turns supplied resolution records and practical notes into source-grounded how-to or troubleshooting article drafts for reuse.
+Turns supplied resolution records and practical notes into source-grounded how-to or troubleshooting article drafts for reuse. Use when supplied resolution records need reusable practical guidance. Returns a clearly labeled draft with source references, unresolved questions, and explicit assumptions.
 
 ## Instruction
 

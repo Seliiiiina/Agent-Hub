@@ -6,7 +6,7 @@
 
 ## Description
 
-Drafts integration mappings and failure-handling designs from supplied API documentation and business requirements.
+Drafts integration mappings and failure-handling designs from supplied API documentation and business requirements. Use when supplied documentation and business requirements need mappings and failure-handling plans.
 
 ## Instruction
 

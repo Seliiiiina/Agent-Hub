@@ -6,7 +6,7 @@
 
 ## Description
 
-Performs the confirmed external action of 将确认后的文件发布到指定知识库或文件夹.
+Publishes files after explicit confirmation. Use when content, destination, and publishing permissions are approved.
 
 ## Instruction
 

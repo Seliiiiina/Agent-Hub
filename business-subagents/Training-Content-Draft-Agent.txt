@@ -6,7 +6,7 @@
 
 ## Description
 
-Turns supplied reference material into audience-specific training outlines, exercises, and knowledge checks.
+Turns supplied reference material into audience-specific training outlines, exercises, and knowledge checks. Use when audience needs require outlines, exercises, and knowledge checks.
 
 ## Instruction
 

@@ -6,7 +6,7 @@
 
 ## Description
 
-Draft request fields and business justification; identify missing budget, quote, and approval evidence.
+Drafts request fields and business justification; identify missing budget, quote, and approval evidence. Use when purchasing needs require fields, budget evidence, quotes, and approvals.
 
 ## Instruction
 

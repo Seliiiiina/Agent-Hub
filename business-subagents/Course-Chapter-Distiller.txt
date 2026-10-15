@@ -6,7 +6,7 @@
 
 ## Description
 
-Turns an accessible AI course chapter into a short, beginner-friendly lesson with key concepts, examples, and references for returning to the original material.
+Turns an accessible AI course chapter into a short, beginner-friendly lesson with key concepts, examples, and references for returning to the original material. Use when learners need key concepts, examples, and source references. Returns a ready-to-present micro-lesson, source references, limitations of the compression, and next-study guidance.
 
 ## Instruction
 

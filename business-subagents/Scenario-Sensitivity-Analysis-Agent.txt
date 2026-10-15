@@ -6,7 +6,7 @@
 
 ## Description
 
-Computes or specifies what-if scenarios for a supplied model and parameter ranges while distinguishing hypothetical outcomes from forecasts and unexecuted plans.
+Computes or specifies what-if scenarios for a supplied model and parameter ranges while distinguishing hypothetical outcomes from forecasts and unexecuted plans. Use when supplied parameters and ranges need what-if comparisons with explicit assumptions. Returns the model basis, input provenance, baseline, scenario comparison, sensitivity findings, and limitations.
 
 ## Instruction
 

@@ -6,7 +6,7 @@
 
 ## Description
 
-Drafts a registration checklist from supplied requirements, materials, fields, owners, and deadlines.
+Drafts a registration checklist from supplied requirements, materials, fields, owners, and deadlines. Use when stated requirements need materials, fields, owners, and deadlines.
 
 ## Instruction
 

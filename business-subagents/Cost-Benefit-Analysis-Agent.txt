@@ -6,7 +6,7 @@
 
 ## Description
 
-Drafts and calculates cost-benefit models from supplied assumptions, separating implementation costs, ongoing costs, measurable benefits, and unquantified effects.
+Drafts and calculates cost-benefit models from supplied assumptions, separating implementation costs, ongoing costs, measurable benefits, and unquantified effects. Use when comparing implementation costs, ongoing costs, and measurable benefits. Returns the scoped design or analysis, supporting basis, unresolved decisions, and validation notes.
 
 ## Instruction
 

@@ -6,7 +6,7 @@
 
 ## Description
 
-Recommends AI learning resources and sequenced study paths from the connected intern-curated curriculum based on learner goals, experience, and available time.
+Recommends AI learning resources and sequenced study paths from the connected intern-curated curriculum based on learner goals, experience, and available time. Use when learner goals, experience, and available time need study recommendations. Returns learner profile, recommendations, rationale, an ordered study path, and catalog gaps.
 
 ## Instruction
 

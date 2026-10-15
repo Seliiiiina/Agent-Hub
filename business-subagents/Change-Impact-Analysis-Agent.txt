@@ -6,7 +6,7 @@
 
 ## Description
 
-Compares a supplied baseline and proposed change to draft an evidence-linked map of affected processes, roles, documents, and dependencies.
+Compares a supplied baseline and proposed change to draft an evidence-linked map of affected processes, roles, documents, and dependencies. Use when comparing a baseline with a proposed business change. Returns a clearly labeled draft with source references, unresolved questions, and explicit assumptions.
 
 ## Instruction
 

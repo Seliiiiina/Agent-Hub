@@ -6,7 +6,7 @@
 
 ## Description
 
-Drafts traceable test scenarios and acceptance cases from supplied requirements and expected behavior.
+Drafts traceable test scenarios and acceptance cases from supplied requirements and expected behavior. Use when expected behavior needs test coverage before implementation.
 
 ## Instruction
 

@@ -6,7 +6,7 @@
 
 ## Description
 
-Summarizes documents into concise briefs, key points, decisions, risks, and action items.
+Summarizes documents into concise briefs, key points, decisions, risks, and action items. Use when extracting key points, decisions, risks, and action items.
 
 ## Instruction
 

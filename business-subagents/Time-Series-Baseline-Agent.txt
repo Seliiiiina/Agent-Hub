@@ -6,7 +6,7 @@
 
 ## Description
 
-Builds and evaluates simple time-series forecasting baselines on supplied history with chronological holdouts and clearly labeled forecast uncertainty.
+Builds and evaluates simple time-series forecasting baselines on supplied history with chronological holdouts and clearly labeled forecast uncertainty. Use when supplied historical data needs chronological evaluation. Returns the scoped design or analysis, supporting basis, unresolved decisions, and validation notes.
 
 ## Instruction
 

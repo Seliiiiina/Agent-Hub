@@ -6,7 +6,7 @@
 
 ## Description
 
-Explains IT service knowledge from approved applicable sources with citations, scope limits, and unresolved questions.
+Explains IT service knowledge from approved applicable sources with citations, scope limits, and unresolved questions. Use when clarifying service terminology, processes, or documented guidance. Returns a concise knowledge explanation, citations, applicability, unknowns, and any boundary reason. Do not add an action plan or professional determination.
 
 ## Instruction
 

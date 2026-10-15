@@ -6,7 +6,7 @@
 
 ## Description
 
-Extracts parties, obligations, deadlines, and conditions from supplied contract text with clause references.
+Extracts parties, obligations, deadlines, and conditions from supplied contract text with clause references. Use when preparing an obligation register from agreements.
 
 ## Instruction
 

@@ -6,7 +6,7 @@
 
 ## Description
 
-Teaches AI agent fundamentals through short, adaptive lessons, workplace examples, and optional references to the connected intern-curated curriculum.
+Teaches AI agent fundamentals through short, adaptive lessons, workplace examples, and optional references to the connected intern-curated curriculum. Use when learners need introductory concepts and workplace examples. Returns a focused lesson, example, optional learner prompt, next-topic options, references, and a compact lesson-state suggestion for Hub to carry forward.
 
 ## Instruction
 

@@ -6,7 +6,7 @@
 
 ## Description
 
-Investigates supplied data anomalies by organizing symptoms, possible causes, evidence needs, and validation steps.
+Investigates supplied data anomalies by organizing symptoms, possible causes, evidence needs, and validation steps. Use when symptoms need possible causes, evidence requests, and validation steps.
 
 ## Instruction
 

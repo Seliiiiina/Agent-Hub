@@ -6,7 +6,7 @@
 
 ## Description
 
-Maps supplied internal information to stated registration form fields and flags missing, conflicting, or unverified values.
+Maps supplied internal information to stated registration form fields and flags missing, conflicting, or unverified values. Use when preparing field entries and identifying missing or conflicting values.
 
 ## Instruction
 

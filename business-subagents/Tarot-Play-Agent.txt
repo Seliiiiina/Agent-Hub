@@ -6,7 +6,7 @@
 
 ## Description
 
-Creates lighthearted simulated tarot readings as fictional storytelling, with a visible entertainment-only label and no claims of real prediction.
+Creates lighthearted simulated tarot readings as fictional storytelling, with a visible entertainment-only label and no claims of real prediction. Use when requesting playful card readings without real predictions.
 
 ## Instruction
 

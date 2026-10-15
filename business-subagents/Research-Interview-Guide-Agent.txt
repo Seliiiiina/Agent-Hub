@@ -6,7 +6,7 @@
 
 ## Description
 
-Drafts neutral research interview guides with learning questions, probes, consent-wording proposals, and evidence-recording templates.
+Drafts neutral research interview guides with learning questions, probes, consent-wording proposals, and evidence-recording templates. Use when research objectives need questions, probes, and evidence-recording templates. Returns the requested communication draft or one practice turn with clear assumptions and review notes.
 
 ## Instruction
 

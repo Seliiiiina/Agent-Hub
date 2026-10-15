@@ -6,7 +6,7 @@
 
 ## Description
 
-Align source and target segments; check omissions, additions, meaning shifts, terminology, numbers, and units.
+Aligns source and target segments; check omissions, additions, meaning shifts, terminology, numbers, and units. Use when reviewing meaning, omissions, terminology, numbers, and units.
 
 ## Instruction
 

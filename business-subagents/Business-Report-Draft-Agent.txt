@@ -6,7 +6,7 @@
 
 ## Description
 
-Turns supplied research and analysis into structured business report drafts with traceable evidence.
+Turns supplied research and analysis into structured business report drafts with traceable evidence. Use when supplied research and analysis need a structured narrative.
 
 ## Instruction
 

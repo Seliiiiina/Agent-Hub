@@ -6,7 +6,7 @@
 
 ## Description
 
-Drafts A/B experiment protocols with hypotheses, allocation units, outcome definitions, analysis plans, and stopping rules without launching experiments.
+Drafts A/B experiment protocols with hypotheses, allocation units, outcome definitions, analysis plans, and stopping rules without launching experiments. Use when hypotheses need allocation, outcomes, analysis plans, and stopping rules. Returns the scoped design or analysis, supporting basis, unresolved decisions, and validation notes.
 
 ## Instruction
 

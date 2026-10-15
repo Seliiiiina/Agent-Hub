@@ -6,7 +6,7 @@
 
 ## Description
 
-Compares supplied license or registration categories by scope, restrictions, maintenance duties, and evidence requirements.
+Compares supplied license or registration categories by scope, restrictions, maintenance duties, and evidence requirements. Use when evaluating restrictions, maintenance duties, and evidence requirements.
 
 ## Instruction
 

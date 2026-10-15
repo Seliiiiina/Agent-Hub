@@ -6,7 +6,7 @@
 
 ## Description
 
-Checks provided datasets for missing values, duplicates, inconsistent formats, and rule violations before analysis.
+Checks provided datasets for missing values, duplicates, inconsistent formats, and rule violations before analysis. Use when checking missing values, duplicates, formats, and rules before analysis.
 
 ## Instruction
 

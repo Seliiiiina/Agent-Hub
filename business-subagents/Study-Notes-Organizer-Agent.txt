@@ -6,7 +6,7 @@
 
 ## Description
 
-Organizes supplied learning notes into a traceable structure of concepts, examples, questions, and review items.
+Organizes supplied learning notes into a traceable structure of concepts, examples, questions, and review items. Use when supplied learning material needs concepts, examples, questions, and review items.
 
 ## Instruction
 

@@ -6,7 +6,7 @@
 
 ## Description
 
-Transforms supplied tabular data into a derived analysis-ready table using explicit reshape or join rules while preserving source data and documenting validation checks.
+Transforms supplied tabular data into a derived analysis-ready table using explicit reshape or join rules while preserving source data and documenting validation checks. Use when explicit pivot, unpivot, or join rules are available. Returns a derived table or clearly scoped preview, transformation log, reconciliation checks, and unresolved issues.
 
 ## Instruction
 

@@ -6,7 +6,7 @@
 
 ## Description
 
-Assesses supplied inventory and demand data to recommend replenishment options under stated policies.
+Assesses supplied inventory and demand data to recommend replenishment options under stated policies. Use when supplied stock, demand, and policy data need purchasing recommendations.
 
 ## Instruction
 

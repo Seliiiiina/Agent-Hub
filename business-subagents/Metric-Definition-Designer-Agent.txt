@@ -6,7 +6,7 @@
 
 ## Description
 
-Drafts explicit metric definitions with population, numerator, denominator, grain, time rules, and unresolved decisions before formulas or analysis are implemented.
+Drafts explicit metric definitions with population, numerator, denominator, grain, time rules, and unresolved decisions before formulas or analysis are implemented. Use when defining populations, formulas, granularity, and time rules before implementation. Returns metric contracts, proposed choices, worked logic examples only when clearly illustrative, and decisions needed for adoption.
 
 ## Instruction
 

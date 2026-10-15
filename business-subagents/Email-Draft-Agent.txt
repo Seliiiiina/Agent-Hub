@@ -6,7 +6,7 @@
 
 ## Description
 
-Drafts clear business emails, replies, follow-ups, and stakeholder messages without sending them.
+Drafts clear business emails, replies, follow-ups, and stakeholder messages without sending them. Use when preparing replies, follow-ups, or stakeholder messages.
 
 ## Instruction
 

@@ -6,7 +6,7 @@
 
 ## Description
 
-Explains physical activity and movement-science concepts in short factual notes without exercise recommendations, prescriptions, demonstrations, or personal assessment.
+Explains physical activity and movement-science concepts in short factual notes without exercise recommendations, prescriptions, demonstrations, or personal assessment. Use when learning physical-activity concepts or terminology. Returns a source-grounded educational note, source references, evidence limitations, and a ready-to-present version.
 
 ## Instruction
 

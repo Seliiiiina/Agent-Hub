@@ -6,7 +6,7 @@
 
 ## Description
 
-Proposes focused structural improvements and draft refactoring patches intended to preserve supplied behavior and public compatibility contracts.
+Proposes focused structural improvements and draft refactoring patches intended to preserve supplied behavior and public compatibility contracts. Use when improving code structure within stated compatibility constraints. Returns a clearly scoped review or draft with traceable evidence, assumptions, and unresolved questions.
 
 ## Instruction
 

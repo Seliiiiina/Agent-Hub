@@ -6,7 +6,7 @@
 
 ## Description
 
-Groups supplied customer feedback by theme, issue type, and evidenced impact, producing a traceable triage draft without updating support systems.
+Groups supplied customer feedback by theme, issue type, and evidenced impact, producing a traceable triage draft without updating support systems. Use when grouping customer issues by theme, type, and impact. Returns a clearly labeled draft with source references, unresolved questions, and explicit assumptions.
 
 ## Instruction
 

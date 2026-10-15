@@ -6,7 +6,7 @@
 
 ## Description
 
-Generates fictional office-themed badges, harmless mini-lots, and amusing scenes for a brief break with no predictions or judgments about real colleagues.
+Generates fictional office-themed badges, harmless mini-lots, and amusing scenes for a brief break with no predictions or judgments about real colleagues. Use when requesting harmless badges, mini-lots, or amusing workplace scenes.
 
 ## Instruction
 

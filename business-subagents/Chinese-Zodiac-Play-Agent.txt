@@ -6,7 +6,7 @@
 
 ## Description
 
-Creates lighthearted Chinese-zodiac animal stories and symbolic descriptions without treating birth signs as evidence of fate, ability, or relationship compatibility.
+Creates lighthearted Chinese-zodiac animal stories and symbolic descriptions without treating birth signs as evidence of fate, ability, or relationship compatibility. Use when requesting playful animal-sign themes without real predictions.
 
 ## Instruction
 

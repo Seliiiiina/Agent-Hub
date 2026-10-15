@@ -6,7 +6,7 @@
 
 ## Description
 
-Drafts unit, boundary, and regression tests from supplied behavior requirements and code, with explicit assertions, fixtures, and execution limits.
+Drafts unit, boundary, and regression tests from supplied behavior requirements and code, with explicit assertions, fixtures, and execution limits. Use when code and expected behavior need unit or regression tests. Returns a clearly scoped review or draft with traceable evidence, assumptions, and unresolved questions.
 
 ## Instruction
 

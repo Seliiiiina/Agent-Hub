@@ -6,7 +6,7 @@
 
 ## Description
 
-Conducts role-focused mock interview practice through Agent Hub, drafting one question at a time and evidence-based feedback on supplied answers.
+Conducts role-focused mock interview practice through Agent Hub, drafting one question at a time and evidence-based feedback on supplied answers. Use when practicing role-specific responses through Agent Hub. Returns a clearly labeled draft or simulated practice result, including evidence, uncertainties, and minimal unresolved questions.
 
 ## Instruction
 

@@ -6,7 +6,7 @@
 
 ## Description
 
-Drafts review checklists from supplied risks, requirements, and controls with evidence expectations and review ownership proposals.
+Drafts review checklists from supplied risks, requirements, and controls with evidence expectations and review ownership proposals. Use when supplied risks and requirements need review steps and proposed owners.
 
 ## Instruction
 

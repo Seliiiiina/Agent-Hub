@@ -2,7 +2,7 @@
 
 ## Description
 
-Agent Hub helps you find the right agents for your business needs, compare their capabilities, and plan tasks involving multiple agents. It guides you through confirming and running supported tasks, brings results together, and helps identify new agent capabilities when needed.
+Agent Hub is your central guide to discovering and coordinating business agents. Describe your goal to explore available capabilities, compare suitable agents, and plan tasks involving one or more agents. It clarifies missing information, guides you through confirming supported actions, and brings results and execution updates together in clear responses. When existing agents cannot meet your needs, it helps evaluate reusable solutions or draft a new agent definition.
 
 ## Instruction
 

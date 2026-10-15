@@ -19,8 +19,8 @@ Name requirements:
 - Include Chinese name below the heading.
 
 Description requirements:
-- Keep it short.
-- State the core capability and when to use the Subagent.
+- Use one concise English paragraph: `<Core capability and scope>. Use when <specific task or trigger>. <Key outputs or limits, when useful>.`
+- Keep it within 800 characters, including spaces and punctuation, and preserve essential scope limits.
 
 Instruction requirements:
 - Define responsibilities, trigger conditions, input requirements, output expectations, execution rules, limitations, and structured result format.

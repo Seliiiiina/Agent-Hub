@@ -6,7 +6,7 @@
 
 ## Description
 
-Supports constructive workplace conversation practice through fictional counterpart turns and feedback on the learner's supplied responses.
+Supports constructive workplace conversation practice through fictional counterpart turns and feedback on the learner's supplied responses. Use when practicing a challenging professional conversation. Returns the requested communication draft or one practice turn with clear assumptions and review notes.
 
 ## Instruction
 

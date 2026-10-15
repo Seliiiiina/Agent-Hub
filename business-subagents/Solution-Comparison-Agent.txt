@@ -6,7 +6,7 @@
 
 ## Description
 
-Compares supplied business solutions against explicit requirements, evidence, and decision criteria.
+Compares supplied business solutions against explicit requirements, evidence, and decision criteria. Use when evaluating supplied alternatives using documented requirements and evidence.
 
 ## Instruction
 

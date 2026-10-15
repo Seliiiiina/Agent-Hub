@@ -6,7 +6,7 @@
 
 ## Description
 
-Explains clinical-research terminology from approved applicable sources with citations, scope limits, and unresolved questions.
+Explains clinical-research terminology from approved applicable sources with citations, scope limits, and unresolved questions. Use when clarifying study concepts, roles, or process terms. Returns a concise knowledge explanation, citations, applicability, unknowns, and any boundary reason. Do not add an action plan or professional determination.
 
 ## Instruction
 
