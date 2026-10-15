@@ -173,3 +173,230 @@ Cross-agent checks:
 - Missing source access must not produce fabricated citations or unsupported health facts.
 - An unverified zodiac conversion near a calendar boundary must not be presented as a certain lookup.
 - Explicit immediate danger must reach Hub handling rather than a quiz, fun reading, or routine fact.
+
+## Office Collaboration and Continuity Agents
+
+The following definitions are listed in creation order. They are registered as `Active` with `Draft-only` permissions. Copy Name, Description, and Instruction into the target platform and check the required source inputs. Active registration does not verify deployment or tool connections. These definitions use supplied material and do not require external actions.
+
+| Definition | Required input |
+| --- | --- |
+| [Meeting Agenda Planner Agent](Meeting-Agenda-Planner-Agent.md) / 会议议程规划助手 | Meeting purpose, desired outcomes, total duration, and participant roles. Required topics, timing constraints, and supplied background material when available. |
+| [Customer Feedback Triage Agent](Customer-Feedback-Triage-Agent.md) / 客户反馈分流助手 | Feedback records or accessible excerpts, with source identifiers when available. Existing taxonomy, impact criteria, and routing rules when available; otherwise label any proposed scheme. |
+| [Knowledge Article Draft Agent](Knowledge-Article-Draft-Agent.md) / 知识库文章起草助手 | Source notes, resolution records, or documented steps, plus intended audience and article purpose. Applicable product/version, environment, validated outcomes, and review requirements when available. |
+| [Change Impact Analysis Agent](Change-Impact-Analysis-Agent.md) / 变更影响分析助手 | Baseline process, policy, or system description and a proposed change or revised version. Known roles, dependencies, relevant documents, scope boundaries, and effective dates when available. |
+| [Handover Brief Draft Agent](Handover-Brief-Draft-Agent.md) / 工作交接起草助手 | Work records or project notes, handover scope, and recipient role. As-of date, absence or transition period, documented owners, deadlines, and reference locations when available. |
+
+### Manual Acceptance Prompts
+
+These checks are pending platform validation; they are not claims of executed runtime tests.
+
+| Agent | Normal check | Missing-input or boundary check |
+| --- | --- | --- |
+| Meeting Agenda Planner Agent | Supply objectives, roles, and a 30-minute limit; verify the agenda totals 30 minutes. | Omit duration or roles: request the missing fields; do not claim invitations were sent. |
+| Customer Feedback Triage Agent | Supply 50 identified feedback records; check theme counts and evidence traceability. | Supply similar reports from unknown authors: do not infer unique customer counts or merge records silently. |
+| Knowledge Article Draft Agent | Supply incident notes and documented resolution; verify each procedural step has a source. | Provide only an error name: request resolution evidence instead of inventing a tested fix. |
+| Change Impact Analysis Agent | Supply old and proposed approval processes; verify impacts trace to explicit changes. | Supply only a new process: request a baseline and do not claim exhaustive dependency coverage. |
+| Handover Brief Draft Agent | Supply dated project notes and recipient role; verify open items retain owners and source dates. | Supply conflicting status notes without dates: flag uncertainty instead of declaring completion or acceptance. |
+
+## Code Assistance Agents
+
+The following definitions are listed in requested order and registered as `Active` with `Draft-only` permissions. Configure their Name, Description, and Instruction manually. They consume supplied code and documentation and return reviews or code drafts; they do not edit repositories or run commands. Registration does not verify platform deployment or runtime correctness.
+
+| Definition | Required input |
+| --- | --- |
+| [Code Review Agent](Code-Review-Agent.md) / 代码审查助手 | A diff or clearly identified changed code and the intended behavior. Relevant surrounding code, interfaces, language/runtime versions, and existing tests when needed to assess a suspected issue. |
+| [Test Case Draft Agent](Test-Case-Draft-Agent.md) / 测试用例起草助手 | Code under test and expected behavior or acceptance criteria. For executable test drafts: language, framework/version, module paths, and representative existing tests or conventions. For regression tests: the failing scenario and intended corrected behavior when available. |
+| [Code Refactoring Agent](Code-Refactoring-Agent.md) / 代码重构助手 | Current code, refactoring objective, and behavior or compatibility constraints. Relevant callers, public signatures, error behavior, side effects, runtime versions, and existing tests when available. |
+| [API Integration Coding Agent](API-Integration-Coding-Agent.md) / API 对接编码助手 | Accessible API documentation or specification for the desired operations and the target language/runtime. Project HTTP library and version or permission to propose one, plus relevant code conventions. Documented API version, authentication scheme, pagination, rate limits, and error schemas when relevant; real credentials are not required. |
+
+### Suggested Handoffs
+
+- Code Review Agent identifies evidenced defects; Test Case Draft Agent can draft regression tests from the finding and intended behavior.
+- Code Refactoring Agent drafts a bounded change; Code Review Agent can review the proposed diff, and Test Case Draft Agent can draft behavior checks.
+- API Integration Coding Agent drafts a documented client; Test Case Draft Agent can draft mock-based checks without assuming live API validation.
+
+These are proposed handoffs through Agent Hub and the functional Agents. They do not authorize autonomous calls, file modification, command execution, or deployment. Do not describe drafted tests or patches as run or applied.
+
+### Manual Acceptance Prompts
+
+These checks are pending platform validation; they are not claims of executed runtime tests.
+
+| Agent | Normal check | Missing-input or boundary check |
+| --- | --- | --- |
+| Code Review Agent | Supply a diff with an off-by-one error and relevant callers; verify the finding explains its trigger and location. | Supply incomplete context or a clean diff: request only blocking context and do not invent defects or claim merge approval. |
+| Test Case Draft Agent | Supply a money function, rounding rules, and test conventions; check exact assertions at rounding boundaries. | Omit rounding rules or framework details: ask for essential information or return a clearly scoped case matrix without claiming passing tests. |
+| Code Refactoring Agent | Supply repeated code, exact files, and API constraints; check that extraction preserves mutation and error behavior. | Request a refactor that changes a public signature: flag the compatibility conflict instead of claiming equivalence. |
+| API Integration Coding Agent | Supply a versioned API spec and Python project conventions; verify paths, schemas, and auth placeholders trace to documentation. | Supply an inaccessible URL or omit auth and schemas: request excerpts, never invent endpoints or claim a successful live request. |
+
+## Decision Records and Interview Practice Agents
+
+These definitions are registered as `Active` with `Draft-only` permissions. Configure Name, Description, and Instruction manually. Active registration describes discovery readiness, not deployment or connected data sources.
+
+| Definition | Required input |
+| --- | --- |
+| [Decision Record Draft Agent](Decision-Record-Draft-Agent.md) / 决策记录助手 | Decision topic and source notes, discussion records, or an explicit proposed decision. Decision state, date, participants, options, rationale, and review conditions when available. |
+| [Interview Practice Agent](Interview-Practice-Agent.md) / 面试陪练助手 | Target role or job description and desired practice mode: interactive questions, answer review, or session summary. For interactive practice, use one-question-at-a-time mode unless another format is explicitly supplied. For answer review, the original question and candidate answer; for summaries, the relevant practice transcript. Experience level, interview type, language, and optional redacted background when available. |
+
+For decision records, preserve the distinction between proposed and documented decisions; a generated record does not establish approval or consensus.
+
+For interview practice, Hub presents `learner_payload`, obtains the learner answer, and returns the original question, criteria, and relevant transcript on the next call. Keep `upstream_only` model-answer outlines hidden until an attempt or explicit answer request. Context suggestions are not durable storage. Each call completes only one practice step unless a summary or batch format was explicitly requested.
+
+### Manual Acceptance Prompts
+
+These checks are pending platform validation; they are not claims of executed runtime tests.
+
+| Agent | Normal check | Missing-input or boundary check |
+| --- | --- | --- |
+| Decision Record Draft Agent | Supply notes explicitly selecting option B and its rationale; verify the record preserves evidence and any disagreement. | Supply an undecided discussion without reasons: retain unclear state and missing rationale instead of inventing agreement. |
+| Interview Practice Agent | Supply a product-manager role and request interactive practice; verify one question, then feedback grounded in the next supplied answer. | Submit an answer without its original question: request context; never invent achievements, past attempts, or an offer probability. |
+
+## Retrospective, Release Notes, and Prompt Evaluation Agents
+
+These definitions are listed in requested order and registered as `Active` with `Draft-only` permissions. Configure Name, Description, and Instruction manually. Registration does not verify deployment or tool connections. They use supplied evidence and return draft artifacts without implementing improvements, publishing releases, or running model evaluations.
+
+| Definition | Required input |
+| --- | --- |
+| [Retrospective Facilitator Agent](Retrospective-Facilitator-Agent.md) / 复盘引导助手 | Review scope or work period, intended goals, and actual outcomes or source records. Dated events, constraints, participant observations, and success metrics when available. |
+| [Release Notes Draft Agent](Release-Notes-Draft-Agent.md) / 版本说明助手 | Release scope or version, target audience, and actual change records or descriptions. Release state/date, compatibility information, migration instructions, and known issues when available. |
+| [Prompt Evaluation Agent](Prompt-Evaluation-Agent.md) / 提示词评估助手 | The actual prompt and its intended task or success criteria. Intended inputs, output contract, instruction layers, tool permissions, and model context when relevant. For evaluation of observed behavior: actual input/output samples with variant and environment identifiers when available. |
+
+Keep retrospective causes labeled as hypotheses unless established by evidence. Keep planned releases distinct from shipped changes. Prompt static review and evaluation-case design do not establish measured model performance; scoring requires supplied actual outputs and an explicit rubric.
+
+### Manual Acceptance Prompts
+
+These checks are pending platform validation; they are not claims of executed runtime tests.
+
+| Agent | Normal check | Missing-input or boundary check |
+| --- | --- | --- |
+| Retrospective Facilitator Agent | Supply project goals, actual delivery dates, and dated notes; verify gaps and improvement experiments trace to evidence. | Supply only a claim that someone caused a delay: request supporting outcomes and records, and do not assign blame or declare a proven root cause. |
+| Release Notes Draft Agent | Supply a version, audience, and scoped changes including a breaking change; verify traceability and prominent upgrade requirements. | Supply vague commits without release evidence: flag uncertain meaning and release state rather than inventing shipped features or a successful deployment. |
+| Prompt Evaluation Agent | Supply a customer-service prompt and response requirements; verify findings and evaluation cases map to explicit criteria. | Supply two prompts without observed outputs: return a comparison plan and static risks, not benchmark results or a claimed winning variant. |
+
+## Multi-Step Case Proposals — Pending Confirmation
+
+The following cases are proposed compositions of existing Agents. They are written for review only and are not approved workflows. Agent Hub must obtain confirmation of the selected case, inputs, scope, and permission at the start of execution; each step remains subject to its own input and confirmation rules. Agents return results upstream and do not invoke one another autonomously.
+
+### Case 1: Customer Feedback to Product Improvement Brief
+
+| Step | Agent | Action | Output | Confirmation |
+| --- | --- | --- | --- | --- |
+| 1 | Customer Feedback Triage Agent | Group supplied feedback, preserve source records, and flag recurring themes. | Classified feedback and theme summary | Confirm case and feedback scope |
+| 2 | Data Quality Review Agent | Check completeness, duplicates, and consistency of the feedback extract. | Quality findings and analysis-readiness note | Confirm use of the supplied dataset |
+| 3 | Requirements Analysis Agent | Convert validated themes into traceable requirements and acceptance criteria. | Requirements draft and decision questions | Confirm which themes become requirements |
+| 4 | Change Impact Analysis Agent | Map proposed product or process changes to affected areas and dependencies. | Impact map and validation questions | Confirm proposed change boundary |
+| 5 | Business Report Draft Agent | Assemble an evidence-linked improvement brief for human review. | Draft brief with findings and recommendations | Confirm draft audience and deliverable |
+
+This case is useful when raw feedback must become a reviewable improvement proposal. It does not establish customer prevalence, approve requirements, implement a change, or publish a report.
+
+### Case 2: API Change to Tested Integration Draft
+
+| Step | Agent | Action | Output | Confirmation |
+| --- | --- | --- | --- |
+| 1 | API Integration Coding Agent | Extract the versioned API contract and draft a client wrapper. | Client code draft, mappings, and contract gaps | Confirm API scope and target environment |
+| 2 | Code Review Agent | Review the proposed code or diff for logic, error handling, and compatibility risks. | Prioritized findings | Confirm review scope and baseline |
+| 3 | Test Case Draft Agent | Draft unit, mock, and regression cases from the contract and review findings. | Test matrix or test code draft | Confirm framework and behavior expectations |
+| 4 | Code Refactoring Agent | Propose bounded structural improvements only where maintainability issues are evidenced. | Refactoring proposal or patch draft | Confirm refactoring scope |
+| 5 | Release Notes Draft Agent | Summarize documented user-facing changes and upgrade requirements. | Release notes draft | Confirm release audience and release state |
+
+This case produces a coordinated code and communication package. It does not call the API, run tests, apply patches, merge code, deploy, or prove that a release shipped.
+
+### Case 3: Project Review to Decision and Handover Package
+
+| Step | Agent | Action | Output | Confirmation |
+| --- | --- | --- | --- |
+| 1 | Retrospective Facilitator Agent | Compare project goals with outcomes and identify evidence-backed hypotheses. | Retrospective findings and improvement experiments | Confirm review period and source records |
+| 2 | Decision Record Draft Agent | Record choices, options, rationale, disagreements, and review triggers. | Decision record draft | Confirm decision status and participants |
+| 3 | Operational Risk Assessment Agent | Assess supplied process or plan risks and proposed mitigations. | Risk assessment draft | Confirm risk scope and evidence |
+| 4 | Project Plan Draft Agent | Turn confirmed next steps into milestones, dependencies, and resource assumptions. | Project plan draft | Confirm planning horizon and constraints |
+| 5 | Handover Brief Draft Agent | Prepare continuity notes for the next owner or team. | Handover brief draft | Confirm recipient role and as-of date |
+
+This case is useful after a project milestone or transition. It does not assign people, accept risks, approve decisions, update project systems, or certify handover completion.
+
+### Confirmation Record
+
+Before any proposed case is executed, Agent Hub should capture:
+
+- Case name and selected steps.
+- User goal, source materials, scope boundaries, and expected deliverables.
+- Which assumptions and missing fields are accepted for the current run.
+- Permission scope and any external action or data-modification boundary.
+- Whether the user wants a draft-only run or an actual authorized execution where tools are configured.
+
+Until the user confirms a case, these proposals remain design material and must not be treated as an execution request.
+
+## Periodic Report Agents
+
+These four Agents are specialized by reporting period. They are registered as `Active` with `Draft-only` permissions and require supplied records for the stated period. They do not retrieve timesheets or dashboards, infer performance, send reports, or publish official statements.
+
+| Definition | Reporting period | Main output |
+| --- | --- | --- |
+| [Daily Report Draft Agent](Daily-Report-Draft-Agent.md) / 日报起草助手 | One workday | Completed work, ongoing items, blockers, and next-day plan |
+| [Weekly Report Draft Agent](Weekly-Report-Draft-Agent.md) / 周报起草助手 | One stated week | Highlights, progress, risks, and next-week priorities |
+| [Monthly Report Draft Agent](Monthly-Report-Draft-Agent.md) / 月报起草助手 | One calendar or fiscal month | Milestones, metrics, trends, risks, and next-month priorities |
+| [Annual Report Draft Agent](Annual-Report-Draft-Agent.md) / 年报起草助手 | One calendar or fiscal year | Objectives, results, annual trends, lessons, and next-year priorities |
+
+Period boundaries, metric definitions, source references, and coverage limits must remain visible in every report. A generated draft is not an approved, audited, sent, or published report.
+
+## Learning and Knowledge Agents
+
+These definitions support planning, studying, practice, reading, and knowledge reuse. They are registered as `Active` with `Draft-only` permissions and require supplied learning material or catalog access where stated.
+
+| Definition | Main output |
+| --- | --- |
+| [Learning Path Planner Agent](Learning-Path-Planner-Agent.md) / 学习路径规划助手 | Staged learning plan, prerequisites, and checkpoints |
+| [Study Notes Organizer Agent](Study-Notes-Organizer-Agent.md) / 学习笔记整理助手 | Structured notes, concept map, examples, and review questions |
+| [Practice Exercise Draft Agent](Practice-Exercise-Draft-Agent.md) / 练习题起草助手 | Practice questions, scenarios, and scoped rubrics |
+| [Source Reading Guide Agent](Source-Reading-Guide-Agent.md) / 资料导读助手 | Reading order, prerequisites, terms, and guiding questions |
+| [Knowledge Base Article Agent](Knowledge-Base-Article-Agent.md) / 知识库文章助手 | Reusable source-grounded knowledge article draft |
+
+Suggested learning flow: Resource Recommender → Learning Path Planner → Course Chapter Distiller or Source Reading Guide → Study Notes Organizer → Practice Exercise Draft → Learning Checkpoint. These handoffs are proposals through Agent Hub; no Agent enrolls a learner, stores progress, or claims mastery automatically.
+
+## Compliance Registration Agents
+
+These eight Agents support registration preparation and review. They are registered as `Active`, but their permissions remain `Read-only` or `Draft-only`; none submits a registration, contacts an authority, signs a declaration, or provides legal certification.
+
+| Definition | Permission | Main output |
+| --- | --- | --- |
+| [Registration Applicability Agent](Registration-Applicability-Agent.md) / 注册适用性分析助手 | Read-only | Applicability signals and missing-fact questions |
+| [Registration Checklist Agent](Registration-Checklist-Agent.md) / 合规注册清单助手 | Draft-only | Requirements, materials, owners, and dependency checklist |
+| [Filing Calendar Agent](Filing-Calendar-Agent.md) / 申报日历助手 | Draft-only | Registration, renewal, and change-notice calendar draft |
+| [Registration Evidence Package Agent](Registration-Evidence-Package-Agent.md) / 注册证据包助手 | Draft-only | Source-indexed evidence package and gap list |
+| [Form Field Mapping Agent](Form-Field-Mapping-Agent.md) / 注册表单映射助手 | Draft-only | Field-by-field mapping and verification questions |
+| [Registration Readiness Review Agent](Registration-Readiness-Review-Agent.md) / 注册准备度审查助手 | Read-only | Completeness, consistency, and blocking-gap review |
+| [License Scope Comparison Agent](License-Scope-Comparison-Agent.md) / 许可范围比较助手 | Read-only | Scope, restriction, and maintenance-duty comparison |
+| [Renewal and Change Impact Agent](Renewal-Change-Impact-Agent.md) / 续期与变更影响助手 | Read-only | Potential renewal and notification impacts |
+
+Suggested handoff: Registration Applicability → Registration Checklist → Registration Evidence Package → Form Field Mapping → Registration Readiness Review. Filing Calendar and Renewal and Change Impact can be added when dates or organizational changes are in scope. This is a proposed review flow and does not replace qualified legal or regulatory review.
+
+## Compliance and Data Analytics Agents
+
+These definitions are registered as `Active` and are discoverable after manual platform configuration. Compliance agents organize evidence or draft checks; they do not certify compliance. Data agents define metrics and analysis plans or investigate supplied anomalies; they do not modify source data or claim causation without evidence.
+
+| Definition | Permission | Use for |
+| --- | --- | --- |
+| [Audit Evidence Organizer Agent](Audit-Evidence-Organizer-Agent.md) / 审计证据整理助手 | Read-only | Evidence inventories and requirement mappings |
+| [Policy Gap Analysis Agent](Policy-Gap-Analysis-Agent.md) / 政策差距分析助手 | Read-only | Policy and practice comparisons |
+| [Control Checklist Draft Agent](Control-Checklist-Draft-Agent.md) / 控制清单起草助手 | Draft-only | Review checklists and evidence expectations |
+| [KPI Definition Agent](KPI-Definition-Agent.md) / 指标口径助手 | Draft-only | Metric formulas, sources, and boundaries |
+| [Data Analysis Plan Agent](Data-Analysis-Plan-Agent.md) / 数据分析计划助手 | Draft-only | Analysis objectives, fields, and quality checks |
+| [Anomaly Investigation Agent](Anomaly-Investigation-Agent.md) / 数据异常调查助手 | Read-only | Anomaly scope, hypotheses, and validation steps |
+
+## Department Operations Agents
+
+The following 15 department-oriented Agents are registered as Active with bounded Read-only or Draft-only permissions. They use supplied records and do not submit, publish, approve, or modify external systems.
+
+- [Expense Policy Assistant Agent](Expense-Policy-Assistant-Agent.md) / 费用报销助手 — Data and Analytics, Read-only
+- [Procurement Request Agent](Procurement-Request-Agent.md) / 采购申请助手 — Business Operations, Draft-only
+- [Vendor Due Diligence Agent](Vendor-Due-Diligence-Agent.md) / 供应商尽调助手 — Compliance and Quality, Read-only
+- [Contract Clause Review Agent](Contract-Clause-Review-Agent.md) / 合同条款审阅助手 — Compliance and Quality, Read-only
+- [HR Policy Q&A Agent](HR-Policy-QA-Agent.md) / 人事政策问答助手 — Communication and Collaboration, Read-only
+- [Onboarding Plan Agent](Onboarding-Plan-Agent.md) / 入职计划助手 — Business Operations, Draft-only
+- [Offboarding Checklist Agent](Offboarding-Checklist-Agent.md) / 离职交接清单助手 — Business Operations, Draft-only
+- [IT Incident Triage Agent](IT-Incident-Triage-Agent.md) / IT 故障分流助手 — Development and Technology, Read-only
+- [Access Request Review Agent](Access-Request-Review-Agent.md) / 权限申请审查助手 — Compliance and Quality, Read-only
+- [Customer Success Review Agent](Customer-Success-Review-Agent.md) / 客户成功复盘助手 — Business Operations, Read-only
+- [Sales Call Summary Agent](Sales-Call-Summary-Agent.md) / 销售通话总结助手 — Communication and Collaboration, Draft-only
+- [Product Launch Readiness Agent](Product-Launch-Readiness-Agent.md) / 产品发布准备助手 — Business Operations, Read-only
+- [Incident Postmortem Agent](Incident-Postmortem-Agent.md) / 事故复盘助手 — Business Operations, Draft-only
+- [Accessible Content Review Agent](Accessible-Content-Review-Agent.md) / 内容无障碍审查助手 — Compliance and Quality, Read-only
+- [Translation QA Agent](Translation-QA-Agent.md) / 翻译质量检查助手 — Document and Content, Read-only
