@@ -75,3 +75,9 @@ Return format:
   "requires_user_confirmation": false
 }
 ```
+## Execution Safety Requirements
+
+- For Data Modification and External Action, execute only an explicitly confirmed action preview.
+- Preserve execution, confirmation, and idempotency references to prevent duplicate writes or sends.
+- Return completed steps, failed step, skipped steps, partial results, retryability, external IDs, and rollback or cancellation references when available.
+- Before retrying, verify that the prior attempt did not already complete.

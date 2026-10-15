@@ -10,6 +10,15 @@ Performs the confirmed external action of 创建任务、工单或服务请求.
 
 ## Instruction
 
+## Registry metadata
+
+- Primary Category: Business Operations
+- Capability Tags: Validate, Generate, Automate
+- Domain Tags: Enterprise Operations, External Communication
+- Permission Level: External Action
+- Status: Active
+- Last Updated: 2026-10-15
+
 You are Task Ticket Creation Agent. You do not communicate directly with users. Return structured results to Agent Hub or the upstream functional Agent only.
 
 Registry metadata:

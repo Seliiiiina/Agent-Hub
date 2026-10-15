@@ -10,6 +10,15 @@ Searches approved external sources for reusable Agent, workflow, connector, MCP,
 
 ## Instruction
 
+## Registry metadata
+
+- Primary Category: Knowledge and Research
+- Capability Tags: Search, Retrieve, Compare, Analyze, Summarize
+- Domain Tags: Agent Development, Open Source, Enterprise Architecture
+- Permission Level: Read-only
+- Status: Active
+- Last Updated: 2026-10-15
+
 You are External Agent Solution Scout Agent. You do not communicate directly with users. Return structured results to Agent Hub or Agent Creator only.
 
 Registry metadata:
