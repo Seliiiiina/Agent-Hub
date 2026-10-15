@@ -2,11 +2,11 @@
 
 ## Batch Scope
 
-This batch creates all 48 candidates remaining in the original expansion plan. After synchronizing collaborators' latest additions, it starts from 134 existing definitions and produces 182 registered Business Subagents. The original 60-candidate pool is now complete: 12 were previously implemented and 48 are implemented here.
+This batch originally created all 48 candidates remaining in the expansion plan, increasing the synchronized baseline from 134 to 182 Business Subagents. The first deduplication pass subsequently removed 10 redundant definitions across 9 capability groups, leaving 172 canonical definitions. The original 60-candidate pool remains fully covered: 12 were implemented earlier and 48 in this batch. Links below now point to the retained canonical definitions.
 
-All new entries use Active status as requested. Potentially overlapping capabilities, including those added by collaborators, are retained for a later human consolidation decision. No existing Agent was retired, renamed, overwritten, or removed.
+All retained entries use Active status as requested. Fully redundant capability entries were consolidated in [Agent Deduplication Review](Agent-Deduplication-Review.md); partially overlapping capabilities remain separate. Candidate counts describe the original creation batch, not the number of surviving new files.
 
-The original remaining candidate 变更影响分析 is implemented as Business Change Impact Analysis Agent (业务变更影响分析助手) to preserve the collaborator's existing Change Impact Analysis Agent without a filename or canonical-name collision. Both definitions remain registered.
+The original candidates 变更影响分析, 项目复盘, and 会议议程设计 are now covered by Change Impact Analysis Agent, Retrospective Facilitator Agent, and Meeting Agenda Planner Agent respectively. Their former batch definitions were removed, and relevant details were preserved in these canonical definitions.
 
 Definitions and Registry metadata are ready for manual configuration; platform deployment, knowledge connections, code runtime access, and end-to-end acceptance remain separate activities. Agent Registry is the metadata source of truth.
 
@@ -54,9 +54,9 @@ Definitions and Registry metadata are ready for manual configuration; platform d
 | 流程瓶颈诊断 | [Process Bottleneck Agent](business-subagents/Process-Bottleneck-Agent.md) / 流程瓶颈诊断助手 | Actual data; enabled interpreter for nontrivial calculations; honest plan-only fallback. |
 | 决策标准设计 | [Decision Criteria Designer Agent](business-subagents/Decision-Criteria-Designer-Agent.md) / 决策标准设计助手 | Readable supplied material; text-only drafting/review with source coverage. |
 | 业务假设验证方案 | [Business Hypothesis Validation Agent](business-subagents/Business-Hypothesis-Validation-Agent.md) / 业务假设验证方案助手 | Readable supplied material; text-only drafting/review with source coverage. |
-| 变更影响分析 | [Business Change Impact Analysis Agent](business-subagents/Business-Change-Impact-Analysis-Agent.md) / 业务变更影响分析助手 | Readable supplied material; text-only drafting/review with source coverage. |
+| 变更影响分析 | [Change Impact Analysis Agent](business-subagents/Change-Impact-Analysis-Agent.md) / 变更影响分析助手 | Readable supplied material; text-only drafting/review with source coverage. |
 | 问题树构建 | [Problem Tree Agent](business-subagents/Problem-Tree-Agent.md) / 问题树构建助手 | Readable supplied material; text-only drafting/review with source coverage. |
-| 项目复盘 | [Project Retrospective Agent](business-subagents/Project-Retrospective-Agent.md) / 项目复盘助手 | Readable supplied material; text-only drafting/review with source coverage. |
+| 项目复盘 | [Retrospective Facilitator Agent](business-subagents/Retrospective-Facilitator-Agent.md) / 复盘引导助手 | Readable supplied material; text-only drafting/review with source coverage. |
 | RACI职责矩阵 | [RACI Matrix Agent](business-subagents/RACI-Matrix-Agent.md) / RACI职责矩阵助手 | Readable supplied material; text-only drafting/review with source coverage. |
 | 工作量估算 | [Workload Estimation Agent](business-subagents/Workload-Estimation-Agent.md) / 工作量估算助手 | Actual data; enabled interpreter for nontrivial calculations; honest plan-only fallback. |
 | 客户旅程分析 | [Customer Journey Agent](business-subagents/Customer-Journey-Agent.md) / 客户旅程分析助手 | Readable supplied material; text-only drafting/review with source coverage. |
@@ -65,7 +65,7 @@ Definitions and Registry metadata are ready for manual configuration; platform d
 
 | Original remaining candidate | Definition | Runtime requirement |
 | --- | --- | --- |
-| 会议议程设计 | [Meeting Agenda Agent](business-subagents/Meeting-Agenda-Agent.md) / 会议议程设计助手 | Readable supplied material; text-only drafting/review with source coverage. |
+| 会议议程设计 | [Meeting Agenda Planner Agent](business-subagents/Meeting-Agenda-Planner-Agent.md) / 会议议程规划助手 | Readable supplied material; text-only drafting/review with source coverage. |
 | 访谈提纲设计 | [Research Interview Guide Agent](business-subagents/Research-Interview-Guide-Agent.md) / 研究访谈提纲助手 | Readable supplied material; text-only drafting/review with source coverage. |
 | 利益相关方沟通地图 | [Stakeholder Communication Map Agent](business-subagents/Stakeholder-Communication-Map-Agent.md) / 利益相关方沟通地图助手 | Readable supplied material; text-only drafting/review with source coverage. |
 | 演讲排练反馈 | [Presentation Rehearsal Coach Agent](business-subagents/Presentation-Rehearsal-Coach-Agent.md) / 演讲排练反馈助手 | Actual learner attempt and Hub-carried context; one explicitly simulated turn. |
@@ -142,13 +142,13 @@ These are proposed acceptance checks, not reported Copilot Studio executions.
 | [Process Bottleneck Agent](business-subagents/Process-Bottleneck-Agent.md) | Supply case-level timestamps and check waiting versus processing time. | Incomplete logs must not produce precise throughput or savings claims. |
 | [Decision Criteria Designer Agent](business-subagents/Decision-Criteria-Designer-Agent.md) | Design gates and preferences for a supplied tool-selection objective. | No arbitrary official weights or option selection without evidence. |
 | [Business Hypothesis Validation Agent](business-subagents/Business-Hypothesis-Validation-Agent.md) | Turn a proposed user-need assumption into observable validation evidence. | Do not label a hypothesis validated before any evidence is supplied. |
-| [Business Change Impact Analysis Agent](business-subagents/Business-Change-Impact-Analysis-Agent.md) | Map a supplied process change to roles, data and controls. | Unknown dependencies remain gaps, not an asserted complete impact analysis. |
+| [Change Impact Analysis Agent](business-subagents/Change-Impact-Analysis-Agent.md) | Map a supplied process change to roles, data and controls. | Unknown dependencies remain gaps, not an asserted complete impact analysis. |
 | [Problem Tree Agent](business-subagents/Problem-Tree-Agent.md) | Decompose a supplied adoption problem into researchable subquestions. | Do not report a proposed causal branch as a verified cause. |
-| [Project Retrospective Agent](business-subagents/Project-Retrospective-Agent.md) | Review a supplied project timeline including a success and a missed goal. | Do not invent lessons, results, or blame from absent evidence. |
+| [Retrospective Facilitator Agent](business-subagents/Retrospective-Facilitator-Agent.md) | Review a supplied project timeline including a success and a missed goal. | Do not invent lessons, results, or blame from absent evidence. |
 | [RACI Matrix Agent](business-subagents/RACI-Matrix-Agent.md) | Map supplied roles and deliverables and surface missing accountability. | A proposal must not create real decision authority. |
 | [Workload Estimation Agent](business-subagents/Workload-Estimation-Agent.md) | Estimate provided task volumes using stated time and availability inputs. | No invented productivity, staffing savings, or guaranteed dates. |
 | [Customer Journey Agent](business-subagents/Customer-Journey-Agent.md) | Map supplied interview excerpts to actual touchpoints with references. | No fictional customer history or inferred private emotions presented as facts. |
-| [Meeting Agenda Agent](business-subagents/Meeting-Agenda-Agent.md) | Plan a 30-minute decision meeting and check time totals. | Do not imply participants agreed or a calendar event was created. |
+| [Meeting Agenda Planner Agent](business-subagents/Meeting-Agenda-Planner-Agent.md) | Plan a 30-minute decision meeting and check time totals. | Do not imply participants agreed or a calendar event was created. |
 | [Research Interview Guide Agent](business-subagents/Research-Interview-Guide-Agent.md) | Design a neutral guide to study colleagues' AI-tool experiences. | No invented interview answers or diagnostic/hiring evaluation. |
 | [Stakeholder Communication Map Agent](business-subagents/Stakeholder-Communication-Map-Agent.md) | Map supplied project roles to information needs and approval gates. | Do not infer named colleagues' attitudes or claim messages were sent. |
 | [Presentation Rehearsal Coach Agent](business-subagents/Presentation-Rehearsal-Coach-Agent.md) | Review a supplied talk transcript against audience and time goals. | No invented delivery observations or guaranteed applause. |
@@ -174,7 +174,7 @@ These are proposed acceptance checks, not reported Copilot Studio executions.
 - Research study: Sampling Design -> Questionnaire Design or Research Interview Guide -> separately collected supplied evidence -> Qualitative Text Coding -> Customer Feedback Analysis or Data Insight.
 - Experiment: AB Experiment Design -> separately run nonclinical experiment -> actual supplied results -> Experiment Results Assessment -> Business Report Draft.
 - Knowledge preparation: Glossary Builder -> Document Index or Knowledge Chunking Plan -> later configured retrieval -> supplied retrieval run -> RAG Retrieval Evaluation.
-- Organizational change: Business Change Impact Analysis -> Stakeholder Communication Map or Change Communication Plan -> Training Lesson Plan/Teaching Case Designer -> draft communication.
+- Organizational change: Change Impact Analysis -> Stakeholder Communication Map or Change Communication Plan -> Training Lesson Plan/Teaching Case Designer -> draft communication.
 - Presentation practice: supplied factual material -> Presentation Storyline -> Presentation Rehearsal Coach or Elevator Pitch Coach -> actual learner attempt -> focused feedback.
 
 These are optional compositions, not automatic execution chains. Finder matches needs, Workflow Builder plans complex dependencies, and Executor runs the confirmed scope. Collecting data, running a real experiment, building an index, or contacting people is not performed by these definitions.

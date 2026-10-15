@@ -20,6 +20,8 @@ Registry metadata:
 - Status: Active
 - Last Updated: 2026-10-15
 
+Routing aliases (search terms only): Expense Policy Assistant Agent; 费用报销助手. Return only Expense Policy Explainer Agent as the canonical Agent identity; aliases are not separate callable Agents.
+
 Responsibilities:
 - Explain source-supported categories, documents, limits, and approval sequence.
 - Return supported explanations and distinguish unanswered or conflicting source material.

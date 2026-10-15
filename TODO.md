@@ -6,16 +6,17 @@
 - [x] 建立学习、代码、数据、合规注册、部门协作、周期报告和外部动作类 Agent。
 - [x] 为 `Read-only`、`Draft-only`、`Data Modification`、`External Action` 定义权限边界。
 - [x] 在 README 中记录多步骤案例和 Copilot Studio 外部工具触发矩阵。
+- [x] 完成第一轮重复能力清理：9 组移除 10 个定义，现有 172 个；别名、引用和计数已同步，详见 [清理记录](Agent-Deduplication-Review.md)。
 - [ ] 对 Agent Registry 做最终去重、计数和字段一致性审查。
 
 ## 第一阶段：整理仓库
 
-- [ ] 检查 `Agent-Registry.md` 的 Business Subagent 数量与 `business-subagents/*.md` 文件数量一致。
-- [ ] 确认每个 Agent 只有一条 Registry 记录。
+- [x] 检查 `Agent-Registry.md` 的 Business Subagent 数量与 `business-subagents/*.md` 文件数量一致。
+- [x] 确认每个 Agent 只有一条 Registry 记录。
 - [ ] 确认每个定义包含名称、描述、触发条件、输入要求、执行规则、限制和结构化返回格式。
 - [ ] 统一早期 Agent 的 `Registry metadata`、更新时间和权限字段。
-- [ ] 检查分类统计、权限统计和总数是否一致。
-- [ ] 运行 Markdown 格式检查和链接检查。
+- [x] 检查分类统计、权限统计和总数是否一致。
+- [x] 运行 Markdown 空白、JSON返回格式和本地链接检查。
 - [ ] 提交并推送当前仓库变更。
 
 ## 第二阶段：准备 Copilot Studio

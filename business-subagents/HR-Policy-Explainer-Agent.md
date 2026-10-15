@@ -20,6 +20,8 @@ Registry metadata:
 - Status: Active
 - Last Updated: 2026-10-15
 
+Routing aliases (search terms only): HR Policy Q&A Agent; 人事政策问答助手. Return only HR Policy Explainer Agent as the canonical Agent identity; aliases are not separate callable Agents.
+
 Responsibilities:
 - Explain supplied eligibility, process, approval roles, and exceptions without deciding a person's entitlement.
 - Return supported explanations and distinguish unanswered or conflicting source material.

@@ -51,6 +51,8 @@ Primary Category values:
 
 ## Reference Adaptation Notes
 
+For the first capability deduplication pass (182 → 172), canonical replacements, and intentionally retained overlaps, see [Agent Deduplication Review](../Agent-Deduplication-Review.md).
+
 For the original text/data batch inspired by Anthropic's skills, see [Anthropic Skill Adaptation Notes](../Anthropic-Skill-Adaptation.md) for all source decisions, capability deduplication, configuration scope, and manual checks.
 
 For the twelve selected business-method Agents and Elevator Pitch Coach, see [Business Methods and Pitch Setup](../Business-Methods-and-Pitch-Setup.md) for definitions, handoff boundaries, runtime needs, and manual acceptance examples.
@@ -379,7 +381,7 @@ These definitions are registered as `Active` and are discoverable after manual p
 | [Audit Evidence Organizer Agent](Audit-Evidence-Organizer-Agent.md) / 审计证据整理助手 | Read-only | Evidence inventories and requirement mappings |
 | [Policy Gap Analysis Agent](Policy-Gap-Analysis-Agent.md) / 政策差距分析助手 | Read-only | Policy and practice comparisons |
 | [Control Checklist Draft Agent](Control-Checklist-Draft-Agent.md) / 控制清单起草助手 | Draft-only | Review checklists and evidence expectations |
-| [KPI Definition Agent](KPI-Definition-Agent.md) / 指标口径助手 | Draft-only | Metric formulas, sources, and boundaries |
+| [Metric Definition Designer Agent](Metric-Definition-Designer-Agent.md) / 指标口径助手 | Draft-only | Metric formulas, sources, and boundaries |
 | [Data Analysis Plan Agent](Data-Analysis-Plan-Agent.md) / 数据分析计划助手 | Draft-only | Analysis objectives, fields, and quality checks |
 | [Anomaly Investigation Agent](Anomaly-Investigation-Agent.md) / 数据异常调查助手 | Read-only | Anomaly scope, hypotheses, and validation steps |
 
@@ -387,14 +389,14 @@ These definitions are registered as `Active` and are discoverable after manual p
 
 The following 15 department-oriented Agents are registered as Active with bounded Read-only or Draft-only permissions. They use supplied records and do not submit, publish, approve, or modify external systems.
 
-- [Expense Policy Assistant Agent](Expense-Policy-Assistant-Agent.md) / 费用报销助手 — Data and Analytics, Read-only
+- [Expense Policy Explainer Agent](Expense-Policy-Explainer-Agent.md) / 报销制度解读助手 — Specialized Business, Read-only
 - [Procurement Request Agent](Procurement-Request-Agent.md) / 采购申请助手 — Business Operations, Draft-only
 - [Vendor Due Diligence Agent](Vendor-Due-Diligence-Agent.md) / 供应商尽调助手 — Compliance and Quality, Read-only
 - [Contract Clause Review Agent](Contract-Clause-Review-Agent.md) / 合同条款审阅助手 — Compliance and Quality, Read-only
-- [HR Policy Q&A Agent](HR-Policy-QA-Agent.md) / 人事政策问答助手 — Communication and Collaboration, Read-only
+- [HR Policy Explainer Agent](HR-Policy-Explainer-Agent.md) / HR制度解读助手 — Specialized Business, Read-only
 - [Onboarding Plan Agent](Onboarding-Plan-Agent.md) / 入职计划助手 — Business Operations, Draft-only
 - [Offboarding Checklist Agent](Offboarding-Checklist-Agent.md) / 离职交接清单助手 — Business Operations, Draft-only
-- [IT Incident Triage Agent](IT-Incident-Triage-Agent.md) / IT 故障分流助手 — Development and Technology, Read-only
+- [Incident Triage Agent](Incident-Triage-Agent.md) / 技术事件分诊智能体 — Development and Technology, Read-only
 - [Access Request Review Agent](Access-Request-Review-Agent.md) / 权限申请审查助手 — Compliance and Quality, Read-only
 - [Customer Success Review Agent](Customer-Success-Review-Agent.md) / 客户成功复盘助手 — Business Operations, Read-only
 - [Sales Call Summary Agent](Sales-Call-Summary-Agent.md) / 销售通话总结助手 — Communication and Collaboration, Draft-only
@@ -410,13 +412,16 @@ The following 15 department-oriented Agents are registered as Active with bounde
 | Agent | Registry 权限 | 默认是否需要外部工具 | 建议 Copilot Studio 配置 |
 | --- | --- | --- | --- |
 | 3-Minute AI Brief | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
+| AB Experiment Design Agent | Draft-only | 否（默认） | 非平凡计算需启用并授权代码解释器，使用实际输入；不可用时只返回分析计划，不虚构计算结果。 |
 | Access Request Review Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Accessible Content Review Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Agent Learning Tutor | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Agent Portfolio Advisor Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Agent Test Case Designer Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | AI Learning Resource Recommender | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
+| AI Output Rubric Designer Agent | Draft-only | 否（默认） | 使用提供的材料或可访问知识源；外部检索或私有数据访问另行配置只读工具与适当认证。 |
 | AI Story Teller | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
+| AI Task Suitability Agent | Read-only | 否（默认） | 使用提供的材料或可访问知识源；外部检索或私有数据访问另行配置只读工具与适当认证。 |
 | AI Tool Guide | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Annual Report Draft Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Anomaly Investigation Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
@@ -425,22 +430,30 @@ The following 15 department-oriented Agents are registered as Active with bounde
 | Audit Evidence Organizer Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Automation Opportunity Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Budget Variance Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
+| Business English Practice Agent | Draft-only | 否（默认） | 使用提供的材料或可访问知识源；外部检索或私有数据访问另行配置只读工具与适当认证。 |
+| Business Hypothesis Validation Agent | Draft-only | 否（默认） | 使用提供的材料或可访问知识源；外部检索或私有数据访问另行配置只读工具与适当认证。 |
 | Business Report Draft Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
+| Calendar Scheduling Agent | External Action | 是（执行外部动作时） | 已授权 Connector/Flow/API；配置连接身份、最小权限、执行前确认和结果回执。 |
 | Capability Registry Manager Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Change Communication Plan Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Change Impact Analysis Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Chinese Zodiac Play Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
+| Citation Organizer Agent | Draft-only | 否（默认） | 使用提供的材料或可访问知识源；外部检索或私有数据访问另行配置只读工具与适当认证。 |
+| Clinical Research Terminology Agent | Read-only | 否（默认） | 使用提供的材料或可访问知识源；外部检索或私有数据访问另行配置只读工具与适当认证。 |
 | Clock-Out Oracle Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Code Refactoring Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Code Review Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Compliance Review Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
+| Concept Map Agent | Draft-only | 否（默认） | 使用提供的材料或可访问知识源；外部检索或私有数据访问另行配置只读工具与适当认证。 |
 | Contract Clause Review Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Contract Obligation Extraction Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Control Checklist Draft Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
+| Cost Benefit Analysis Agent | Draft-only | 否（默认） | 非平凡计算需启用并授权代码解释器，使用实际输入；不可用时只返回分析计划，不虚构计算结果。 |
 | Course Chapter Distiller | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Cross Document Number Check Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Customer Feedback Analysis Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Customer Feedback Triage Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
+| Customer Journey Agent | Draft-only | 否（默认） | 使用提供的材料或可访问知识源；外部检索或私有数据访问另行配置只读工具与适当认证。 |
 | Customer Success Review Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Daily Report Draft Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Data Analysis Plan Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
@@ -449,42 +462,52 @@ The following 15 department-oriented Agents are registered as Active with bounde
 | Data Insight Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Data Quality Review Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Data Visualization Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
+| Decision Criteria Designer Agent | Draft-only | 否（默认） | 使用提供的材料或可访问知识源；外部检索或私有数据访问另行配置只读工具与适当认证。 |
 | Decision Record Draft Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
-| Document Change Review Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
+| Demo Script Draft Agent | Draft-only | 否（默认） | 使用提供的材料或可访问知识源；外部检索或私有数据访问另行配置只读工具与适当认证。 |
+| Document Index Agent | Draft-only | 否（默认） | 使用提供的材料或可访问知识源；外部检索或私有数据访问另行配置只读工具与适当认证。 |
 | Document Reader Review Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Document Summarizer Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Document Version Comparison Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Elevator Pitch Coach Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Email Draft Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
+| Email Sending Agent | External Action | 是（执行外部动作时） | 已授权 Connector/Flow/API；配置连接身份、最小权限、执行前确认和结果回执。 |
 | Evidence Reasoning Review Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
-| Expense Policy Assistant Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
+| Expense Policy Explainer Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
+| Experiment Results Assessment Agent | Read-only | 否（默认） | 非平凡计算需启用并授权代码解释器，使用实际输入；不可用时只返回分析计划，不虚构计算结果。 |
+| External Agent Solution Scout Agent | Read-only | 否（默认） | 使用提供的材料或可访问知识源；外部检索或私有数据访问另行配置只读工具与适当认证。 |
+| File Publishing Agent | External Action | 是（执行外部动作时） | 已授权 Connector/Flow/API；配置连接身份、最小权限、执行前确认和结果回执。 |
 | Filing Calendar Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Folk Fortune Play Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Form Field Mapping Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | GitHub Repository Research Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
+| Glossary Builder Agent | Draft-only | 否（默认） | 使用提供的材料或可访问知识源；外部检索或私有数据访问另行配置只读工具与适当认证。 |
 | Handover Brief Draft Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
-| HR Policy Q&A Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
+| HR Policy Explainer Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Hydration Knowledge Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Incident Postmortem Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Incident Triage Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
+| Information Security Literacy Agent | Read-only | 否（默认） | 使用提供的材料或可访问知识源；外部检索或私有数据访问另行配置只读工具与适当认证。 |
 | Internal FAQ Draft Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
+| Internship Achievement Agent | Draft-only | 否（默认） | 使用提供的材料或可访问知识源；外部检索或私有数据访问另行配置只读工具与适当认证。 |
 | Interview Guide Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Interview Practice Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Inventory Replenishment Advisor Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
-| IT Incident Triage Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
+| IT Service Knowledge Agent | Read-only | 否（默认） | 使用提供的材料或可访问知识源；外部检索或私有数据访问另行配置只读工具与适当认证。 |
+| Job Description Draft Agent | Draft-only | 否（默认） | 使用提供的材料或可访问知识源；外部检索或私有数据访问另行配置只读工具与适当认证。 |
 | Knowledge Answer Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Knowledge Article Draft Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Knowledge Base Article Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
-| KPI Definition Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
+| Knowledge Chunking Plan Agent | Draft-only | 否（默认） | 使用提供的材料或可访问知识源；外部检索或私有数据访问另行配置只读工具与适当认证。 |
 | Learning Checkpoint | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Learning Path Planner Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | License Scope Comparison Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | LLM Learning Tutor | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Meeting Agenda Planner Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
-| Metric Definition Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Metric Definition Designer Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Monthly Report Draft Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Movement Knowledge Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
+| Notification Sending Agent | External Action | 是（执行外部动作时） | 已授权 Connector/Flow/API；配置连接身份、最小权限、执行前确认和结果回执。 |
 | Nutrition Knowledge Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Offboarding Checklist Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Office Fun Draw Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
@@ -492,28 +515,41 @@ The following 15 department-oriented Agents are registered as Active with bounde
 | Operational Risk Assessment Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Policy Gap Analysis Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Practice Exercise Draft Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
+| Presentation Rehearsal Coach Agent | Draft-only | 否（默认） | 使用提供的材料或可访问知识源；外部检索或私有数据访问另行配置只读工具与适当认证。 |
 | Presentation Storyline Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
+| Privacy Knowledge Agent | Read-only | 否（默认） | 使用提供的材料或可访问知识源；外部检索或私有数据访问另行配置只读工具与适当认证。 |
+| Problem Tree Agent | Draft-only | 否（默认） | 使用提供的材料或可访问知识源；外部检索或私有数据访问另行配置只读工具与适当认证。 |
+| Process Bottleneck Agent | Read-only | 否（默认） | 非平凡计算需启用并授权代码解释器，使用实际输入；不可用时只返回分析计划，不虚构计算结果。 |
 | Procurement Brief Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
+| Procurement Policy Knowledge Agent | Read-only | 否（默认） | 使用提供的材料或可访问知识源；外部检索或私有数据访问另行配置只读工具与适当认证。 |
 | Procurement Request Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Product Launch Readiness Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
+| Project Naming Agent | Draft-only | 否（默认） | 使用提供的材料或可访问知识源；外部检索或私有数据访问另行配置只读工具与适当认证。 |
 | Project Plan Draft Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
+| Prompt Comparison Review Agent | Read-only | 否（默认） | 使用提供的材料或可访问知识源；外部检索或私有数据访问另行配置只读工具与适当认证。 |
 | Prompt Evaluation Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Prompt Refinement Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Psychology Knowledge Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Qualitative Text Coding Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
+| Quality System Intro Agent | Read-only | 否（默认） | 使用提供的材料或可访问知识源；外部检索或私有数据访问另行配置只读工具与适当认证。 |
 | Questionnaire Design Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
+| RACI Matrix Agent | Draft-only | 否（默认） | 使用提供的材料或可访问知识源；外部检索或私有数据访问另行配置只读工具与适当认证。 |
+| RAG Retrieval Evaluation Agent | Read-only | 否（默认） | 非平凡计算需启用并授权代码解释器，使用实际输入；不可用时只返回分析计划，不虚构计算结果。 |
 | Record Status Update Agent | Data Modification | 是（写入或修改数据时） | Connector/Agent Flow 或 API 工具；User authentication/OBO；执行前确认；返回变更日志和回滚引用。 |
 | Registration Applicability Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Registration Checklist Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Registration Evidence Package Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Registration Readiness Review Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
+| Regulatory Affairs Terminology Agent | Read-only | 否（默认） | 使用提供的材料或可访问知识源；外部检索或私有数据访问另行配置只读工具与适当认证。 |
 | Release Notes Draft Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Renewal and Change Impact Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Requirements Analysis Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
+| Research Interview Guide Agent | Draft-only | 否（默认） | 使用提供的材料或可访问知识源；外部检索或私有数据访问另行配置只读工具与适当认证。 |
 | Research Scout Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Retrospective Facilitator Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Root Cause Analysis Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Sales Call Summary Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
+| Sampling Design Agent | Draft-only | 否（默认） | 非平凡计算需启用并授权代码解释器，使用实际输入；不可用时只返回分析计划，不虚构计算结果。 |
 | Scenario Sensitivity Analysis Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Sleep Knowledge Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Solution Comparison Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
@@ -521,14 +557,22 @@ The following 15 department-oriented Agents are registered as Active with bounde
 | Source Reading Guide Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Spreadsheet Formula Advisor Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Spreadsheet Update Agent | Data Modification | 是（写入或修改数据时） | Connector/Agent Flow 或 API 工具；User authentication/OBO；执行前确认；返回变更日志和回滚引用。 |
+| SQL Query Draft Agent | Draft-only | 否（默认） | 使用提供的材料或可访问知识源；外部检索或私有数据访问另行配置只读工具与适当认证。 |
+| Stakeholder Communication Map Agent | Draft-only | 否（默认） | 使用提供的材料或可访问知识源；外部检索或私有数据访问另行配置只读工具与适当认证。 |
 | Structured Information Extraction Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Study Notes Organizer Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
-| Survey Design Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
+| Supply Chain Terminology Agent | Read-only | 否（默认） | 使用提供的材料或可访问知识源；外部检索或私有数据访问另行配置只读工具与适当认证。 |
 | Tabular Reshaping Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Tarot Play Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
+| Task Ticket Creation Agent | External Action | 是（执行外部动作时） | 已授权 Connector/Flow/API；配置连接身份、最小权限、执行前确认和结果回执。 |
+| Teaching Case Designer Agent | Draft-only | 否（默认） | 使用提供的材料或可访问知识源；外部检索或私有数据访问另行配置只读工具与适当认证。 |
+| Team Icebreaker Agent | Draft-only | 否（默认） | 使用提供的材料或可访问知识源；外部检索或私有数据访问另行配置只读工具与适当认证。 |
+| Technical Plain Language Agent | Draft-only | 否（默认） | 使用提供的材料或可访问知识源；外部检索或私有数据访问另行配置只读工具与适当认证。 |
 | Terminology Translation Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Test Case Design Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Test Case Draft Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
+| Text Redaction Draft Agent | Draft-only | 否（默认） | 使用提供的材料或可访问知识源；外部检索或私有数据访问另行配置只读工具与适当认证。 |
+| Time Series Baseline Agent | Draft-only | 否（默认） | 非平凡计算需启用并授权代码解释器，使用实际输入；不可用时只返回分析计划，不虚构计算结果。 |
 | Training Content Draft Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Training Lesson Plan Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Translation QA Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
@@ -536,6 +580,8 @@ The following 15 department-oriented Agents are registered as Active with bounde
 | Vision Knowledge Agent | Read-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Visual Design Brief Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 | Weekly Report Draft Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
+| Workload Estimation Agent | Draft-only | 否（默认） | 非平凡计算需启用并授权代码解释器，使用实际输入；不可用时只返回分析计划，不虚构计算结果。 |
+| Workplace Roleplay Coach Agent | Draft-only | 否（默认） | 使用提供的材料或可访问知识源；外部检索或私有数据访问另行配置只读工具与适当认证。 |
 | Zodiac Play Agent | Draft-only | 否（默认） | 知识源或对话工具即可；只有访问外部实时数据时再添加 Connector/Flow/MCP，并按数据敏感度配置认证。 |
 
 ### 配置判断规则

@@ -20,6 +20,8 @@ Registry metadata:
 - Status: Active
 - Last Updated: 2026-10-15
 
+Routing aliases (search terms only): Document Change Review Agent; 文档变更审阅智能体. Return only Document Version Comparison Agent as the canonical Agent identity; aliases are not separate callable Agents.
+
 Responsibilities:
 - Align comparable sections of two explicitly identified versions.
 - Separate additions, deletions, wording changes, and simple reordering where evidence supports the distinction.

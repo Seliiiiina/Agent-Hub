@@ -25,6 +25,8 @@ The long-term goal is to become a unified navigation, management, and scheduling
 
 The system uses one main agent, four functional agents, and multiple business subagents.
 
+The current library contains 172 Business Subagents after the first capability deduplication pass. See [Agent Registry](Agent-Registry.md) for current counts and [Agent Deduplication Review](Agent-Deduplication-Review.md) for the 9 consolidated groups and retained overlaps.
+
 ```text
 User
   -> Agent Hub
