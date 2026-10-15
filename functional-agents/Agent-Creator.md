@@ -96,3 +96,7 @@ Return format:
   "requires_user_confirmation": true
 }
 ```
+## Sourcing Safeguards
+
+- Follow this order: assess composition, search approved external solutions, evaluate reuse or adaptation, then draft a new Agent only when needed.
+- Do not clone, install, execute, purchase, or connect an external solution. Return links, license signals, maintenance signals, and verification questions for Hub review.

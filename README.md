@@ -476,41 +476,57 @@ If execution fails, Agent Executor must return:
 
 ```mermaid
 flowchart TD
-  U[User request] --> H[Agent Hub extracts goal, task, input, constraints]
-  H --> C{Enough goal and input?}
-  C -- No --> Q[Ask minimum clarification questions]
-  Q --> H
+  U[User request] --> H[Agent Hub extracts goal, inputs, scope, constraints]
+  H --> C{Enough information to match?}
+  C -- No goal --> Q1[Ask minimum goal clarification]
+  Q1 --> H
+  C -- Missing source --> Q2[Request required source or period]
+  Q2 --> H
   C -- Yes --> S{User specified a Subagent?}
 
-  S -- Yes --> V[Validate Subagent in Agent Registry]
-  V --> VP{Exists, available, capable, permitted?}
-  VP -- Yes --> T{Simple or complex task?}
+  S -- Yes --> V[Validate Registry status, capability, permission, tools]
+  V --> VP{Valid and available?}
   VP -- No --> F[Agent Finder recommends alternatives]
-
+  VP -- Yes --> T{Simple or complex task?}
   S -- No --> F
   F --> FM{Suitable Business Subagent found?}
-  FM -- No --> G[Agent Creator analyzes capability gap]
-  G --> GC[Draft new Agent definition and Registry update suggestion]
-  GC --> HC[Agent Hub asks user to confirm creation]
+  FM -- No --> G1[Check whether existing Agents can compose]
+  G1 -->|Yes| B[Workflow Builder drafts Blueprint]
+  G1 -->|No| G2[Agent Creator searches approved external reuse]
+  G2 --> G3[Recommend reuse, adapt, or create]
+  G3 --> HC[Hub requests confirmation before adoption or creation]
+  HC -->|Confirmed| T
 
-  FM -- Yes --> R[Agent Hub presents ranked recommendations]
-  R --> UC[User selects and confirms Agent]
+  FM -- Yes --> R[Hub presents ranked recommendations]
+  R --> UC[User selects Agent or Agent set]
   UC --> T
 
-  T -- Simple --> CS[Agent Hub confirms Agent, goal, input, permission scope]
-  CS --> E[Agent Executor runs confirmed Subagent]
-
-  T -- Complex --> B[Workflow Builder creates Workflow Blueprint]
-  B --> WB[Agent Hub presents blueprint]
-  WB --> WC{User confirms workflow?}
+  T -- Simple --> CS[Confirm Agent, goal, input, permission scope]
+  T -- Complex --> B
+  B --> WB[Hub presents ordered Blueprint, dependencies, and outputs]
+  WB --> WC{User confirms Blueprint?}
   WC -- No --> RQ[Revise plan or stop]
-  WC -- Yes --> E
+  RQ --> B
+  WC -- Yes --> CS
 
-  E --> ER{Execution completed?}
-  ER -- Yes --> OUT[Agent Hub presents result]
-  ER -- No --> FAIL[Executor returns error, completed steps, failed step, retry suggestion]
+  CS --> AC{Data Modification or External Action?}
+  AC -- No --> E[Executor runs confirmed task]
+  AC -- Yes --> PRE[Preview target, records, content, timing, identity]
+  PRE --> CONF{User confirms concrete action?}
+  CONF -- No --> STOP[Stop without external change]
+  CONF -- Yes --> E
+
+  E --> ER{Execution result}
+  ER -- Completed --> OUT[Hub presents result and validation]
+  ER -- Partial --> PART[Present completed, failed, skipped, IDs, rollback]
+  ER -- Failed --> FAIL[Present error, retryability, and required confirmation]
+  PART --> OUT
   FAIL --> OUT
-  OUT --> REV[User accepts, modifies, retries, or extends]
+  OUT --> REV{User next step?}
+  REV -- Accept --> END[Close execution]
+  REV -- Retry --> ID[Check idempotency and prior external result]
+  ID --> E
+  REV -- Modify or extend --> H
 ```
 
 ### Agent Finder Retrieval and Scoring Flow
@@ -578,6 +594,8 @@ User asks for a complex multi-step task
   -> Agent Executor returns structured status and results
   -> Agent Hub presents final result
 ```
+
+For workflows containing Data Modification or External Action steps, the Blueprint confirmation is followed by a concrete action preview confirmation. A partial result does not automatically retry; the user must choose a next step, and Executor must check idempotency before retrying.
 
 ### New Agent Creation
 
@@ -763,3 +781,8 @@ Use force push only when intentionally replacing remote history and after confir
 | M3: Agent Registry baseline | `Agent-Registry.md` indexes available agents with v1 registry fields. | Done |
 | M4: End-to-end prototype | A full recommendation, confirmation, and execution flow can be simulated. | Done |
 | M5: Copilot Studio readiness | Agent definitions are ready to migrate or map into Copilot Studio concepts. | Not started |
+## Execution Safeguards
+
+For Data Modification and External Action, Agent Hub must present a second confirmation after the proposed change or action is rendered. The confirmation identifies the target system, records or recipients, fields or content, timing, connection identity, permission scope, and expected result. A trigger phrase identifies intent; it does not grant permission.
+
+Agent Executor must support partial success and idempotent retries. Every execution result should preserve an execution ID, confirmation ID, idempotency key, completed steps, failed step, skipped steps, partial results, external system IDs, retryability, and rollback or cancellation references when available.
