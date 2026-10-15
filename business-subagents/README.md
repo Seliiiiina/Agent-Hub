@@ -51,13 +51,9 @@ Primary Category values:
 
 ## Reference Adaptation Notes
 
-For the first capability deduplication pass (182 → 172), canonical replacements, and intentionally retained overlaps, see [Agent Deduplication Review](../Agent-Deduplication-Review.md).
 
-For the original text/data batch inspired by Anthropic's skills, see [Anthropic Skill Adaptation Notes](../Anthropic-Skill-Adaptation.md) for all source decisions, capability deduplication, configuration scope, and manual checks.
 
-For the twelve selected business-method Agents and Elevator Pitch Coach, see [Business Methods and Pitch Setup](../Business-Methods-and-Pitch-Setup.md) for definitions, handoff boundaries, runtime needs, and manual acceptance examples.
 
-For all 48 remaining candidates in the original expansion plan, see [Remaining Candidates Batch Setup](../Remaining-Candidates-Batch-Setup.md) for the candidate mapping, configuration dependencies, and manual acceptance examples. Overlapping definitions are retained for later consolidation.
 
 ## AI Learning Agent Setup Notes
 

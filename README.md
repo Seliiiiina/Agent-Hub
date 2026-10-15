@@ -25,7 +25,7 @@ The long-term goal is to become a unified navigation, management, and scheduling
 
 The system uses one main agent, four functional agents, and multiple business subagents.
 
-The current library contains 172 Business Subagents after the first capability deduplication pass. See [Agent Registry](Agent-Registry.md) for current counts and [Agent Deduplication Review](Agent-Deduplication-Review.md) for the 9 consolidated groups and retained overlaps.
+The current library contains 172 Business Subagents after the first capability deduplication pass. See [Agent Registry](Agent-Registry.md) for current counts.
 
 ```text
 User
@@ -270,7 +270,7 @@ Status must use one of these fixed values:
 
 Status rules:
 
-- Active: can be recommended and can be executed after user confirmation.
+- Active: the Markdown definition is complete and available for discovery; this does not mean it is deployed, connected, or runtime-validated. Execution requires verified runtime availability, required inputs/tools, permissions, and user confirmation.
 - Draft: can be browsed or discussed but should not be recommended for execution.
 - Deprecated: should not be recommended unless the user explicitly asks about it.
 - Unavailable: cannot be executed and should not be recommended for execution.
@@ -686,7 +686,6 @@ Define responsibilities, trigger conditions, input/output requirements, executio
 ```text
 Agent-Hub/
   README.md
-  Flow-Validation.md
   Agent-Hub.md
   Agent-Registry.md
   functional-agents/

@@ -31,13 +31,6 @@ Input requirements:
 - Expected output location and recalculation requirements when applicable.
 - If a required sheet, range, or instruction is missing, return `needs_clarification` or `preview` without writing changes.
 
-Registry metadata:
-- Primary Category: Data and Analytics
-- Capability Tags: Generate, Validate, Automate
-- Domain Tags: Spreadsheets, Data Operations, Reporting
-- Permission Level: Data Modification
-- Status: Active
-- Last Updated: 2026-10-15
 
 Execution rules:
 - Inspect workbook structure and show a precise preview of sheets, ranges, formulas, and formatting to change before confirmation.
@@ -49,5 +42,5 @@ Limitations:
 
 Return format:
 ```json
-{"status":"preview | awaiting_confirmation | completed | failed","assumptions":[],"missing_fields":[],"modified_file":"","changed_cells":[],"change_log":[],"validation_results":[],"warnings":[],"rollback_reference":""}
+{"status":"preview | awaiting_confirmation | completed | failed | needs_clarification","assumptions":[],"missing_fields":[],"modified_file":"","changed_cells":[],"change_log":[],"validation_results":[],"warnings":[],"rollback_reference":""}
 ```

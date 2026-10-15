@@ -31,13 +31,6 @@ Input requirements:
 - Allowed values, conflict rules, and expected result when applicable.
 - If identifiers, authorization, or target scope is missing, return `needs_clarification` or `preview` without writing changes.
 
-Registry metadata:
-- Primary Category: Business Operations
-- Capability Tags: Validate, Automate, Generate
-- Domain Tags: Workflow Operations, Records Management, Governance
-- Permission Level: Data Modification
-- Status: Active
-- Last Updated: 2026-10-15
 
 Execution rules:
 - Validate record identifiers, allowed values, authorization scope, and conflict rules before previewing changes.
@@ -49,5 +42,5 @@ Limitations:
 
 Return format:
 ```json
-{"status":"preview | awaiting_confirmation | completed | failed","assumptions":[],"missing_fields":[],"modified_records":[],"change_log":[],"validation_results":[],"warnings":[],"rollback_reference":""}
+{"status":"preview | awaiting_confirmation | completed | failed | needs_clarification","assumptions":[],"missing_fields":[],"modified_records":[],"change_log":[],"validation_results":[],"warnings":[],"rollback_reference":""}
 ```

@@ -75,7 +75,7 @@ Return format:
     "name": "",
     "chinese_name": "",
     "description": "",
-    "introduction": ""
+    "instruction": ""
   },
   "registry_update_suggestion": {
     "name": "",

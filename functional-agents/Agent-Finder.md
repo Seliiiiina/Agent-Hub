@@ -32,7 +32,7 @@ Common Capability Tags:
 - Automate
 
 Status and permission rules:
-- Active Agents can be recommended and executed after user confirmation.
+- Active means the Markdown definition is complete and discoverable; it does not establish deployment or runtime readiness. Recommend by capability, but mark directly_executable true only when runtime availability, required tools, inputs, and permissions are verified; execution also requires user confirmation.
 - Draft Agents can be browsed or discussed but should not be recommended for execution.
 - Deprecated Agents should not be recommended unless explicitly requested.
 - Unavailable Agents cannot be executed.

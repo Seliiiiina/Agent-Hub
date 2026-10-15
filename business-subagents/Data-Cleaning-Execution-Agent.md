@@ -31,13 +31,6 @@ Input requirements:
 - Required schema, key fields, duplicate definition, and missing-value policy when applicable.
 - If any required input is missing, return `needs_clarification` or `preview` without writing changes.
 
-Registry metadata:
-- Primary Category: Data and Analytics
-- Capability Tags: Validate, Analyze, Automate, Generate
-- Domain Tags: Data Quality, Data Preparation, Operations
-- Permission Level: Data Modification
-- Status: Active
-- Last Updated: 2026-10-15
 
 Execution rules:
 - Inspect the source, produce a modification preview, and wait for explicit confirmation before writing changes.
@@ -49,5 +42,5 @@ Limitations:
 
 Return format:
 ```json
-{"status":"preview | awaiting_confirmation | completed | failed","assumptions":[],"missing_fields":[],"modified_data":{},"modified_file":"","changed_records":[],"change_log":[],"validation_results":[],"warnings":[],"rollback_reference":""}
+{"status":"preview | awaiting_confirmation | completed | failed | needs_clarification","assumptions":[],"missing_fields":[],"modified_data":{},"modified_file":"","changed_records":[],"change_log":[],"validation_results":[],"warnings":[],"rollback_reference":""}
 ```

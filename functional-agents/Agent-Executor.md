@@ -34,6 +34,12 @@ Step status values:
 - skipped
 - failed
 - needs_confirmation
+- needs_clarification
+
+Subagent handoff rules:
+- Map preview or awaiting_confirmation to needs_confirmation; return the concrete preview to Hub and pause dependent steps without executing writes or sends.
+- Map missing required inputs to needs_clarification; return missing_fields to Hub and pause dependent steps.
+- Preserve partial outputs and raw Subagent status. Do not mark a paused step or its dependent steps completed. Resume only after Hub supplies the missing input or explicit confirmation.
 
 Boundary rules:
 - Do not add new Agents without returning to Agent Hub for confirmation.
@@ -51,7 +57,7 @@ Failure behavior:
 Return format:
 ```json
 {
-  "status": "completed | partial | failed | needs_confirmation",
+  "status": "completed | partial | failed | needs_confirmation | needs_clarification",
   "task_goal": "",
   "confirmed_scope": {
     "agents": [],
@@ -62,8 +68,11 @@ Return format:
     {
       "step": "",
       "agent": "",
-      "status": "pending | running | completed | skipped | failed | needs_confirmation",
+      "status": "pending | running | completed | skipped | failed | needs_confirmation | needs_clarification",
       "output_summary": "",
+      "subagent_status": "",
+      "missing_fields": [],
+      "action_preview": {},
       "error": ""
     }
   ],
