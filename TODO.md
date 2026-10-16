@@ -52,6 +52,11 @@
 
 ## 第四阶段：功能验收
 
+- [ ] 单独测试 Finder：从已上传的 Agent-Registry.txt 检索 Budget Variance Agent 的名称、分类和权限，并核对来源证据。
+- [ ] 验证 Finder 的知识源处理状态为 Ready；目录问题能检索到 Registry Overview、分类汇总和具体条目。
+- [ ] 从 Hub 测试 “what agent do you have?”，检查实际运行记录是否调用 Finder 并返回检索证据。
+- [ ] 验证 Registry 无法检索时返回 registry_unavailable，部分检索时展示有证据的条目，不编造完整计数或搜索能力。
+
 - [ ] 用 5 个 Agent Finder 查询检查分类、匹配分数和推荐理由。
 - [ ] 验收客户反馈 → 产品改进简报工作流。
 - [ ] 验收 API 变更 → 集成代码与测试草稿工作流。
