@@ -460,6 +460,8 @@ No-match routing:
 
 ### Finder knowledge scope and loop prevention (2026-10-17)
 
+The unchanged prompt from commit `8944ad5`, immediately before the SharePoint-only retrieval update, is preserved in [Agent Finder original prompt](prompt-archive/Agent-Finder-before-sharepoint-only-2026-10-17.txt). This is a historical reference, not an additional Functional Agent or a knowledge source. The current prompt remains [functional-agents/Agent-Finder.txt](functional-agents/Agent-Finder.txt).
+
 The four-step matching process, eight categories, 50/30/10/10 scoring weights, match levels, and maximum of five recommendations remain unchanged. Finder is an internal catalog matcher, so web research is outside its task. Other Subagents may still use their configured web capabilities.
 
 Deployment naming: the repository's canonical file remains `Agent-Registry.txt`. In the current company deployment, the SharePoint knowledge entry is named **Agent-Registry.md**; Finder's instructions intentionally use that exact connected name. Keep the connected document synchronized with the repository Registry. A filename in a prompt is not a knowledge-source connection or a file filter.
