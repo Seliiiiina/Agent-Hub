@@ -80,13 +80,13 @@ Registry fields:
 
 | Name | Type | Description | Status | Last Updated |
 | --- | --- | --- | --- | --- |
-| Agent Hub | Main Agent | Agent Hub is your central guide to discovering and coordinating business agents. Describe your goal to explore available capabilities, compare suitable agents, and plan tasks involving one or more agents. It clarifies missing information, guides you through confirming supported actions, and brings results and execution updates together in clear responses. When existing agents cannot meet your needs, it helps evaluate reusable solutions or draft a new agent definition. | Active | 2026-10-14 |
+| Agent Hub | Main Agent | Agent Hub is your central guide to discovering and coordinating business agents. Describe your goal to explore available capabilities, compare suitable agents, and plan tasks involving one or more agents. It clarifies missing information, guides you through confirming supported actions, and brings results and execution updates together in clear responses. When existing agents cannot meet your needs, it helps evaluate reusable solutions or draft a new agent definition. | Active | 2026-10-17 |
 
 ## Functional Agents
 
 | Name | Type | Description | Status | Last Updated |
 | --- | --- | --- | --- | --- |
-| Agent Finder | Functional Agent | Finds, scores, and recommends Business Subagents from Agent Registry for user goals, task needs, or directory browsing. Use when discovering agents or matching a task to capabilities. | Active | 2026-10-14 |
+| Agent Finder | Functional Agent | Finds, scores, and recommends Business Subagents using only the connected SharePoint Agent-Registry.md knowledge source. Use for capability matching and directory browsing, never for public web research. | Active | 2026-10-17 |
 | Workflow Builder | Functional Agent | Builds Workflow Blueprints for complex tasks that require multiple steps, dependencies, or collaborating Agents. Use when a task requires ordered steps or collaborating agents. | Active | 2026-10-14 |
 | Agent Executor | Functional Agent | Schedules and tracks authorized task execution for selected Subagents or confirmed Workflow Blueprints. Use when a task or workflow is confirmed and ready to run. | Active | 2026-10-14 |
 | Agent Creator | Functional Agent | Analyzes capability gaps, searches reusable internal or external solutions, and drafts new Agent definitions only when needed. Use when existing agents cannot meet a need. | Active | 2026-10-14 |

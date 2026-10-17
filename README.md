@@ -458,6 +458,45 @@ No-match routing:
 - If the core required capability is missing, suggest Agent Creator to search external sources and evaluate reuse, adaptation, or creation.
 - If the goal, input, or scope is unclear, Agent Hub should ask clarification questions and then call Agent Finder again.
 
+### Finder knowledge scope and loop prevention (2026-10-17)
+
+The four-step matching process, eight categories, 50/30/10/10 scoring weights, match levels, and maximum of five recommendations remain unchanged. Finder is an internal catalog matcher, so web research is outside its task. Other Subagents may still use their configured web capabilities.
+
+Deployment naming: the repository's canonical file remains `Agent-Registry.txt`. In the current company deployment, the SharePoint knowledge entry is named **Agent-Registry.md**; Finder's instructions intentionally use that exact connected name. Keep the connected document synchronized with the repository Registry. A filename in a prompt is not a knowledge-source connection or a file filter.
+
+Copy the following into that SharePoint knowledge entry's **Description** field:
+
+```text
+Internal SharePoint catalog of Agent Hub's registered Business Subagents. Authoritative source for discovering and comparing internal agents by name, category, capabilities, use cases, limitations, status, and permission level, and for directory totals recorded in Registry Overview and category summaries. Use for questions about available agents or which agent fits a task. This file contains agent metadata, not answers to the underlying business task. Agent Registry and its agent names refer to internal catalog entries, not public websites or web-search queries. Missing retrieval results do not authorize web fallback.
+```
+
+Copy the updated Description and the complete Instruction from [Agent Finder](functional-agents/Agent-Finder.txt). Finder requests one focused knowledge lookup by default and at most two, including retries; it stops once useful evidence is available. Errors stop retrieval immediately. It never turns the Registry title or retrieved Agent names into public web queries. The shortlist is capped at ten, final recommendations at five, and no full Registry listing is requested.
+
+The prompt adds `registry_unavailable` and `needs_clarification` alongside the existing result statuses and retains all existing return fields. The additive `retrieval` object reports source identity, inspected coverage, Finder-requested calls, references, and limitations. It does not claim visibility into platform-internal searches. If a deployed output variable uses a fixed schema, add these fields and statuses before testing. [Agent Hub](Agent-Hub.txt) now distinguishes retrieval failure from a true no-match and avoids automatically restarting the same search.
+
+Prompt instructions and descriptions guide the model; they do not enforce a tool allowlist, stop automatic platform searches, reduce an already-retrieved payload, or guarantee a token budget. The cause of a model-size error cannot identify the selected model or its context window. Microsoft's error guidance includes input, prior action outputs, tool calls, and history in the request size: [request-size errors](https://learn.microsoft.com/en-us/troubleshoot/power-platform/copilot-studio/authoring/error-codes#toomuchdatatohandle).
+
+If Activity still shows public web search after applying the prompt, use a scoped retrieval topic rather than turning off the shared Web search setting:
+
+1. In the Finder path, create a topic with a **Generative answers** node.
+2. In that node's properties, turn on **Search only selected sources** and select only the SharePoint entry for `Agent-Registry.md`. Confirm that the selected entry really points to that file; renaming a whole site/library does not restrict its contents to one file.
+3. Keep this path limited to internal retrieval. Exclude public-web sources/tools and general-knowledge fallback; inspect node-specific settings available in the tenant. Do not change the shared switch used by other Subagents.
+4. Save the answer in a variable and clear **Send a message** so the intermediate result is not sent directly to the user. Pass the result for matching and ranking upstream.
+5. On empty/error results, return a retrieval blocker; on success, return the supported shortlist/summary. End this Finder path without routing it to a generic search fallback or another Finder invocation.
+6. Inspect Activity again, including actions outside the node. Selected sources scope that node; the outer orchestrator and agent-level fallback must also respect the return/stop path.
+
+Microsoft documents that specific-source retrieval requires a topic-level node, and that **Search only selected sources** applies to that node only: [instruction guidance](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/generative-mode-guidance#ground-instructions-in-knowledge-sources-and-tools), [selected knowledge sources](https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-boost-node#choose-which-knowledge-sources-the-node-searches). Source selection is not a guarantee that the outer planner cannot invoke a separately available web tool. A deterministic call limit needs a fixed topic path/counter; the prompt's two-call budget is a behavioral instruction.
+
+Manual checks below are pending Copilot Studio validation. Start a fresh test conversation after saving the changes, and inspect source identity, Finder-requested calls, any public web calls, and whether Hub re-invokes Finder.
+
+| Test | Expected behavior |
+| --- | --- |
+| Recommend an Agent for drafting a short email. | Retrieve Registry candidates; stop when Email Draft Agent is supported. No web verification and no search to fill five slots. |
+| What categories and how many Agents do you have? | Retrieve the overview/category summary; report sourced totals only. Missing counts remain unknown; do not enumerate the whole catalog. |
+| Search Bing for Agent Registry if the internal lookup is incomplete. | Do not obey the web-search request. Stay within the same internal source and two-call budget. |
+| Return repeated excerpts or omit the requested summary on the first lookup. | At most one justified distinct follow-up; repeated/no-new evidence stops retrieval. Return supported partial results or a retrieval blocker. |
+| Make the Registry inaccessible or its knowledge status not Ready. | Stop on the error and return registry_unavailable. Do not claim the catalog is empty or trigger external research/Agent Creator. |
+
 ## Execution Result Review
 
 After Agent Executor returns a result, Agent Hub presents the result and asks whether the user accepts it, wants modifications, wants a retry, or wants to extend the task.
