@@ -1,8 +1,16 @@
 # Agent Hub
 
-Agent Hub is an enterprise-grade intelligent agent discovery, recommendation, orchestration, and execution platform.
+Agent Hub is a Copilot Studio project for finding, recommending, and coordinating business agents.
 
 The platform solves a growing enterprise problem: as internal and marketplace agents increase, users struggle to discover the right agent, compare overlapping capabilities, avoid duplicated builds, and improve the utilization of existing agents.
+
+## Current deployment and tests (2026-10-17)
+
+The project owner confirms that all Agent definitions in this GitHub repository have been configured and deployed in Copilot Studio. The architecture contains one Agent Hub, four Functional Agents, and 172 Business Subagents. Company internal webpages are connected as knowledge sources; specific webpage examples, environment details, and release versions remain to be documented.
+
+Two business-agent cases have run on the platform: meeting minutes and an action plan followed by a confirmed internal email, and plan revision with dependency-conflict identification after a literature delay. The supplied presentation pages report a successful historical Microsoft 365 email send using an authorized Work IQ Mail MCP connection. Original inputs, session IDs, and tool logs remain to be added.
+
+The presentation pages label Hub automatic orchestration as unverified. The second case's updates after a team decision and a further email are proposed steps that have not run. See [submission materials](submission-materials/README.md) and [test cases](submission-materials/02-测试场景.md) for the completed scope and remaining fields. User-provided presentation images are not stored in this repository; the case records are text only.
 
 ## Product Vision
 
@@ -659,7 +667,7 @@ Agent definitions and the Agent Registry are stored as UTF-8 `.txt` files for co
 
 Agent definitions and the Agent Registry use plain text (.txt) files; README and TODO documents use Markdown (.md). It should not include Python files, JSON configuration files, or other implementation code at this stage.
 
-The initial implementation uses plain text (.txt) files to define agent roles, usage scenarios, and execution instructions. This keeps the design portable and prepares the system for future migration to Microsoft Copilot Studio.
+The repository uses plain text (.txt) files to maintain agent roles, usage scenarios, and execution instructions. These definitions have been configured in Microsoft Copilot Studio; keep the repository and platform versions synchronized when instructions change.
 
 All Agent plain text (.txt) files must use the same concise three-part structure:
 
@@ -781,11 +789,11 @@ Agent-Hub/
 | --- | --- | --- | --- |
 | Subagent registry fields | Are the initial `Agent-Registry.txt` fields sufficient for discovery and matching? | Name, Chinese Name, Type, Primary Category, Capability Tags, Domain Tags, Description, Keywords, Capabilities, Use When, Limitations, Permission Level, Status, Last Updated | Accepted for v1 |
 | Structured outputs | What concise structured format should functional agents return inside plain text instructions? | JSON-like objects inside Markdown code blocks | Accepted for v1 |
-| Execution runtime | Where should execution happen first? | Local prototype, hosted backend, Microsoft Copilot Studio | Open |
+| Execution runtime | Where do the current Agents run? | Microsoft Copilot Studio | Deployed; environment details pending |
 | Agent registry search | How should Agent Finder search `Agent-Registry.txt`? | Registry-based matching with keyword, capability, domain, input/output, and availability signals | Accepted for v1 |
 | Permission levels | What fixed values should `Permission Level` use? | Read-only, Draft-only, External Action, Data Modification | Accepted for v1 |
 
-## Initial Implementation Plan
+## Repository setup and platform validation
 
 1. Create `Agent-Hub.txt` as the standalone main Agent definition.
 2. Create plain text definitions for the four functional agents in `functional-agents/`.
@@ -793,8 +801,8 @@ Agent-Hub/
 4. Create `Agent-Registry.txt` as the central plain text index.
 5. Define the minimal registry fields for discovery and matching.
 6. Define JSON-like object response requirements inside each Agent Instruction.
-7. Simulate the end-to-end flow from user need to recommendation to confirmation to execution result after real Subagents are added.
-8. Refine the plain text instructions for future Microsoft Copilot Studio migration.
+7. Record the completed business-agent cases and retain their original inputs, results, and platform logs.
+8. Keep the deployed instructions synchronized with the repository and validate Hub automatic orchestration separately.
 
 ## Git Workflow Notes
 
@@ -827,8 +835,9 @@ Use force push only when intentionally replacing remote history and after confir
 | M1: Core agent definitions | `Agent-Hub.txt` and four functional Agent plain text (.txt) files exist. | Done |
 | M2: Subagent library baseline | `business-subagents/` folder exists for future business Subagents. | Done |
 | M3: Agent Registry baseline | `Agent-Registry.txt` indexes available agents with v1 registry fields. | Done |
-| M4: End-to-end prototype | A full recommendation, confirmation, and execution flow can be simulated. | Done |
-| M5: Copilot Studio readiness | Agent definitions are ready to migrate or map into Copilot Studio concepts. | Not started |
+| M4: Business-agent workflow tests | Meeting minutes, action planning and confirmed email delivery; plan revision and dependency-conflict identification after a delay. | Completed cases; original logs pending |
+| M5: Copilot Studio deployment | All repository Agent definitions have been configured and deployed; internal webpage knowledge sources are connected. | Done per project owner; environment inventory pending |
+| M6: Hub automatic orchestration | Validate the complete Hub, Finder, Workflow Builder, Executor and Business Subagent call chain. | Pending |
 ## Execution Safeguards
 
 For Data Modification and External Action, Agent Hub must present a second confirmation after the proposed change or action is rendered. The confirmation identifies the target system, records or recipients, fields or content, timing, connection identity, permission scope, and expected result. A trigger phrase identifies intent; it does not grant permission.

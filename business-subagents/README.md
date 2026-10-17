@@ -57,7 +57,7 @@ Primary Category values:
 
 ## AI Learning Agent Setup Notes
 
-The AI learning batch contains plain text definitions for manual configuration and is registered as `Active` for discovery and use. Knowledge sources and tools will be connected manually in the company environment; registry status does not record deployment or connection state.
+The AI learning batch is maintained as plain text definitions and registered as `Active` for discovery. The project owner confirms that all repository Agent definitions have been deployed in Copilot Studio as of 2026-10-17. Individual knowledge-source, tool-connection, and runtime-validation records still need to be documented; registry status does not record these states.
 
 ### Manual Configuration
 

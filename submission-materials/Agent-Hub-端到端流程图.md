@@ -2,6 +2,8 @@
 
 来源：项目 README 的 End-to-End Agent Hub Flow。
 
+本图为完整流程设计。当前仓库 Agent 已部署，两个业务案例已跑通；Hub 自动编排、能力缺口处理和异常重试等分支的验证情况需分别记录。已完成的业务路径及尚未执行的后续动作见[测试场景](02-测试场景.md)。
+
 ```mermaid
 flowchart TD
   U[User request] --> H[Agent Hub extracts goal, inputs, scope, constraints]
