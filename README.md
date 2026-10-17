@@ -476,6 +476,8 @@ Copy the updated Description and the complete Instruction from [Agent Finder](fu
 
 The prompt adds `registry_unavailable` and `needs_clarification` alongside the existing result statuses and retains all existing return fields. The additive `retrieval` object reports source identity, inspected coverage, Finder-requested calls, references, and limitations. It does not claim visibility into platform-internal searches. If a deployed output variable uses a fixed schema, add these fields and statuses before testing. [Agent Hub](Agent-Hub.txt) now distinguishes retrieval failure from a true no-match and avoids automatically restarting the same search.
 
+The Hub-side retrieval fallback is merged into its existing output-handling rule; no two extra bullets are needed. Repeated routing and presentation wording was shortened so the entire Hub TXT, including its Description and CRLF line endings, fits within 8,000 characters. Copy only the Instruction content into the platform's Instructions field.
+
 Prompt instructions and descriptions guide the model; they do not enforce a tool allowlist, stop automatic platform searches, reduce an already-retrieved payload, or guarantee a token budget. The cause of a model-size error cannot identify the selected model or its context window. Microsoft's error guidance includes input, prior action outputs, tool calls, and history in the request size: [request-size errors](https://learn.microsoft.com/en-us/troubleshoot/power-platform/copilot-studio/authoring/error-codes#toomuchdatatohandle).
 
 If Activity still shows public web search after applying the prompt, use a scoped retrieval topic rather than turning off the shared Web search setting:

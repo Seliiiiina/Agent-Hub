@@ -22,6 +22,7 @@
 - [x] 保留原四步匹配、分类、评分权重和最多五个推荐，限定 Finder 仅检索已连接的 SharePoint `Agent-Registry.md`。
 - [x] 禁止 Finder 公网搜索；加入一次优先、最多两次检索及错误／重复结果停止规则。
 - [x] 增加知识源 Description、检索覆盖说明和 Hub 防止重复调用的处理规则，详见 README 的 Finder knowledge scope。
+- [x] 将 Hub 新增兜底合并进已有输出规则，精简重复表述，使完整 TXT 和 Instruction 都小于 8000 字符。
 - [ ] 在 Copilot Studio 更新 Finder、Hub 和知识源 Description；新会话验证公网调用为零，成功后及时停止。
 - [ ] 验证无权限、空结果、部分召回和重复片段时的退出行为；需要时配置限定知识源的 Generative answers 节点。
 
